@@ -1,0 +1,1854 @@
+-- MySQL Administrator dump 1.4
+--
+-- ------------------------------------------------------
+-- Server version	5.1.48-community
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+
+--
+-- Create schema schoolfund
+--
+
+CREATE DATABASE IF NOT EXISTS schoolfund;
+USE schoolfund;
+
+--
+-- Definition of table `_group`
+--
+
+DROP TABLE IF EXISTS `_group`;
+CREATE TABLE `_group` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `version` bigint(20) NOT NULL,
+  `date_created` datetime DEFAULT NULL,
+  `description` varchar(255) DEFAULT NULL,
+  `external` bit(1) NOT NULL,
+  `last_updated` datetime DEFAULT NULL,
+  `name` varchar(255) NOT NULL,
+  `protect` bit(1) NOT NULL,
+  `realm` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `_group`
+--
+
+/*!40000 ALTER TABLE `_group` DISABLE KEYS */;
+/*!40000 ALTER TABLE `_group` ENABLE KEYS */;
+
+
+--
+-- Definition of table `_group_roles`
+--
+
+DROP TABLE IF EXISTS `_group_roles`;
+CREATE TABLE `_group_roles` (
+  `role_id` bigint(20) NOT NULL,
+  `group_id` bigint(20) NOT NULL,
+  PRIMARY KEY (`group_id`,`role_id`),
+  KEY `FK1C8B2B3E42555646` (`role_id`),
+  KEY `FK1C8B2B3E35C9368E` (`group_id`),
+  KEY `FK_group_roles_role_id` (`role_id`),
+  CONSTRAINT `FK_group_roles_group_id` FOREIGN KEY (`group_id`) REFERENCES `_group` (`id`),
+  CONSTRAINT `FK_group_roles_role_id` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `_group_roles`
+--
+
+/*!40000 ALTER TABLE `_group_roles` DISABLE KEYS */;
+/*!40000 ALTER TABLE `_group_roles` ENABLE KEYS */;
+
+
+--
+-- Definition of table `_group_users`
+--
+
+DROP TABLE IF EXISTS `_group_users`;
+CREATE TABLE `_group_users` (
+  `user_base_id` bigint(20) NOT NULL,
+  `group_id` bigint(20) NOT NULL,
+  PRIMARY KEY (`group_id`,`user_base_id`),
+  KEY `FK1CB72A89FA4F085D` (`user_base_id`),
+  KEY `FK1CB72A8935C9368E` (`group_id`),
+  CONSTRAINT `FK1CB72A8935C9368E` FOREIGN KEY (`group_id`) REFERENCES `_group` (`id`),
+  CONSTRAINT `FK1CB72A89FA4F085D` FOREIGN KEY (`user_base_id`) REFERENCES `member` (`mem_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `_group_users`
+--
+
+/*!40000 ALTER TABLE `_group_users` DISABLE KEYS */;
+/*!40000 ALTER TABLE `_group_users` ENABLE KEYS */;
+
+
+--
+-- Definition of table `address_type`
+--
+
+DROP TABLE IF EXISTS `address_type`;
+CREATE TABLE `address_type` (
+  `address_type_id` varchar(16) NOT NULL,
+  `address_type_desc` varchar(64) NOT NULL,
+  `date_created` datetime DEFAULT NULL,
+  `last_updated` datetime DEFAULT NULL,
+  PRIMARY KEY (`address_type_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `address_type`
+--
+
+/*!40000 ALTER TABLE `address_type` DISABLE KEYS */;
+/*!40000 ALTER TABLE `address_type` ENABLE KEYS */;
+
+
+--
+-- Definition of table `contacts`
+--
+
+DROP TABLE IF EXISTS `contacts`;
+CREATE TABLE `contacts` (
+  `contacts_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `school_id` bigint(20) NOT NULL,
+  `contact_email` varchar(128) NOT NULL,
+  `contact_first_name` varchar(64) DEFAULT NULL,
+  `contact_last_name` varchar(64) DEFAULT NULL,
+  `contact_mi` varchar(16) DEFAULT NULL,
+  `contact_salutation` varchar(8) DEFAULT NULL,
+  `contact_suffix` varchar(16) DEFAULT NULL,
+  `contact_dob` date DEFAULT NULL,
+  `csv_filename` varchar(64) DEFAULT NULL,
+  `created_by` bigint(20) DEFAULT NULL,
+  `last_updated_by` bigint(20) DEFAULT NULL,
+  `date_created` datetime DEFAULT NULL,
+  `last_updated` datetime DEFAULT NULL,
+  PRIMARY KEY (`contacts_id`),
+  UNIQUE KEY `uq_mem_email_id` (`school_id`,`contact_email`),
+  KEY `fk_contacts_schools1` (`school_id`),
+  CONSTRAINT `fk_contacts_schools1` FOREIGN KEY (`school_id`) REFERENCES `schools` (`school_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `contacts`
+--
+
+/*!40000 ALTER TABLE `contacts` DISABLE KEYS */;
+/*!40000 ALTER TABLE `contacts` ENABLE KEYS */;
+
+
+--
+-- Definition of table `converted_contacts`
+--
+
+DROP TABLE IF EXISTS `converted_contacts`;
+CREATE TABLE `converted_contacts` (
+  `converted_contacts_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `contacts_id` bigint(20) NOT NULL,
+  `mem_id` bigint(20) NOT NULL,
+  `converted_date` date NOT NULL,
+  `created_by` bigint(20) DEFAULT NULL,
+  `last_updated_by` bigint(20) DEFAULT NULL,
+  `date_created` datetime DEFAULT NULL,
+  `last_updated` datetime DEFAULT NULL,
+  PRIMARY KEY (`converted_contacts_id`),
+  KEY `fk_converted_contacts_contacts1` (`contacts_id`),
+  KEY `fk_converted_contacts_member1` (`mem_id`),
+  CONSTRAINT `fk_converted_contacts_contacts1` FOREIGN KEY (`contacts_id`) REFERENCES `contacts` (`contacts_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_converted_contacts_member1` FOREIGN KEY (`mem_id`) REFERENCES `member` (`mem_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `converted_contacts`
+--
+
+/*!40000 ALTER TABLE `converted_contacts` DISABLE KEYS */;
+/*!40000 ALTER TABLE `converted_contacts` ENABLE KEYS */;
+
+
+--
+-- Definition of table `coordinator`
+--
+
+DROP TABLE IF EXISTS `coordinator`;
+CREATE TABLE `coordinator` (
+  `mem_id` bigint(20) NOT NULL,
+  `coorindator_info1` varchar(1024) DEFAULT NULL,
+  `coorindator_info2` varchar(1024) DEFAULT NULL,
+  `date_created` datetime DEFAULT NULL,
+  `last_updated` datetime DEFAULT NULL,
+  PRIMARY KEY (`mem_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `coordinator`
+--
+
+/*!40000 ALTER TABLE `coordinator` DISABLE KEYS */;
+/*!40000 ALTER TABLE `coordinator` ENABLE KEYS */;
+
+
+--
+-- Definition of table `details`
+--
+
+DROP TABLE IF EXISTS `details`;
+CREATE TABLE `details` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `version` bigint(20) NOT NULL,
+  `description` varchar(255) DEFAULT NULL,
+  `display_name` varchar(255) DEFAULT NULL,
+  `logo` varchar(255) DEFAULT NULL,
+  `logo_small` varchar(255) DEFAULT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `url_id` bigint(20) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK5CD8F242E6644D8E` (`url_id`),
+  CONSTRAINT `FK5CD8F242E6644D8E` FOREIGN KEY (`url_id`) REFERENCES `url` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `details`
+--
+
+/*!40000 ALTER TABLE `details` DISABLE KEYS */;
+/*!40000 ALTER TABLE `details` ENABLE KEYS */;
+
+
+--
+-- Definition of table `donations`
+--
+
+DROP TABLE IF EXISTS `donations`;
+CREATE TABLE `donations` (
+  `donation_id` int(11) NOT NULL AUTO_INCREMENT,
+  `mem_id` bigint(20) NOT NULL,
+  `pledge_id` bigint(20) DEFAULT NULL,
+  `donation_date` date NOT NULL,
+  `donation_amount` decimal(12,2) NOT NULL,
+  `payment_method_id` int(11) DEFAULT NULL,
+  `transaction_ref` varchar(128) DEFAULT NULL,
+  `comments` varchar(1024) DEFAULT NULL,
+  `created_by` bigint(20) DEFAULT NULL,
+  `last_updated_by` bigint(20) DEFAULT NULL,
+  `date_created` datetime DEFAULT NULL,
+  `last_updated` datetime DEFAULT NULL,
+  PRIMARY KEY (`donation_id`),
+  KEY `fk_donations_pledges1` (`pledge_id`),
+  KEY `fk_donations_payment_method1` (`payment_method_id`),
+  CONSTRAINT `fk_donations_pledges1` FOREIGN KEY (`pledge_id`) REFERENCES `pledges` (`pledge_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_donations_payment_method1` FOREIGN KEY (`payment_method_id`) REFERENCES `payment_method` (`payment_method_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `donations`
+--
+
+/*!40000 ALTER TABLE `donations` DISABLE KEYS */;
+/*!40000 ALTER TABLE `donations` ENABLE KEYS */;
+
+
+--
+-- Definition of table `email_addr`
+--
+
+DROP TABLE IF EXISTS `email_addr`;
+CREATE TABLE `email_addr` (
+  `email_addr_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `school_id` bigint(20) NOT NULL,
+  `email_id` varchar(128) NOT NULL,
+  `email_status_id` int(11) NOT NULL,
+  `last_dely_ts` datetime DEFAULT NULL,
+  `date_created` datetime DEFAULT NULL,
+  `last_updated` datetime DEFAULT NULL,
+  PRIMARY KEY (`email_addr_id`),
+  KEY `fk_email_addr_schools1` (`school_id`),
+  KEY `fk_email_addr_email_status1` (`email_status_id`),
+  CONSTRAINT `fk_email_addr_schools1` FOREIGN KEY (`school_id`) REFERENCES `schools` (`school_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_email_addr_email_status1` FOREIGN KEY (`email_status_id`) REFERENCES `email_status` (`email_status_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `email_addr`
+--
+
+/*!40000 ALTER TABLE `email_addr` DISABLE KEYS */;
+/*!40000 ALTER TABLE `email_addr` ENABLE KEYS */;
+
+
+--
+-- Definition of table `email_deli_statuses`
+--
+
+DROP TABLE IF EXISTS `email_deli_statuses`;
+CREATE TABLE `email_deli_statuses` (
+  `email_deli_status_id` varchar(16) NOT NULL,
+  `email_deli_status_desc` varchar(64) NOT NULL,
+  PRIMARY KEY (`email_deli_status_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `email_deli_statuses`
+--
+
+/*!40000 ALTER TABLE `email_deli_statuses` DISABLE KEYS */;
+INSERT INTO `email_deli_statuses` (`email_deli_status_id`,`email_deli_status_desc`) VALUES 
+ ('PERM_FAIL','Permanent Failure'),
+ ('SENT','Successfully Sent'),
+ ('TEMP_FAIL','Temporary Send failure'),
+ ('TO_SEND','To be sent');
+/*!40000 ALTER TABLE `email_deli_statuses` ENABLE KEYS */;
+
+
+--
+-- Definition of table `email_details`
+--
+
+DROP TABLE IF EXISTS `email_details`;
+CREATE TABLE `email_details` (
+  `email_detail_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `email_hdr_id` bigint(20) NOT NULL,
+  `mailing_list_contacts_id` bigint(20) NOT NULL,
+  `requested_date` datetime DEFAULT NULL,
+  `sent_date` datetime DEFAULT NULL,
+  `status` varchar(16) DEFAULT NULL,
+  `read_status` tinyint(1) DEFAULT '0',
+  `bounce_status` tinyint(1) DEFAULT '0',
+  `fail_error_code` varchar(16) DEFAULT NULL,
+  `failure_notes` varchar(2048) DEFAULT NULL,
+  `created_date` datetime DEFAULT NULL,
+  `last_updated` datetime DEFAULT NULL,
+  PRIMARY KEY (`email_detail_id`),
+  KEY `fk_email_details_email_hdr1` (`email_hdr_id`),
+  KEY `fk_email_details_mailing_list_contacts1` (`mailing_list_contacts_id`),
+  CONSTRAINT `fk_email_details_email_hdr1` FOREIGN KEY (`email_hdr_id`) REFERENCES `email_hdr` (`email_hdr_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_email_details_mailing_list_contacts1` FOREIGN KEY (`mailing_list_contacts_id`) REFERENCES `mailing_list_contacts` (`mailing_list_contacts_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `email_details`
+--
+
+/*!40000 ALTER TABLE `email_details` DISABLE KEYS */;
+/*!40000 ALTER TABLE `email_details` ENABLE KEYS */;
+
+
+--
+-- Definition of table `email_fail_codes`
+--
+
+DROP TABLE IF EXISTS `email_fail_codes`;
+CREATE TABLE `email_fail_codes` (
+  `email_fail_code_id` varchar(16) NOT NULL,
+  `email_fail_code_desc` varchar(64) NOT NULL,
+  PRIMARY KEY (`email_fail_code_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `email_fail_codes`
+--
+
+/*!40000 ALTER TABLE `email_fail_codes` DISABLE KEYS */;
+/*!40000 ALTER TABLE `email_fail_codes` ENABLE KEYS */;
+
+
+--
+-- Definition of table `email_hdr`
+--
+
+DROP TABLE IF EXISTS `email_hdr`;
+CREATE TABLE `email_hdr` (
+  `email_hdr_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `email_uq_token` varchar(32) NOT NULL,
+  `requested_by` bigint(20) NOT NULL,
+  `template_id` bigint(20) NOT NULL,
+  `mailing_list_id` bigint(20) NOT NULL,
+  `request_date` datetime NOT NULL,
+  `sent_date` datetime DEFAULT NULL,
+  `status` varchar(16) DEFAULT NULL,
+  `date_created` datetime DEFAULT NULL,
+  `last_updated` datetime DEFAULT NULL,
+  PRIMARY KEY (`email_hdr_id`),
+  UNIQUE KEY `email_uq_token_UNIQUE` (`email_uq_token`),
+  KEY `fk_email_hdr_mailing_list1` (`mailing_list_id`),
+  KEY `fk_email_hdr_templates1` (`template_id`),
+  CONSTRAINT `fk_email_hdr_mailing_list1` FOREIGN KEY (`mailing_list_id`) REFERENCES `mailing_list` (`mailing_list_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_email_hdr_templates1` FOREIGN KEY (`template_id`) REFERENCES `templates` (`template_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `email_hdr`
+--
+
+/*!40000 ALTER TABLE `email_hdr` DISABLE KEYS */;
+/*!40000 ALTER TABLE `email_hdr` ENABLE KEYS */;
+
+
+--
+-- Definition of table `email_status`
+--
+
+DROP TABLE IF EXISTS `email_status`;
+CREATE TABLE `email_status` (
+  `email_status_id` int(11) NOT NULL AUTO_INCREMENT,
+  `email_status` varchar(64) DEFAULT NULL,
+  PRIMARY KEY (`email_status_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `email_status`
+--
+
+/*!40000 ALTER TABLE `email_status` DISABLE KEYS */;
+/*!40000 ALTER TABLE `email_status` ENABLE KEYS */;
+
+
+--
+-- Definition of table `emails_sent`
+--
+
+DROP TABLE IF EXISTS `emails_sent`;
+CREATE TABLE `emails_sent` (
+  `emails_sent_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `email_uq_token` varchar(32) DEFAULT NULL,
+  `email_addr_email_addr_id` bigint(20) NOT NULL,
+  `email_hdr_id` bigint(20) NOT NULL,
+  `delivered_time` datetime DEFAULT NULL,
+  `deli_status_id` varchar(16) NOT NULL,
+  `fail_code_id` varchar(16) NOT NULL,
+  `last_updated_by` bigint(20) DEFAULT NULL,
+  `created_by` bigint(20) DEFAULT NULL,
+  `date_created` datetime DEFAULT NULL,
+  `last_updated` datetime DEFAULT NULL,
+  PRIMARY KEY (`emails_sent_id`),
+  UNIQUE KEY `email_uq_token_UNIQUE` (`email_uq_token`),
+  KEY `fk_emails_sent_email_addr1` (`email_addr_email_addr_id`),
+  KEY `fk_emails_sent_email_hdr1` (`email_hdr_id`),
+  KEY `fk_emails_sent_email_deli_statuses1` (`deli_status_id`),
+  KEY `fk_emails_sent_email_fail_codes1` (`fail_code_id`),
+  CONSTRAINT `fk_emails_sent_email_addr1` FOREIGN KEY (`email_addr_email_addr_id`) REFERENCES `email_addr` (`email_addr_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_emails_sent_email_hdr1` FOREIGN KEY (`email_hdr_id`) REFERENCES `email_hdr` (`email_hdr_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_emails_sent_email_deli_statuses1` FOREIGN KEY (`deli_status_id`) REFERENCES `email_deli_statuses` (`email_deli_status_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_emails_sent_email_fail_codes1` FOREIGN KEY (`fail_code_id`) REFERENCES `email_fail_codes` (`email_fail_code_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `emails_sent`
+--
+
+/*!40000 ALTER TABLE `emails_sent` DISABLE KEYS */;
+/*!40000 ALTER TABLE `emails_sent` ENABLE KEYS */;
+
+
+--
+-- Definition of table `federation_provider`
+--
+
+DROP TABLE IF EXISTS `federation_provider`;
+CREATE TABLE `federation_provider` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `version` bigint(20) NOT NULL,
+  `auto_provision` bit(1) NOT NULL,
+  `details_id` bigint(20) NOT NULL,
+  `uid` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK25943B6DA98E7EAE` (`details_id`),
+  CONSTRAINT `FK25943B6DA98E7EAE` FOREIGN KEY (`details_id`) REFERENCES `details` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `federation_provider`
+--
+
+/*!40000 ALTER TABLE `federation_provider` DISABLE KEYS */;
+/*!40000 ALTER TABLE `federation_provider` ENABLE KEYS */;
+
+
+--
+-- Definition of table `federation_provider_props`
+--
+
+DROP TABLE IF EXISTS `federation_provider_props`;
+CREATE TABLE `federation_provider_props` (
+  `props` bigint(20) DEFAULT NULL,
+  `props_idx` varchar(255) DEFAULT NULL,
+  `props_elt` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `federation_provider_props`
+--
+
+/*!40000 ALTER TABLE `federation_provider_props` DISABLE KEYS */;
+/*!40000 ALTER TABLE `federation_provider_props` ENABLE KEYS */;
+
+
+--
+-- Definition of table `invoice_statuses`
+--
+
+DROP TABLE IF EXISTS `invoice_statuses`;
+CREATE TABLE `invoice_statuses` (
+  `invoice_status_id` varchar(16) NOT NULL,
+  `invoice_status_desc` varchar(64) NOT NULL,
+  PRIMARY KEY (`invoice_status_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `invoice_statuses`
+--
+
+/*!40000 ALTER TABLE `invoice_statuses` DISABLE KEYS */;
+INSERT INTO `invoice_statuses` (`invoice_status_id`,`invoice_status_desc`) VALUES 
+ ('APPROVE','Approved'),
+ ('CREATE','Created'),
+ ('EXPIRE','Expired'),
+ ('PAID','Paid');
+/*!40000 ALTER TABLE `invoice_statuses` ENABLE KEYS */;
+
+
+--
+-- Definition of table `invoices`
+--
+
+DROP TABLE IF EXISTS `invoices`;
+CREATE TABLE `invoices` (
+  `invoice_id` int(11) NOT NULL,
+  `pledge_id` bigint(20) NOT NULL,
+  `invoice_date` date NOT NULL,
+  `invoice_ref` varchar(128) DEFAULT NULL,
+  `invoice_amount` decimal(12,2) NOT NULL,
+  `due_date` date DEFAULT NULL,
+  `status` varchar(16) NOT NULL,
+  `invoice_comments` varchar(1024) DEFAULT NULL,
+  `payment_method_id` int(11) DEFAULT NULL,
+  `payment_transaction_ref` varchar(128) DEFAULT NULL,
+  `paid_amount` decimal(12,2) DEFAULT NULL,
+  `paid_date` date DEFAULT NULL,
+  `check_no` varchar(16) DEFAULT NULL,
+  `payment_comments` varchar(1024) DEFAULT NULL,
+  `date_created` datetime DEFAULT NULL,
+  `last_updated` datetime DEFAULT NULL,
+  `created_by` bigint(20) DEFAULT NULL,
+  `last_updated_by` bigint(20) DEFAULT NULL,
+  PRIMARY KEY (`invoice_id`),
+  KEY `fk_invoices_pledges1` (`pledge_id`),
+  KEY `fk_invoices_payment_method1` (`payment_method_id`),
+  CONSTRAINT `fk_invoices_pledges1` FOREIGN KEY (`pledge_id`) REFERENCES `pledges` (`pledge_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_invoices_payment_method1` FOREIGN KEY (`payment_method_id`) REFERENCES `payment_method` (`payment_method_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `invoices`
+--
+
+/*!40000 ALTER TABLE `invoices` DISABLE KEYS */;
+/*!40000 ALTER TABLE `invoices` ENABLE KEYS */;
+
+
+--
+-- Definition of table `level_permission_fifth`
+--
+
+DROP TABLE IF EXISTS `level_permission_fifth`;
+CREATE TABLE `level_permission_fifth` (
+  `level_permission_id` bigint(20) DEFAULT NULL,
+  `fifth_string` varchar(255) DEFAULT NULL,
+  KEY `FKC93CB6A2D7151CB7` (`level_permission_id`),
+  CONSTRAINT `FKC93CB6A2D7151CB7` FOREIGN KEY (`level_permission_id`) REFERENCES `permission` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `level_permission_fifth`
+--
+
+/*!40000 ALTER TABLE `level_permission_fifth` DISABLE KEYS */;
+/*!40000 ALTER TABLE `level_permission_fifth` ENABLE KEYS */;
+
+
+--
+-- Definition of table `level_permission_first`
+--
+
+DROP TABLE IF EXISTS `level_permission_first`;
+CREATE TABLE `level_permission_first` (
+  `level_permission_id` bigint(20) DEFAULT NULL,
+  `first_string` varchar(255) DEFAULT NULL,
+  KEY `FKC93CE39BD7151CB7` (`level_permission_id`),
+  CONSTRAINT `FKC93CE39BD7151CB7` FOREIGN KEY (`level_permission_id`) REFERENCES `permission` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `level_permission_first`
+--
+
+/*!40000 ALTER TABLE `level_permission_first` DISABLE KEYS */;
+/*!40000 ALTER TABLE `level_permission_first` ENABLE KEYS */;
+
+
+--
+-- Definition of table `level_permission_fourth`
+--
+
+DROP TABLE IF EXISTS `level_permission_fourth`;
+CREATE TABLE `level_permission_fourth` (
+  `level_permission_id` bigint(20) DEFAULT NULL,
+  `fourth_string` varchar(255) DEFAULT NULL,
+  KEY `FK5EB5768FD7151CB7` (`level_permission_id`),
+  CONSTRAINT `FK5EB5768FD7151CB7` FOREIGN KEY (`level_permission_id`) REFERENCES `permission` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `level_permission_fourth`
+--
+
+/*!40000 ALTER TABLE `level_permission_fourth` DISABLE KEYS */;
+/*!40000 ALTER TABLE `level_permission_fourth` ENABLE KEYS */;
+
+
+--
+-- Definition of table `level_permission_second`
+--
+
+DROP TABLE IF EXISTS `level_permission_second`;
+CREATE TABLE `level_permission_second` (
+  `level_permission_id` bigint(20) DEFAULT NULL,
+  `second_string` varchar(255) DEFAULT NULL,
+  KEY `FK744F50E9D7151CB7` (`level_permission_id`),
+  CONSTRAINT `FK744F50E9D7151CB7` FOREIGN KEY (`level_permission_id`) REFERENCES `permission` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `level_permission_second`
+--
+
+/*!40000 ALTER TABLE `level_permission_second` DISABLE KEYS */;
+/*!40000 ALTER TABLE `level_permission_second` ENABLE KEYS */;
+
+
+--
+-- Definition of table `level_permission_sixth`
+--
+
+DROP TABLE IF EXISTS `level_permission_sixth`;
+CREATE TABLE `level_permission_sixth` (
+  `level_permission_id` bigint(20) DEFAULT NULL,
+  `sixth_string` varchar(255) DEFAULT NULL,
+  KEY `FKC9F42BC1D7151CB7` (`level_permission_id`),
+  CONSTRAINT `FKC9F42BC1D7151CB7` FOREIGN KEY (`level_permission_id`) REFERENCES `permission` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `level_permission_sixth`
+--
+
+/*!40000 ALTER TABLE `level_permission_sixth` DISABLE KEYS */;
+/*!40000 ALTER TABLE `level_permission_sixth` ENABLE KEYS */;
+
+
+--
+-- Definition of table `level_permission_third`
+--
+
+DROP TABLE IF EXISTS `level_permission_third`;
+CREATE TABLE `level_permission_third` (
+  `level_permission_id` bigint(20) DEFAULT NULL,
+  `third_string` varchar(255) DEFAULT NULL,
+  KEY `FKCA019652D7151CB7` (`level_permission_id`),
+  CONSTRAINT `FKCA019652D7151CB7` FOREIGN KEY (`level_permission_id`) REFERENCES `permission` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `level_permission_third`
+--
+
+/*!40000 ALTER TABLE `level_permission_third` DISABLE KEYS */;
+/*!40000 ALTER TABLE `level_permission_third` ENABLE KEYS */;
+
+
+--
+-- Definition of table `login_record`
+--
+
+DROP TABLE IF EXISTS `login_record`;
+CREATE TABLE `login_record` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `version` bigint(20) NOT NULL,
+  `date_created` datetime DEFAULT NULL,
+  `last_updated` datetime DEFAULT NULL,
+  `owner_id` bigint(20) NOT NULL,
+  `remote_addr` varchar(255) NOT NULL,
+  `remote_host` varchar(255) NOT NULL,
+  `user_agent` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FKF43101E7165461AF` (`owner_id`),
+  CONSTRAINT `FKF43101E7165461AF` FOREIGN KEY (`owner_id`) REFERENCES `member` (`mem_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `login_record`
+--
+
+/*!40000 ALTER TABLE `login_record` DISABLE KEYS */;
+INSERT INTO `login_record` (`id`,`version`,`date_created`,`last_updated`,`owner_id`,`remote_addr`,`remote_host`,`user_agent`) VALUES 
+ (3,0,'2011-08-25 17:34:17','2011-08-25 17:34:17',3,'0:0:0:0:0:0:0:1','0:0:0:0:0:0:0:1','Mozilla/5.0 (Windows NT 6.1; rv:5.0) Gecko/20100101 Firefox/5.0'),
+ (4,0,'2011-08-25 18:17:34','2011-08-25 18:17:34',46,'0:0:0:0:0:0:0:1','0:0:0:0:0:0:0:1','Mozilla/5.0 (Windows NT 6.1; rv:5.0) Gecko/20100101 Firefox/5.0'),
+ (5,0,'2011-08-25 18:37:10','2011-08-25 18:37:10',1,'0:0:0:0:0:0:0:1','0:0:0:0:0:0:0:1','Mozilla/5.0 (Windows NT 6.1; rv:5.0) Gecko/20100101 Firefox/5.0'),
+ (6,0,'2011-08-25 18:37:41','2011-08-25 18:37:41',41,'0:0:0:0:0:0:0:1','0:0:0:0:0:0:0:1','Mozilla/5.0 (Windows NT 6.1; rv:5.0) Gecko/20100101 Firefox/5.0'),
+ (7,0,'2011-08-25 18:41:45','2011-08-25 18:41:45',41,'0:0:0:0:0:0:0:1','0:0:0:0:0:0:0:1','Mozilla/5.0 (Windows NT 6.1; rv:5.0) Gecko/20100101 Firefox/5.0');
+/*!40000 ALTER TABLE `login_record` ENABLE KEYS */;
+
+
+--
+-- Definition of table `mailing_list`
+--
+
+DROP TABLE IF EXISTS `mailing_list`;
+CREATE TABLE `mailing_list` (
+  `mailing_list_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `school_id` bigint(20) NOT NULL,
+  `mailing_list_name` varchar(64) NOT NULL,
+  `is_system_created` tinyint(1) DEFAULT '0',
+  `created_by` bigint(20) DEFAULT NULL,
+  `last_updated_by` bigint(20) DEFAULT NULL,
+  `date_created` datetime DEFAULT NULL,
+  `last_updated` datetime DEFAULT NULL,
+  PRIMARY KEY (`mailing_list_id`),
+  KEY `fk_mailing_list_schools1` (`school_id`),
+  CONSTRAINT `fk_mailing_list_schools1` FOREIGN KEY (`school_id`) REFERENCES `schools` (`school_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `mailing_list`
+--
+
+/*!40000 ALTER TABLE `mailing_list` DISABLE KEYS */;
+/*!40000 ALTER TABLE `mailing_list` ENABLE KEYS */;
+
+
+--
+-- Definition of table `mailing_list_contacts`
+--
+
+DROP TABLE IF EXISTS `mailing_list_contacts`;
+CREATE TABLE `mailing_list_contacts` (
+  `mailing_list_contacts_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `contacts_id` bigint(20) NOT NULL,
+  `mailing_list_id` bigint(20) NOT NULL,
+  `created_by` bigint(20) DEFAULT NULL,
+  `last_updated_by` bigint(20) DEFAULT NULL,
+  `date_created` datetime DEFAULT NULL,
+  `last_updated` datetime DEFAULT NULL,
+  PRIMARY KEY (`mailing_list_contacts_id`),
+  KEY `fk_mailing_list_contacts_contacts1` (`contacts_id`),
+  KEY `fk_mailing_list_contacts_mailing_list1` (`mailing_list_id`),
+  CONSTRAINT `fk_mailing_list_contacts_contacts1` FOREIGN KEY (`contacts_id`) REFERENCES `contacts` (`contacts_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_mailing_list_contacts_mailing_list1` FOREIGN KEY (`mailing_list_id`) REFERENCES `mailing_list` (`mailing_list_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `mailing_list_contacts`
+--
+
+/*!40000 ALTER TABLE `mailing_list_contacts` DISABLE KEYS */;
+/*!40000 ALTER TABLE `mailing_list_contacts` ENABLE KEYS */;
+
+
+--
+-- Definition of table `mem_address`
+--
+
+DROP TABLE IF EXISTS `mem_address`;
+CREATE TABLE `mem_address` (
+  `mem_address_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `address_type_id` varchar(16) NOT NULL,
+  `mem_id` bigint(20) NOT NULL,
+  `addr_line1` varchar(256) DEFAULT NULL,
+  `addr_line2` varchar(256) DEFAULT NULL,
+  `city` varchar(64) DEFAULT NULL,
+  `zip` varchar(5) DEFAULT NULL,
+  `state` varchar(2) DEFAULT NULL,
+  `date_created` datetime DEFAULT NULL,
+  `last_updated` datetime DEFAULT NULL,
+  PRIMARY KEY (`mem_address_id`),
+  KEY `fk_mem_address_address_type1` (`address_type_id`),
+  KEY `fk_member_mem_id` (`mem_id`),
+  CONSTRAINT `fk_mem_address_address_type1` FOREIGN KEY (`address_type_id`) REFERENCES `address_type` (`address_type_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_member_mem_id` FOREIGN KEY (`mem_id`) REFERENCES `member` (`mem_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `mem_address`
+--
+
+/*!40000 ALTER TABLE `mem_address` DISABLE KEYS */;
+/*!40000 ALTER TABLE `mem_address` ENABLE KEYS */;
+
+
+--
+-- Definition of table `mem_contributions`
+--
+
+DROP TABLE IF EXISTS `mem_contributions`;
+CREATE TABLE `mem_contributions` (
+  `mem_contributions_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `mem_id` bigint(20) NOT NULL,
+  `school_id` bigint(20) NOT NULL,
+  `contribution_date` date DEFAULT NULL,
+  `pledge_amt` decimal(10,2) DEFAULT NULL,
+  `pledge_paid` decimal(10,2) DEFAULT NULL,
+  `donation_paid` decimal(10,2) DEFAULT NULL,
+  `survey_credit` decimal(10,2) DEFAULT NULL,
+  `survey_credit_recd` decimal(10,2) DEFAULT NULL,
+  `date_created` datetime DEFAULT NULL,
+  `last_updated` datetime DEFAULT NULL,
+  `created_by` bigint(20) DEFAULT NULL,
+  `last_updated_by` bigint(20) DEFAULT NULL,
+  PRIMARY KEY (`mem_contributions_id`),
+  KEY `fk_mem_contributions_member1` (`mem_id`),
+  KEY `fk_mem_contributions_schools1` (`school_id`),
+  CONSTRAINT `fk_mem_contributions_member1` FOREIGN KEY (`mem_id`) REFERENCES `member` (`mem_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_mem_contributions_schools1` FOREIGN KEY (`school_id`) REFERENCES `schools` (`school_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `mem_contributions`
+--
+
+/*!40000 ALTER TABLE `mem_contributions` DISABLE KEYS */;
+/*!40000 ALTER TABLE `mem_contributions` ENABLE KEYS */;
+
+
+--
+-- Definition of table `mem_pref`
+--
+
+DROP TABLE IF EXISTS `mem_pref`;
+CREATE TABLE `mem_pref` (
+  `mem_pref_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `mem_id` bigint(20) NOT NULL,
+  `pref_name` varchar(255) DEFAULT NULL,
+  `pref_value` varchar(255) DEFAULT NULL,
+  `date_created` datetime NOT NULL,
+  `last_updated` datetime NOT NULL,
+  PRIMARY KEY (`mem_pref_id`),
+  KEY `key_mem_id` (`mem_id`),
+  KEY `FKD925124DD0319AA7` (`mem_id`),
+  CONSTRAINT `FKD925124DD0319AA7` FOREIGN KEY (`mem_id`) REFERENCES `member` (`mem_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='Maintains user preferences';
+
+--
+-- Dumping data for table `mem_pref`
+--
+
+/*!40000 ALTER TABLE `mem_pref` DISABLE KEYS */;
+/*!40000 ALTER TABLE `mem_pref` ENABLE KEYS */;
+
+
+--
+-- Definition of table `mem_status`
+--
+
+DROP TABLE IF EXISTS `mem_status`;
+CREATE TABLE `mem_status` (
+  `mem_status_id` varchar(16) NOT NULL,
+  `mem_status_desc` varchar(255) DEFAULT NULL,
+  `date_created` datetime NOT NULL,
+  `last_updated` datetime NOT NULL,
+  PRIMARY KEY (`mem_status_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='Maintains the user statuses';
+
+--
+-- Dumping data for table `mem_status`
+--
+
+/*!40000 ALTER TABLE `mem_status` DISABLE KEYS */;
+INSERT INTO `mem_status` (`mem_status_id`,`mem_status_desc`,`date_created`,`last_updated`) VALUES 
+ ('ACTIVE','Active Member','2011-08-08 00:00:00','2011-08-08 00:00:00'),
+ ('INACTIVE','Inactive Member','2011-08-08 00:00:00','2011-08-08 00:00:00'),
+ ('SUSPEND','Suspended Member','2011-08-08 00:00:00','2011-08-08 00:00:00');
+/*!40000 ALTER TABLE `mem_status` ENABLE KEYS */;
+
+
+--
+-- Definition of table `mem_types`
+--
+
+DROP TABLE IF EXISTS `mem_types`;
+CREATE TABLE `mem_types` (
+  `mem_type_id` varchar(16) NOT NULL,
+  `mem_type_desc` varchar(64) NOT NULL,
+  `date_created` datetime DEFAULT NULL,
+  `last_updated` datetime DEFAULT NULL,
+  PRIMARY KEY (`mem_type_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `mem_types`
+--
+
+/*!40000 ALTER TABLE `mem_types` DISABLE KEYS */;
+INSERT INTO `mem_types` (`mem_type_id`,`mem_type_desc`,`date_created`,`last_updated`) VALUES 
+ ('MER','Merchants','2011-08-08 00:00:00','2011-08-08 00:00:00'),
+ ('SFA','School Fund Admin','2011-08-08 00:00:00','2011-08-08 00:00:00'),
+ ('SUP','Supports','2011-08-08 00:00:00','2011-08-08 00:00:00');
+/*!40000 ALTER TABLE `mem_types` ENABLE KEYS */;
+
+
+--
+-- Definition of table `member`
+--
+
+DROP TABLE IF EXISTS `member`;
+CREATE TABLE `member` (
+  `mem_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `mem_status_id` varchar(16) NOT NULL DEFAULT 'ACTIVE',
+  `mem_type_id` varchar(16) DEFAULT NULL,
+  `date_created` datetime DEFAULT NULL,
+  `last_updated` datetime DEFAULT NULL,
+  `created_by` bigint(20) DEFAULT NULL,
+  `last_updated_by` bigint(20) DEFAULT NULL,
+  `version` bigint(20) NOT NULL,
+  `action_hash` varchar(255) DEFAULT NULL,
+  `enabled` bit(1) NOT NULL,
+  `expiration` datetime DEFAULT NULL,
+  `external` bit(1) NOT NULL,
+  `federated` bit(1) NOT NULL,
+  `federation_provider_id` bigint(20) DEFAULT NULL,
+  `password_hash` varchar(255) DEFAULT NULL,
+  `profile_id` bigint(20) NOT NULL,
+  `realm` varchar(255) DEFAULT NULL,
+  `remoteapi` bit(1) DEFAULT NULL,
+  `username` varchar(255) DEFAULT NULL,
+  `class` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`mem_id`),
+  UNIQUE KEY `username` (`username`),
+  KEY `FK892776BAE5B47697` (`mem_status_id`),
+  KEY `FK892776BA6212C3F0` (`created_by`),
+  KEY `FK892776BA5EA61686` (`last_updated_by`),
+  KEY `FK892776BA864B4D7` (`mem_type_id`),
+  KEY `FK892776BA6F1935BF` (`profile_id`),
+  KEY `FK892776BA6D69CCD` (`federation_provider_id`),
+  KEY `FK892776BAFD1E6512` (`mem_type_id`),
+  KEY `FK892776BA92C30412` (`mem_status_id`),
+  CONSTRAINT `FK892776BA92C30412` FOREIGN KEY (`mem_status_id`) REFERENCES `mem_status` (`mem_status_id`),
+  CONSTRAINT `FK892776BA5EA61686` FOREIGN KEY (`last_updated_by`) REFERENCES `member` (`mem_id`),
+  CONSTRAINT `FK892776BA6212C3F0` FOREIGN KEY (`created_by`) REFERENCES `member` (`mem_id`),
+  CONSTRAINT `FK892776BA6D69CCD` FOREIGN KEY (`federation_provider_id`) REFERENCES `federation_provider` (`id`),
+  CONSTRAINT `FK892776BA6F1935BF` FOREIGN KEY (`profile_id`) REFERENCES `profile_base` (`id`),
+  CONSTRAINT `FK892776BA864B4D7` FOREIGN KEY (`mem_type_id`) REFERENCES `mem_types` (`mem_type_id`),
+  CONSTRAINT `FK892776BAE5B47697` FOREIGN KEY (`mem_status_id`) REFERENCES `mem_status` (`mem_status_id`),
+  CONSTRAINT `FK892776BAFD1E6512` FOREIGN KEY (`mem_type_id`) REFERENCES `mem_types` (`mem_type_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=52 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC COMMENT='Maintains primary member information';
+
+--
+-- Dumping data for table `member`
+--
+
+/*!40000 ALTER TABLE `member` DISABLE KEYS */;
+INSERT INTO `member` (`mem_id`,`mem_status_id`,`mem_type_id`,`date_created`,`last_updated`,`created_by`,`last_updated_by`,`version`,`action_hash`,`enabled`,`expiration`,`external`,`federated`,`federation_provider_id`,`password_hash`,`profile_id`,`realm`,`remoteapi`,`username`,`class`) VALUES 
+ (1,'ACTIVE','SUP','2011-08-24 13:20:05','2011-08-25 18:37:10',NULL,NULL,2,'3e9a7ba02a5491c486f3c4dc85239960216718b2651d6d263c7a3f91584135d3',0x01,NULL,0x00,0x00,NULL,'ec0d54ad8732c6b9c504db5b4d00e5699582971db900b4f8ce1a59fa9fcbdf0b',1,NULL,0x00,'supporter@gmail.com','com.schoolfund.Member'),
+ (2,'ACTIVE','SUP','2011-08-24 13:20:05','2011-08-24 13:20:05',NULL,NULL,2,'3647fae9a3fc4fcc7c02e58187dac4ee85872e6c21b29aca77b1dddcfe71e542',0x01,NULL,0x00,0x00,NULL,'735b5c5a489b9db73675f7d4964ec22ceef1d57705fff86da7a8ff54c3e1b98f',2,NULL,0x00,'coordinator@gmail.com','com.schoolfund.Member'),
+ (3,'ACTIVE','SUP','2011-08-24 13:20:05','2011-08-25 17:34:17',NULL,NULL,4,'e8b89cbcd4bced865e9359d300356e16427c25e5f17d7edddab652ca7f5da82f',0x01,NULL,0x00,0x00,NULL,'3e6b76727a8dfffa94fdf4e9fbc01c1a16f008e6e91a9f5e0de06d1c620e068c',3,NULL,0x00,'admin@gmail.com','com.schoolfund.Member'),
+ (34,'ACTIVE','SUP','2011-08-25 17:26:24','2011-08-25 17:26:37',NULL,NULL,2,'9828d33a113abd32d41e9457774b09cadeb7d0e0ae3b3a988910122cbf067174',0x01,NULL,0x00,0x00,NULL,'5ed2c8b1464c4bc6997ea76eae9553824e04d443fd73f2859ff33a456d745596',6,NULL,0x00,'srinivas.r1@sigmainfo.net','com.schoolfund.Member'),
+ (35,'ACTIVE','SUP','2011-08-25 17:28:12','2011-08-25 17:28:23',NULL,NULL,2,'5da917e827516ad39fd0b7508cfa702ff5b5af827589b350e2047ff841dece5e',0x01,NULL,0x00,0x00,NULL,'5ed2c8b1464c4bc6997ea76eae9553824e04d443fd73f2859ff33a456d745596',7,NULL,0x00,'srinivas.r2@sigmainfo.net','com.schoolfund.Member'),
+ (36,'ACTIVE','SUP','2011-08-25 17:30:20','2011-08-25 17:30:32',NULL,NULL,2,'af425e30b9c12e0c58a0e1fd7b96d2eada55b23fe5bfe039443bca03f0354072',0x01,NULL,0x00,0x00,NULL,'5ed2c8b1464c4bc6997ea76eae9553824e04d443fd73f2859ff33a456d745596',8,NULL,0x00,'srinivas.r3@sigmainfo.net','com.schoolfund.Member'),
+ (37,'ACTIVE','SUP','2011-08-25 17:32:05','2011-08-25 17:32:16',NULL,NULL,2,'74d404265947afb305d6643f57792c706afa368dedf620f0417e34c27783c4f0',0x01,NULL,0x00,0x00,NULL,'5ed2c8b1464c4bc6997ea76eae9553824e04d443fd73f2859ff33a456d745596',9,NULL,0x00,'srinivas.r4@sigmainfo.net','com.schoolfund.Member'),
+ (38,'ACTIVE','SUP','2011-08-25 17:33:19','2011-08-25 17:39:37',NULL,NULL,4,'29e961a7af30ddc53497e23bd1eaee06f6d165c8cab8f982cf807f600647884b',0x01,NULL,0x00,0x00,NULL,'5ed2c8b1464c4bc6997ea76eae9553824e04d443fd73f2859ff33a456d745596',10,NULL,0x00,'srinivas.r5@sigmainfo.net','com.schoolfund.Member'),
+ (39,'ACTIVE','SUP','2011-08-25 17:40:18','2011-08-25 17:40:28',NULL,NULL,2,'986f541c6265c8cb09089628364a6bc9160599817c494fbfdecbb9c462b253e1',0x01,NULL,0x00,0x00,NULL,'5ed2c8b1464c4bc6997ea76eae9553824e04d443fd73f2859ff33a456d745596',11,NULL,0x00,'srinivas.r6@sigmainfo.net','com.schoolfund.Member'),
+ (40,'ACTIVE','SUP','2011-08-25 17:41:20','2011-08-25 17:41:29',NULL,NULL,2,'a6f6250620db0a109a9bf4600a416814276a71e168220d231325fdd3bd3e694c',0x01,NULL,0x00,0x00,NULL,'5ed2c8b1464c4bc6997ea76eae9553824e04d443fd73f2859ff33a456d745596',12,NULL,0x00,'srinivas.r7@sigmainfo.net','com.schoolfund.Member'),
+ (41,'ACTIVE','SUP','2011-08-25 17:42:22','2011-08-25 18:41:45',NULL,NULL,4,'423d802b301386107773d714148563bcdccf0c930db235a0bd96908ed5eb8ee4',0x01,NULL,0x00,0x00,NULL,'5ed2c8b1464c4bc6997ea76eae9553824e04d443fd73f2859ff33a456d745596',13,NULL,0x00,'srinivas.r8@sigmainfo.net','com.schoolfund.Member'),
+ (42,'ACTIVE','SUP','2011-08-25 17:43:23','2011-08-25 17:43:31',NULL,NULL,2,'23b1c92893600cd2d7ac04ce829c04231a646f73d2ff2cfc515ee02e351f42a5',0x01,NULL,0x00,0x00,NULL,'5ed2c8b1464c4bc6997ea76eae9553824e04d443fd73f2859ff33a456d745596',14,NULL,0x00,'srinivas.r9@sigmainfo.net','com.schoolfund.Member'),
+ (43,'ACTIVE','SUP','2011-08-25 17:44:18','2011-08-25 17:44:42',NULL,NULL,2,'699ff61526ab51946fc5f686f2ecf489b037aa1ee4b055cfa88f9e95a29a0dbf',0x01,NULL,0x00,0x00,NULL,'5ed2c8b1464c4bc6997ea76eae9553824e04d443fd73f2859ff33a456d745596',15,NULL,0x00,'srinivas.r10@sigmainfo.net','com.schoolfund.Member'),
+ (44,'ACTIVE','SUP','2011-08-25 17:45:31','2011-08-25 17:45:41',NULL,NULL,2,'5e26df4e0ce82d5464bc52179d9b7038ee39d695fd0c1c0d76bc0ef24e794fdb',0x01,NULL,0x00,0x00,NULL,'5ed2c8b1464c4bc6997ea76eae9553824e04d443fd73f2859ff33a456d745596',16,NULL,0x00,'srinivas.r11@sigmainfo.net','com.schoolfund.Member'),
+ (45,'ACTIVE','SUP','2011-08-25 17:46:20','2011-08-25 17:46:32',NULL,NULL,2,'c26e3f5e1731d64e77366ee82c711fa3f75f8ea66c0e50b60e092d7c243cae11',0x01,NULL,0x00,0x00,NULL,'5ed2c8b1464c4bc6997ea76eae9553824e04d443fd73f2859ff33a456d745596',17,NULL,0x00,'srinivas.r12@sigmainfo.net','com.schoolfund.Member'),
+ (46,'ACTIVE','SUP','2011-08-25 17:58:16','2011-08-25 18:17:34',NULL,NULL,4,'4bc1a9e6f88b352e91e3c78afd80ef8836e3588adae398061022e9b70e8e7a68',0x01,NULL,0x00,0x00,NULL,'5ed2c8b1464c4bc6997ea76eae9553824e04d443fd73f2859ff33a456d745596',18,NULL,0x00,'srinivas.r13@sigmainfo.net','com.schoolfund.Member'),
+ (47,'ACTIVE','SUP','2011-08-25 18:17:05','2011-08-25 18:17:16',NULL,NULL,3,'bfee0cae66e28860b66adb66664331a28f7ede40c191ffa03ec839476bc535f9',0x01,NULL,0x00,0x00,NULL,'5ed2c8b1464c4bc6997ea76eae9553824e04d443fd73f2859ff33a456d745596',19,NULL,0x00,'srinivas.r14@sigmainfo.net','com.schoolfund.Member'),
+ (48,'ACTIVE','SUP','2011-08-25 18:18:33','2011-08-25 18:18:43',NULL,NULL,3,'f1691248883b2452fa13e446d9396d15abb1a70f7510d09e71b4737a4e0e2092',0x01,NULL,0x00,0x00,NULL,'5ed2c8b1464c4bc6997ea76eae9553824e04d443fd73f2859ff33a456d745596',20,NULL,0x00,'srinivas.r15@sigmainfo.net','com.schoolfund.Member'),
+ (49,'ACTIVE','SUP','2011-08-25 18:19:28','2011-08-25 18:19:38',NULL,NULL,3,'dcb263be67b4ba5e63e78ad8e1f1584f3d9c5ea7593cb37ea7c6ce5deeb07986',0x01,NULL,0x00,0x00,NULL,'5ed2c8b1464c4bc6997ea76eae9553824e04d443fd73f2859ff33a456d745596',21,NULL,0x00,'srinivas.r16@sigmainfo.net','com.schoolfund.Member'),
+ (50,'ACTIVE','SUP','2011-08-25 18:22:25','2011-08-25 18:22:38',NULL,NULL,3,'0fb24c9edf25ef4d9d083a84f27d36fd26387962cec5ad04155de8c404d0be38',0x01,NULL,0x00,0x00,NULL,'5ed2c8b1464c4bc6997ea76eae9553824e04d443fd73f2859ff33a456d745596',22,NULL,0x00,'srinivas.r17@sigmainfo.net','com.schoolfund.Member'),
+ (51,'ACTIVE','SUP','2011-08-25 18:23:17','2011-08-25 18:24:00',NULL,NULL,3,'9c5117112d9d2e3915f4fe994cc567175b789cec22af7f09d34f21164a9afa9d',0x01,NULL,0x00,0x00,NULL,'5ed2c8b1464c4bc6997ea76eae9553824e04d443fd73f2859ff33a456d745596',23,NULL,0x00,'srinivas.r18@sigmainfo.net','com.schoolfund.Member');
+/*!40000 ALTER TABLE `member` ENABLE KEYS */;
+
+
+--
+-- Definition of table `member_member`
+--
+
+DROP TABLE IF EXISTS `member_member`;
+CREATE TABLE `member_member` (
+  `user_base_followers_id` bigint(20) DEFAULT NULL,
+  `user_base_id` bigint(20) DEFAULT NULL,
+  `user_base_follows_id` bigint(20) DEFAULT NULL,
+  KEY `FK9BD9D7DF131C54DA` (`user_base_follows_id`),
+  KEY `FK9BD9D7DFA829B447` (`user_base_followers_id`),
+  KEY `FK9BD9D7DFFA4F085D` (`user_base_id`),
+  CONSTRAINT `FK9BD9D7DFFA4F085D` FOREIGN KEY (`user_base_id`) REFERENCES `member` (`mem_id`),
+  CONSTRAINT `FK9BD9D7DF131C54DA` FOREIGN KEY (`user_base_follows_id`) REFERENCES `member` (`mem_id`),
+  CONSTRAINT `FK9BD9D7DFA829B447` FOREIGN KEY (`user_base_followers_id`) REFERENCES `member` (`mem_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `member_member`
+--
+
+/*!40000 ALTER TABLE `member_member` DISABLE KEYS */;
+/*!40000 ALTER TABLE `member_member` ENABLE KEYS */;
+
+
+--
+-- Definition of table `member_passwd_history`
+--
+
+DROP TABLE IF EXISTS `member_passwd_history`;
+CREATE TABLE `member_passwd_history` (
+  `user_base_id` bigint(20) DEFAULT NULL,
+  `passwd_history_string` varchar(255) DEFAULT NULL,
+  KEY `FK618B2C18FA4F085D` (`user_base_id`),
+  CONSTRAINT `FK618B2C18FA4F085D` FOREIGN KEY (`user_base_id`) REFERENCES `member` (`mem_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `member_passwd_history`
+--
+
+/*!40000 ALTER TABLE `member_passwd_history` DISABLE KEYS */;
+INSERT INTO `member_passwd_history` (`user_base_id`,`passwd_history_string`) VALUES 
+ (1,'ec0d54ad8732c6b9c504db5b4d00e5699582971db900b4f8ce1a59fa9fcbdf0b'),
+ (2,'735b5c5a489b9db73675f7d4964ec22ceef1d57705fff86da7a8ff54c3e1b98f'),
+ (3,'3e6b76727a8dfffa94fdf4e9fbc01c1a16f008e6e91a9f5e0de06d1c620e068c'),
+ (34,'5ed2c8b1464c4bc6997ea76eae9553824e04d443fd73f2859ff33a456d745596'),
+ (35,'5ed2c8b1464c4bc6997ea76eae9553824e04d443fd73f2859ff33a456d745596'),
+ (36,'5ed2c8b1464c4bc6997ea76eae9553824e04d443fd73f2859ff33a456d745596'),
+ (37,'5ed2c8b1464c4bc6997ea76eae9553824e04d443fd73f2859ff33a456d745596'),
+ (38,'5ed2c8b1464c4bc6997ea76eae9553824e04d443fd73f2859ff33a456d745596'),
+ (39,'5ed2c8b1464c4bc6997ea76eae9553824e04d443fd73f2859ff33a456d745596'),
+ (40,'5ed2c8b1464c4bc6997ea76eae9553824e04d443fd73f2859ff33a456d745596'),
+ (41,'5ed2c8b1464c4bc6997ea76eae9553824e04d443fd73f2859ff33a456d745596'),
+ (42,'5ed2c8b1464c4bc6997ea76eae9553824e04d443fd73f2859ff33a456d745596'),
+ (43,'5ed2c8b1464c4bc6997ea76eae9553824e04d443fd73f2859ff33a456d745596'),
+ (44,'5ed2c8b1464c4bc6997ea76eae9553824e04d443fd73f2859ff33a456d745596'),
+ (45,'5ed2c8b1464c4bc6997ea76eae9553824e04d443fd73f2859ff33a456d745596'),
+ (46,'5ed2c8b1464c4bc6997ea76eae9553824e04d443fd73f2859ff33a456d745596'),
+ (47,'5ed2c8b1464c4bc6997ea76eae9553824e04d443fd73f2859ff33a456d745596'),
+ (48,'5ed2c8b1464c4bc6997ea76eae9553824e04d443fd73f2859ff33a456d745596'),
+ (49,'5ed2c8b1464c4bc6997ea76eae9553824e04d443fd73f2859ff33a456d745596'),
+ (50,'5ed2c8b1464c4bc6997ea76eae9553824e04d443fd73f2859ff33a456d745596'),
+ (51,'5ed2c8b1464c4bc6997ea76eae9553824e04d443fd73f2859ff33a456d745596');
+/*!40000 ALTER TABLE `member_passwd_history` ENABLE KEYS */;
+
+
+--
+-- Definition of table `merchant`
+--
+
+DROP TABLE IF EXISTS `merchant`;
+CREATE TABLE `merchant` (
+  `mem_id` bigint(20) NOT NULL,
+  `merchant_name` varchar(128) NOT NULL,
+  `bus_addr_line1` varchar(256) DEFAULT NULL,
+  `bus_addr_line2` varchar(256) DEFAULT NULL,
+  `bus_city` varchar(64) DEFAULT NULL,
+  `bus_zip` varchar(5) DEFAULT NULL,
+  `merchant_info1` varchar(1024) DEFAULT NULL,
+  `merchant_info2` varchar(1024) DEFAULT NULL,
+  `date_created` datetime DEFAULT NULL,
+  `last_updated` datetime DEFAULT NULL,
+  PRIMARY KEY (`mem_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `merchant`
+--
+
+/*!40000 ALTER TABLE `merchant` DISABLE KEYS */;
+/*!40000 ALTER TABLE `merchant` ENABLE KEYS */;
+
+
+--
+-- Definition of table `payment_method`
+--
+
+DROP TABLE IF EXISTS `payment_method`;
+CREATE TABLE `payment_method` (
+  `payment_method_id` int(11) NOT NULL AUTO_INCREMENT,
+  `method_name` varchar(32) NOT NULL,
+  `date_created` datetime DEFAULT NULL,
+  `last_updated` datetime DEFAULT NULL,
+  PRIMARY KEY (`payment_method_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `payment_method`
+--
+
+/*!40000 ALTER TABLE `payment_method` DISABLE KEYS */;
+/*!40000 ALTER TABLE `payment_method` ENABLE KEYS */;
+
+
+--
+-- Definition of table `payment_types`
+--
+
+DROP TABLE IF EXISTS `payment_types`;
+CREATE TABLE `payment_types` (
+  `payment_type_id` varchar(16) NOT NULL,
+  `payment_type_desc` varchar(64) NOT NULL,
+  PRIMARY KEY (`payment_type_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `payment_types`
+--
+
+/*!40000 ALTER TABLE `payment_types` DISABLE KEYS */;
+INSERT INTO `payment_types` (`payment_type_id`,`payment_type_desc`) VALUES 
+ ('CARD','Credit Card'),
+ ('CHECK','Bank Check'),
+ ('PAYPAL','Paypal');
+/*!40000 ALTER TABLE `payment_types` ENABLE KEYS */;
+
+
+--
+-- Definition of table `permission`
+--
+
+DROP TABLE IF EXISTS `permission`;
+CREATE TABLE `permission` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `version` bigint(20) NOT NULL,
+  `actions` varchar(255) NOT NULL,
+  `group_id` bigint(20) DEFAULT NULL,
+  `managed` bit(1) NOT NULL,
+  `possible_actions` varchar(255) NOT NULL,
+  `role_id` bigint(20) DEFAULT NULL,
+  `target` varchar(255) NOT NULL,
+  `type` varchar(255) NOT NULL,
+  `user_id` bigint(20) DEFAULT NULL,
+  `class` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FKE125C5CF42555646` (`role_id`),
+  KEY `FKE125C5CFAA6DB197` (`user_id`),
+  KEY `FKE125C5CF35C9368E` (`group_id`),
+  CONSTRAINT `FKE125C5CF35C9368E` FOREIGN KEY (`group_id`) REFERENCES `_group` (`id`),
+  CONSTRAINT `FKE125C5CF42555646` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`),
+  CONSTRAINT `FKE125C5CFAA6DB197` FOREIGN KEY (`user_id`) REFERENCES `member` (`mem_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `permission`
+--
+
+/*!40000 ALTER TABLE `permission` DISABLE KEYS */;
+INSERT INTO `permission` (`id`,`version`,`actions`,`group_id`,`managed`,`possible_actions`,`role_id`,`target`,`type`,`user_id`,`class`) VALUES 
+ (1,0,'*',NULL,0x01,'*',NULL,'profile:edit:1','grails.plugins.nimble.auth.WildcardPermission',1,'grails.plugins.nimble.core.Permission'),
+ (2,0,'*',NULL,0x01,'*',NULL,'profile:edit:2','grails.plugins.nimble.auth.WildcardPermission',2,'grails.plugins.nimble.core.Permission'),
+ (3,0,'*',NULL,0x01,'*',NULL,'*','grails.plugins.nimble.auth.AllPermission',2,'grails.plugins.nimble.core.Permission'),
+ (4,0,'*',NULL,0x01,'*',NULL,'profile:edit:3','grails.plugins.nimble.auth.WildcardPermission',3,'grails.plugins.nimble.core.Permission'),
+ (5,0,'*',NULL,0x01,'*',NULL,'*','grails.plugins.nimble.auth.AllPermission',3,'grails.plugins.nimble.core.Permission'),
+ (6,0,'*',NULL,0x01,'*',NULL,'*','grails.plugins.nimble.auth.AllPermission',3,'grails.plugins.nimble.core.Permission'),
+ (10,0,'*',NULL,0x01,'*',NULL,'profile:edit:34','grails.plugins.nimble.auth.WildcardPermission',34,'grails.plugins.nimble.core.Permission'),
+ (11,0,'*',NULL,0x01,'*',NULL,'profile:edit:35','grails.plugins.nimble.auth.WildcardPermission',35,'grails.plugins.nimble.core.Permission'),
+ (12,0,'*',NULL,0x01,'*',NULL,'profile:edit:36','grails.plugins.nimble.auth.WildcardPermission',36,'grails.plugins.nimble.core.Permission'),
+ (13,0,'*',NULL,0x01,'*',NULL,'profile:edit:37','grails.plugins.nimble.auth.WildcardPermission',37,'grails.plugins.nimble.core.Permission'),
+ (14,0,'*',NULL,0x01,'*',NULL,'profile:edit:38','grails.plugins.nimble.auth.WildcardPermission',38,'grails.plugins.nimble.core.Permission'),
+ (15,0,'*',NULL,0x01,'*',NULL,'profile:edit:39','grails.plugins.nimble.auth.WildcardPermission',39,'grails.plugins.nimble.core.Permission'),
+ (16,0,'*',NULL,0x01,'*',NULL,'profile:edit:40','grails.plugins.nimble.auth.WildcardPermission',40,'grails.plugins.nimble.core.Permission'),
+ (17,0,'*',NULL,0x01,'*',NULL,'profile:edit:41','grails.plugins.nimble.auth.WildcardPermission',41,'grails.plugins.nimble.core.Permission'),
+ (18,0,'*',NULL,0x01,'*',NULL,'profile:edit:42','grails.plugins.nimble.auth.WildcardPermission',42,'grails.plugins.nimble.core.Permission'),
+ (19,0,'*',NULL,0x01,'*',NULL,'profile:edit:43','grails.plugins.nimble.auth.WildcardPermission',43,'grails.plugins.nimble.core.Permission'),
+ (20,0,'*',NULL,0x01,'*',NULL,'profile:edit:44','grails.plugins.nimble.auth.WildcardPermission',44,'grails.plugins.nimble.core.Permission'),
+ (21,0,'*',NULL,0x01,'*',NULL,'profile:edit:45','grails.plugins.nimble.auth.WildcardPermission',45,'grails.plugins.nimble.core.Permission'),
+ (22,0,'*',NULL,0x01,'*',NULL,'profile:edit:46','grails.plugins.nimble.auth.WildcardPermission',46,'grails.plugins.nimble.core.Permission'),
+ (23,0,'*',NULL,0x01,'*',NULL,'*','grails.plugins.nimble.auth.AllPermission',46,'grails.plugins.nimble.core.Permission'),
+ (24,0,'*',NULL,0x01,'*',NULL,'profile:edit:47','grails.plugins.nimble.auth.WildcardPermission',47,'grails.plugins.nimble.core.Permission'),
+ (25,0,'*',NULL,0x01,'*',NULL,'*','grails.plugins.nimble.auth.AllPermission',47,'grails.plugins.nimble.core.Permission'),
+ (26,0,'*',NULL,0x01,'*',NULL,'profile:edit:48','grails.plugins.nimble.auth.WildcardPermission',48,'grails.plugins.nimble.core.Permission'),
+ (27,0,'*',NULL,0x01,'*',NULL,'*','grails.plugins.nimble.auth.AllPermission',48,'grails.plugins.nimble.core.Permission'),
+ (28,0,'*',NULL,0x01,'*',NULL,'profile:edit:49','grails.plugins.nimble.auth.WildcardPermission',49,'grails.plugins.nimble.core.Permission'),
+ (29,0,'*',NULL,0x01,'*',NULL,'*','grails.plugins.nimble.auth.AllPermission',49,'grails.plugins.nimble.core.Permission'),
+ (30,0,'*',NULL,0x01,'*',NULL,'profile:edit:50','grails.plugins.nimble.auth.WildcardPermission',50,'grails.plugins.nimble.core.Permission'),
+ (31,0,'*',NULL,0x01,'*',NULL,'*','grails.plugins.nimble.auth.AllPermission',50,'grails.plugins.nimble.core.Permission'),
+ (32,0,'*',NULL,0x01,'*',NULL,'profile:edit:51','grails.plugins.nimble.auth.WildcardPermission',51,'grails.plugins.nimble.core.Permission'),
+ (33,0,'*',NULL,0x01,'*',NULL,'*','grails.plugins.nimble.auth.AllPermission',51,'grails.plugins.nimble.core.Permission');
+/*!40000 ALTER TABLE `permission` ENABLE KEYS */;
+
+
+--
+-- Definition of table `pledge_stautses`
+--
+
+DROP TABLE IF EXISTS `pledge_stautses`;
+CREATE TABLE `pledge_stautses` (
+  `pledge_status_id` varchar(16) NOT NULL,
+  `pledge_status_desc` varchar(64) NOT NULL,
+  PRIMARY KEY (`pledge_status_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `pledge_stautses`
+--
+
+/*!40000 ALTER TABLE `pledge_stautses` DISABLE KEYS */;
+INSERT INTO `pledge_stautses` (`pledge_status_id`,`pledge_status_desc`) VALUES 
+ ('ACTIVE','Active Pledge'),
+ ('EXPIRED','Expired '),
+ ('INACTIVE','Deactivated');
+/*!40000 ALTER TABLE `pledge_stautses` ENABLE KEYS */;
+
+
+--
+-- Definition of table `pledges`
+--
+
+DROP TABLE IF EXISTS `pledges`;
+CREATE TABLE `pledges` (
+  `pledge_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `mem_id` bigint(20) NOT NULL,
+  `pledge_date` date NOT NULL,
+  `pledge_amount` decimal(12,2) NOT NULL,
+  `payment_frequency` varchar(16) NOT NULL,
+  `payment_type` varchar(16) DEFAULT NULL,
+  `status` varchar(16) DEFAULT NULL,
+  `comments` varchar(1024) DEFAULT NULL,
+  `created_by` bigint(20) DEFAULT NULL,
+  `last_updated_by` bigint(20) DEFAULT NULL,
+  `created_date` datetime DEFAULT NULL,
+  `last_updated` datetime DEFAULT NULL,
+  PRIMARY KEY (`pledge_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `pledges`
+--
+
+/*!40000 ALTER TABLE `pledges` DISABLE KEYS */;
+/*!40000 ALTER TABLE `pledges` ENABLE KEYS */;
+
+
+--
+-- Definition of table `profile_base`
+--
+
+DROP TABLE IF EXISTS `profile_base`;
+CREATE TABLE `profile_base` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `version` bigint(20) NOT NULL,
+  `date_created` datetime DEFAULT NULL,
+  `dob` datetime NOT NULL,
+  `first_name` varchar(255) DEFAULT NULL,
+  `last_name` varchar(255) DEFAULT NULL,
+  `last_updated` datetime DEFAULT NULL,
+  `middle_initial` varchar(255) DEFAULT NULL,
+  `non_verified_email` varchar(255) DEFAULT NULL,
+  `remarks` varchar(255) DEFAULT NULL,
+  `tnc_accepted` int(11) NOT NULL,
+  `wwp_uid` varchar(255) DEFAULT NULL,
+  `class` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `profile_base`
+--
+
+/*!40000 ALTER TABLE `profile_base` DISABLE KEYS */;
+INSERT INTO `profile_base` (`id`,`version`,`date_created`,`dob`,`first_name`,`last_name`,`last_updated`,`middle_initial`,`non_verified_email`,`remarks`,`tnc_accepted`,`wwp_uid`,`class`) VALUES 
+ (1,0,'2011-08-24 13:20:05','2011-08-24 13:20:05','Supporter User',NULL,'2011-08-24 13:20:05',NULL,NULL,NULL,0,NULL,'com.schoolfund.Roles'),
+ (2,0,'2011-08-24 13:20:05','2011-08-24 13:20:05','Cordinator User',NULL,'2011-08-24 13:20:05',NULL,NULL,NULL,0,NULL,'com.schoolfund.Roles'),
+ (3,0,'2011-08-24 13:20:05','2011-08-24 13:20:05','Administrator',NULL,'2011-08-24 13:20:05',NULL,NULL,NULL,0,NULL,'com.schoolfund.Roles'),
+ (6,0,'2011-08-25 17:26:24','2011-08-25 00:00:00','School1','Supporter','2011-08-25 17:26:24','1',NULL,NULL,0,NULL,'com.schoolfund.Roles'),
+ (7,0,'2011-08-25 17:28:12','2011-08-25 00:00:00','School1','Supporter','2011-08-25 17:28:12','2',NULL,NULL,0,NULL,'com.schoolfund.Roles'),
+ (8,0,'2011-08-25 17:30:20','2011-08-25 00:00:00','School2','Supporter','2011-08-25 17:30:20','1',NULL,NULL,0,NULL,'com.schoolfund.Roles'),
+ (9,0,'2011-08-25 17:32:05','2011-08-25 00:00:00','School2','Supporter','2011-08-25 17:32:05','2',NULL,NULL,0,NULL,'com.schoolfund.Roles'),
+ (10,0,'2011-08-25 17:33:19','2011-08-25 00:00:00','School3','Supporter','2011-08-25 17:33:19','1',NULL,NULL,0,NULL,'com.schoolfund.Roles'),
+ (11,0,'2011-08-25 17:40:18','2011-08-25 00:00:00','School3','Supporter','2011-08-25 17:40:18','2',NULL,NULL,0,NULL,'com.schoolfund.Roles'),
+ (12,0,'2011-08-25 17:41:20','2011-08-25 00:00:00','School4','Supporter','2011-08-25 17:41:20','1',NULL,NULL,0,NULL,'com.schoolfund.Roles'),
+ (13,0,'2011-08-25 17:42:22','2011-08-25 00:00:00','School4','Supporter','2011-08-25 17:42:22','2',NULL,NULL,0,NULL,'com.schoolfund.Roles'),
+ (14,0,'2011-08-25 17:43:23','2011-08-25 00:00:00','School5','Supporter','2011-08-25 17:43:23','1',NULL,NULL,0,NULL,'com.schoolfund.Roles'),
+ (15,0,'2011-08-25 17:44:18','2011-08-25 00:00:00','School5','Supporter','2011-08-25 17:44:18','2',NULL,NULL,0,NULL,'com.schoolfund.Roles'),
+ (16,0,'2011-08-25 17:45:31','2011-08-25 00:00:00','School6','Supporter','2011-08-25 17:45:31','1',NULL,NULL,0,NULL,'com.schoolfund.Roles'),
+ (17,0,'2011-08-25 17:46:20','2011-08-25 00:00:00','School6','Supporter','2011-08-25 17:46:20','2',NULL,NULL,0,NULL,'com.schoolfund.Roles'),
+ (18,0,'2011-08-25 17:58:16','2011-08-25 00:00:00','School1','Coordinator','2011-08-25 17:58:16','1',NULL,NULL,0,NULL,'com.schoolfund.Roles'),
+ (19,0,'2011-08-25 18:17:05','2011-08-25 00:00:00','School2','Coordinator','2011-08-25 18:17:05','1',NULL,NULL,0,NULL,'com.schoolfund.Roles'),
+ (20,0,'2011-08-25 18:18:33','2011-08-25 00:00:00','School3','Coordinator','2011-08-25 18:18:33','1',NULL,NULL,0,NULL,'com.schoolfund.Roles'),
+ (21,0,'2011-08-25 18:19:28','2011-08-25 00:00:00','School4','Coordinator','2011-08-25 18:19:28','1',NULL,NULL,0,NULL,'com.schoolfund.Roles'),
+ (22,0,'2011-08-25 18:22:25','2011-08-25 00:00:00','School5','Coordinator','2011-08-25 18:22:25','1',NULL,NULL,0,NULL,'com.schoolfund.Roles'),
+ (23,0,'2011-08-25 18:23:17','2011-08-25 00:00:00','School6','Coordinator','2011-08-25 18:23:17','1',NULL,NULL,0,NULL,'com.schoolfund.Roles');
+/*!40000 ALTER TABLE `profile_base` ENABLE KEYS */;
+
+
+--
+-- Definition of table `roles`
+--
+
+DROP TABLE IF EXISTS `roles`;
+CREATE TABLE `roles` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `version` bigint(20) NOT NULL,
+  `date_created` datetime DEFAULT NULL,
+  `description` varchar(255) DEFAULT NULL,
+  `external` bit(1) NOT NULL,
+  `last_updated` datetime DEFAULT NULL,
+  `name` varchar(255) NOT NULL,
+  `protect` bit(1) NOT NULL,
+  `realm` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `roles`
+--
+
+/*!40000 ALTER TABLE `roles` DISABLE KEYS */;
+INSERT INTO `roles` (`id`,`version`,`date_created`,`description`,`external`,`last_updated`,`name`,`protect`,`realm`) VALUES 
+ (1,23,'2011-08-24 13:20:04','Supporter Role',0x00,'2011-08-25 18:23:17','MEM',0x01,NULL),
+ (2,8,'2011-08-24 13:20:04','Coordinator Role',0x00,'2011-08-25 18:23:17','CORD',0x01,NULL),
+ (3,1,'2011-08-24 13:20:04','Administrative Role',0x00,'2011-08-24 13:20:05','ADMIN',0x01,NULL);
+/*!40000 ALTER TABLE `roles` ENABLE KEYS */;
+
+
+--
+-- Definition of table `roles_users`
+--
+
+DROP TABLE IF EXISTS `roles_users`;
+CREATE TABLE `roles_users` (
+  `role_id` bigint(20) NOT NULL,
+  `user_base_id` bigint(20) NOT NULL,
+  PRIMARY KEY (`role_id`,`user_base_id`),
+  KEY `FK_role_users_mem_id` (`user_base_id`),
+  KEY `FK_role_users_role_id` (`role_id`),
+  KEY `FK91FE65E642555646` (`role_id`),
+  KEY `FK91FE65E6FA4F085D` (`user_base_id`),
+  CONSTRAINT `FK91FE65E6FA4F085D` FOREIGN KEY (`user_base_id`) REFERENCES `member` (`mem_id`),
+  CONSTRAINT `FK91FE65E642555646` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`),
+  CONSTRAINT `FK_role_users_mem_id` FOREIGN KEY (`user_base_id`) REFERENCES `member` (`mem_id`),
+  CONSTRAINT `FK_role_users_role_id` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `roles_users`
+--
+
+/*!40000 ALTER TABLE `roles_users` DISABLE KEYS */;
+INSERT INTO `roles_users` (`role_id`,`user_base_id`) VALUES 
+ (1,1),
+ (1,2),
+ (2,2),
+ (1,3),
+ (2,3),
+ (3,3),
+ (1,34),
+ (1,35),
+ (1,36),
+ (1,37),
+ (1,38),
+ (1,39),
+ (1,40),
+ (1,41),
+ (1,42),
+ (1,43),
+ (1,44),
+ (1,45),
+ (1,46),
+ (2,46),
+ (1,47),
+ (2,47),
+ (1,48),
+ (2,48),
+ (1,49),
+ (2,49),
+ (1,50),
+ (2,50),
+ (1,51),
+ (2,51);
+/*!40000 ALTER TABLE `roles_users` ENABLE KEYS */;
+
+
+--
+-- Definition of table `school_goal`
+--
+
+DROP TABLE IF EXISTS `school_goal`;
+CREATE TABLE `school_goal` (
+  `school_goal_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `school_id` bigint(20) NOT NULL,
+  `track_start_date` date NOT NULL,
+  `track_end_date` date DEFAULT NULL,
+  `goal` decimal(12,2) DEFAULT NULL,
+  `is_current` tinyint(1) DEFAULT '1' COMMENT 'Is the goal for the current year?',
+  `created_by` bigint(20) DEFAULT NULL COMMENT 'User who created it',
+  `last_updated_by` bigint(20) DEFAULT NULL COMMENT 'Last updated by',
+  `date_created` datetime DEFAULT NULL,
+  `last_updated` datetime DEFAULT NULL,
+  PRIMARY KEY (`school_goal_id`),
+  KEY `fk_school_goal_schools1` (`school_id`),
+  CONSTRAINT `fk_school_goal_schools1` FOREIGN KEY (`school_id`) REFERENCES `schools` (`school_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `school_goal`
+--
+
+/*!40000 ALTER TABLE `school_goal` DISABLE KEYS */;
+/*!40000 ALTER TABLE `school_goal` ENABLE KEYS */;
+
+
+--
+-- Definition of table `school_members`
+--
+
+DROP TABLE IF EXISTS `school_members`;
+CREATE TABLE `school_members` (
+  `school_mem_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `mem_id` bigint(20) NOT NULL,
+  `school_id` bigint(20) NOT NULL,
+  `percent_share` decimal(5,2) DEFAULT NULL,
+  `comments` varchar(1024) DEFAULT NULL,
+  `is_coordinator` tinyint(1) DEFAULT '0' COMMENT 'User co-ordinator for the school? 0-No 1-yes',
+  `date_created` datetime DEFAULT NULL,
+  `last_updated` datetime DEFAULT NULL,
+  PRIMARY KEY (`school_mem_id`),
+  KEY `fk_school_members_schools1` (`school_id`),
+  KEY `fk_school_members_mem_id` (`mem_id`),
+  KEY `FKA077174E3F427DFD` (`school_id`),
+  KEY `FKA077174ED0319AA7` (`mem_id`),
+  CONSTRAINT `FKA077174ED0319AA7` FOREIGN KEY (`mem_id`) REFERENCES `member` (`mem_id`),
+  CONSTRAINT `FKA077174E3F427DFD` FOREIGN KEY (`school_id`) REFERENCES `schools` (`school_id`),
+  CONSTRAINT `fk_school_members_mem_id` FOREIGN KEY (`mem_id`) REFERENCES `member` (`mem_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_school_members_schools1` FOREIGN KEY (`school_id`) REFERENCES `schools` (`school_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `school_members`
+--
+
+/*!40000 ALTER TABLE `school_members` DISABLE KEYS */;
+INSERT INTO `school_members` (`school_mem_id`,`mem_id`,`school_id`,`percent_share`,`comments`,`is_coordinator`,`date_created`,`last_updated`) VALUES 
+ (4,34,1,NULL,NULL,0,'2011-08-25 17:26:24','2011-08-25 17:26:24'),
+ (5,35,1,NULL,NULL,0,'2011-08-25 17:28:12','2011-08-25 17:28:12'),
+ (6,36,2,NULL,NULL,0,'2011-08-25 17:30:20','2011-08-25 17:30:20'),
+ (7,37,2,NULL,NULL,0,'2011-08-25 17:32:05','2011-08-25 17:32:05'),
+ (8,38,3,NULL,NULL,0,'2011-08-25 17:33:19','2011-08-25 17:33:19'),
+ (9,39,3,NULL,NULL,0,'2011-08-25 17:40:18','2011-08-25 17:40:18'),
+ (10,40,4,NULL,NULL,0,'2011-08-25 17:41:20','2011-08-25 17:41:20'),
+ (11,41,4,NULL,NULL,0,'2011-08-25 17:42:22','2011-08-25 17:42:22'),
+ (12,42,5,NULL,NULL,0,'2011-08-25 17:43:23','2011-08-25 17:43:23'),
+ (13,43,5,NULL,NULL,0,'2011-08-25 17:44:18','2011-08-25 17:44:18'),
+ (14,44,6,NULL,NULL,0,'2011-08-25 17:45:31','2011-08-25 17:45:31'),
+ (15,45,6,NULL,NULL,0,'2011-08-25 17:46:20','2011-08-25 17:46:20'),
+ (16,46,1,NULL,NULL,0,'2011-08-25 17:58:16','2011-08-25 17:58:16'),
+ (17,47,2,NULL,NULL,0,'2011-08-25 18:17:05','2011-08-25 18:17:05'),
+ (18,48,3,NULL,NULL,0,'2011-08-25 18:18:33','2011-08-25 18:18:33'),
+ (19,49,4,NULL,NULL,0,'2011-08-25 18:19:28','2011-08-25 18:19:28'),
+ (20,50,5,NULL,NULL,0,'2011-08-25 18:22:25','2011-08-25 18:22:25'),
+ (21,51,6,NULL,NULL,0,'2011-08-25 18:23:17','2011-08-25 18:23:17');
+/*!40000 ALTER TABLE `school_members` ENABLE KEYS */;
+
+
+--
+-- Definition of table `school_types`
+--
+
+DROP TABLE IF EXISTS `school_types`;
+CREATE TABLE `school_types` (
+  `school_type_id` int(11) NOT NULL AUTO_INCREMENT,
+  `school_type` varchar(64) NOT NULL,
+  `date_created` datetime DEFAULT NULL,
+  `last_updated` datetime DEFAULT NULL,
+  PRIMARY KEY (`school_type_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1 COMMENT='School Types';
+
+--
+-- Dumping data for table `school_types`
+--
+
+/*!40000 ALTER TABLE `school_types` DISABLE KEYS */;
+INSERT INTO `school_types` (`school_type_id`,`school_type`,`date_created`,`last_updated`) VALUES 
+ (1,'District Funded',NULL,NULL),
+ (2,'State Funded',NULL,NULL),
+ (3,'Federal Funded',NULL,NULL);
+/*!40000 ALTER TABLE `school_types` ENABLE KEYS */;
+
+
+--
+-- Definition of table `schools`
+--
+
+DROP TABLE IF EXISTS `schools`;
+CREATE TABLE `schools` (
+  `school_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `school_name` varchar(128) NOT NULL,
+  `district_name` varchar(64) DEFAULT NULL,
+  `address_line1` varchar(128) DEFAULT NULL,
+  `address_line2` varchar(128) DEFAULT NULL,
+  `city` varchar(64) DEFAULT NULL,
+  `zip5` varchar(5) DEFAULT NULL,
+  `zip9` varchar(16) DEFAULT NULL,
+  `state` varchar(4) DEFAULT NULL,
+  `school_county` varchar(64) DEFAULT NULL,
+  `principal_name` varchar(128) DEFAULT NULL,
+  `no_of_students` int(11) DEFAULT NULL,
+  `no_of_faculty` int(11) DEFAULT NULL,
+  `school_type_id` int(11) DEFAULT NULL,
+  `website` varchar(128) DEFAULT NULL,
+  `school_logo` blob,
+  `twitter_link` varchar(128) DEFAULT NULL,
+  `facebook_link` varchar(128) DEFAULT NULL,
+  `created_by` bigint(20) DEFAULT NULL,
+  `last_updated_by` bigint(20) DEFAULT NULL,
+  `date_created` datetime DEFAULT NULL,
+  `last_updated` datetime DEFAULT NULL,
+  PRIMARY KEY (`school_id`),
+  KEY `fk_schools_school_types1` (`school_type_id`),
+  KEY `FK724A137F6212C3F0` (`created_by`),
+  KEY `FK724A137F5EA61686` (`last_updated_by`),
+  KEY `FK724A137FF323A092` (`school_type_id`),
+  CONSTRAINT `FK724A137FF323A092` FOREIGN KEY (`school_type_id`) REFERENCES `school_types` (`school_type_id`),
+  CONSTRAINT `FK724A137F5EA61686` FOREIGN KEY (`last_updated_by`) REFERENCES `member` (`mem_id`),
+  CONSTRAINT `FK724A137F6212C3F0` FOREIGN KEY (`created_by`) REFERENCES `member` (`mem_id`),
+  CONSTRAINT `fk_schools_school_types1` FOREIGN KEY (`school_type_id`) REFERENCES `school_types` (`school_type_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=latin1 COMMENT='Master list of Schools in the US';
+
+--
+-- Dumping data for table `schools`
+--
+
+/*!40000 ALTER TABLE `schools` DISABLE KEYS */;
+INSERT INTO `schools` (`school_id`,`school_name`,`district_name`,`address_line1`,`address_line2`,`city`,`zip5`,`zip9`,`state`,`school_county`,`principal_name`,`no_of_students`,`no_of_faculty`,`school_type_id`,`website`,`school_logo`,`twitter_link`,`facebook_link`,`created_by`,`last_updated_by`,`date_created`,`last_updated`) VALUES 
+ (1,'A M WINDHAM ELEM SCH','DALEVILLE CITY','626 Daleville Ave',NULL,'Daleville','36322','36322-2006','AL','DALE COUNTY',NULL,0,0,1,NULL,NULL,NULL,NULL,NULL,NULL,'2011-08-08 00:00:00','2011-08-08 00:00:00'),
+ (2,'A.C. MOORE ELEM SCH','ESCAMBIA COUNTY','501 Beck St',NULL,'Atmore','36502','36502-3019','AL','ESCAMBIA COUNTY',NULL,0,0,1,NULL,NULL,NULL,NULL,NULL,NULL,'2011-08-08 00:00:00','2011-08-08 00:00:00'),
+ (3,'ABBEVILLE ALT SCH','HENRY COUNTY','300 N Trawick St',NULL,'Abbeville','36310','','AL','HENRY COUNTY',NULL,0,0,1,NULL,NULL,NULL,NULL,NULL,NULL,'2011-08-08 00:00:00','2011-08-08 00:00:00'),
+ (4,'ABBEVILLE ELEM SCH','HENRY COUNTY','100 Elm St',NULL,'Abbeville','36310','36310-2413','AL','HENRY COUNTY',NULL,0,0,1,NULL,NULL,NULL,NULL,NULL,NULL,'2011-08-08 00:00:00','2011-08-08 00:00:00'),
+ (5,'ABBEVILLE HIGH SCH','HENRY COUNTY','411 Graball Cutoff',NULL,'Abbeville','36310','36310-0519','AL','HENRY COUNTY',NULL,0,0,1,NULL,NULL,NULL,NULL,NULL,NULL,'2011-08-08 00:00:00','2011-08-08 00:00:00'),
+ (6,'ABBEVILLE MIDDLE SCH','HENRY COUNTY','P O BOX 547',NULL,'Abbeville','36310','36310-0547','AL','HENRY COUNTY',NULL,0,0,1,NULL,NULL,NULL,NULL,NULL,NULL,'2011-08-08 00:00:00','2011-08-08 00:00:00'),
+ (7,'ABC ELEM','WILCOX COUNTY','P O BOX 129',NULL,'Alberta','36720','36720-0145','AL','WILCOX COUNTY',NULL,0,0,1,NULL,NULL,NULL,NULL,NULL,NULL,'2011-08-08 00:00:00','2011-08-08 00:00:00'),
+ (8,'ABRAMS ELEM SCH','BESSEMER CITY','1200 23rd St N',NULL,'Bessemer','35020','35020-3443','AL','JEFFERSON COUNTY',NULL,0,0,1,NULL,NULL,NULL,NULL,NULL,NULL,'2011-08-08 00:00:00','2011-08-08 00:00:00'),
+ (9,'ACAD FOR ACADEMICS & ARTS','HUNTSVILLE CITY','2800 Poplar Ave NW',NULL,'Huntsville','35816','35816-3230','AL','MADISON COUNTY',NULL,0,0,1,NULL,NULL,NULL,NULL,NULL,NULL,'2011-08-08 00:00:00','2011-08-08 00:00:00'),
+ (10,'ACAD FOR SCIENCE & FOREIGN LANGUAGE','HUNTSVILLE CITY','3221 Mastin Lake Rd NW',NULL,'Huntsville','35810','35810-2823','AL','MADISON COUNTY',NULL,0,0,1,NULL,NULL,NULL,NULL,NULL,NULL,'2011-08-08 00:00:00','2011-08-08 00:00:00'),
+ (11,'ADAMS ELEM SCH','GADSDEN CITY','919 Raley St',NULL,'Gadsden','35903','35903-2027','AL','ETOWAH COUNTY',NULL,0,0,1,NULL,NULL,NULL,NULL,NULL,NULL,'2011-08-08 00:00:00','2011-08-08 00:00:00'),
+ (12,'ADAMSVILLE ELEM SCH','JEFFERSON COUNTY','600 Hazelwood Rd',NULL,'Adamsville','35005','35005-1829','AL','JEFFERSON COUNTY',NULL,0,0,1,NULL,NULL,NULL,NULL,NULL,NULL,'2011-08-08 00:00:00','2011-08-08 00:00:00'),
+ (13,'ADDISON ELEM SCH','WINSTON COUNTY','P O BOX 660',NULL,'Addison','35540','35540-0660','AL','WINSTON COUNTY',NULL,0,0,1,NULL,NULL,NULL,NULL,NULL,NULL,'2011-08-08 00:00:00','2011-08-08 00:00:00'),
+ (14,'ADDISON HIGH SCH','WINSTON COUNTY','P O BOX 240',NULL,'Addison','35540','35540-0240','AL','WINSTON COUNTY',NULL,0,0,1,NULL,NULL,NULL,NULL,NULL,NULL,'2011-08-08 00:00:00','2011-08-08 00:00:00'),
+ (15,'ADOLESCENT DAY TREATMENT','BIRMINGHAM CITY','1632 7th Ave S',NULL,'Birmingham','35233','','AL','JEFFERSON COUNTY',NULL,0,0,1,NULL,NULL,NULL,NULL,NULL,NULL,'2011-08-08 00:00:00','2011-08-08 00:00:00'),
+ (16,'AH WATWOOD ELEM SCH','TALLADEGA COUNTY','2000 Limbaugh Ave',NULL,'Childersburg','35044','35044-2099','AL','TALLADEGA COUNTY',NULL,0,0,1,NULL,NULL,NULL,NULL,NULL,NULL,'2011-08-08 00:00:00','2011-08-08 00:00:00'),
+ (17,'AIRPORT ROAD INTERMEDIATE SCH','ELMORE COUNTY','5959 Airport Rd',NULL,'Millbrook','36054','','AL','ELMORE COUNTY',NULL,0,0,1,NULL,NULL,NULL,NULL,NULL,NULL,'2011-08-08 00:00:00','2011-08-08 00:00:00'),
+ (18,'AKRON COMM SCH EAST','HALE COUNTY','P O BOX 38',NULL,'Akron','35441','35441-0038','AL','HALE COUNTY',NULL,0,0,1,NULL,NULL,NULL,NULL,NULL,NULL,'2011-08-08 00:00:00','2011-08-08 00:00:00'),
+ (19,'AKRON COMM SCH WEST','HALE COUNTY','P O BOX 48',NULL,'Akron','35441','35441-0048','AL','HALE COUNTY',NULL,0,0,1,NULL,NULL,NULL,NULL,NULL,NULL,'2011-08-08 00:00:00','2011-08-08 00:00:00'),
+ (20,'ALA AVENUE MIDDLE SCH','ALBERTVILLE CITY','600 E Alabama Ave',NULL,'Albertville','35950','35950-2336','AL','MARSHALL COUNTY',NULL,0,0,1,NULL,NULL,NULL,NULL,NULL,NULL,'2011-08-08 00:00:00','2011-08-08 00:00:00'),
+ (21,'ALABAMA CLINICAL SCHOOL','ALABAMA CLINICAL SCHOOL','1221 Alton Dr',NULL,'Birmingham','35210','','AL','JEFFERSON COUNTY',NULL,0,0,1,NULL,NULL,NULL,NULL,NULL,NULL,'2011-08-08 00:00:00','2011-08-08 00:00:00'),
+ (22,'ALABAMA SCHOOL FOR BLIND','AL INST DEAF AND BLIND','P O BOX 455',NULL,'Talladega','35160','','AL','TALLADEGA COUNTY',NULL,0,0,1,NULL,NULL,NULL,NULL,NULL,NULL,'2011-08-08 00:00:00','2011-08-08 00:00:00'),
+ (23,'ALABAMA SCHOOL FOR DEAF','AL INST DEAF AND BLIND','P O DRAWER 698',NULL,'Talladega','35160','35160-2411','AL','TALLADEGA COUNTY',NULL,0,0,1,NULL,NULL,NULL,NULL,NULL,NULL,'2011-08-08 00:00:00','2011-08-08 00:00:00'),
+ (24,'ALABAMA SCHOOL OF FINE ARTS','ALABAMA SCHOOL OF FINE ARTS','1800 8th Ave N',NULL,'Birmingham','35203','35203-2203','AL','JEFFERSON COUNTY',NULL,0,0,1,NULL,NULL,NULL,NULL,NULL,NULL,'2011-08-08 00:00:00','2011-08-08 00:00:00'),
+ (25,'ALABAMA YOUTH SERVICES','ALABAMA YOUTH SERVICES','1299 Hillsboro Pkwy',NULL,'Helena','35080','','AL','SHELBY COUNTY',NULL,0,0,1,NULL,NULL,NULL,NULL,NULL,NULL,'2011-08-08 00:00:00','2011-08-08 00:00:00'),
+ (26,'ALBERT P BREWER HIGH SCH','MORGAN COUNTY','59 Eva Rd',NULL,'Somerville','35670','35670-6423','AL','MORGAN COUNTY',NULL,0,0,1,NULL,NULL,NULL,NULL,NULL,NULL,'2011-08-08 00:00:00','2011-08-08 00:00:00'),
+ (27,'ALBERT P BREWER VOC SCH','MORGAN COUNTY','59 Eva Rd',NULL,'Somerville','35670','','AL','MORGAN COUNTY',NULL,0,0,1,NULL,NULL,NULL,NULL,NULL,NULL,'2011-08-08 00:00:00','2011-08-08 00:00:00'),
+ (28,'ALBERT TURNER SR ELEM SCH','PERRY COUNTY','901 PEGUES CIR',NULL,'Marion','36756','36756-2115','AL','PERRY COUNTY',NULL,0,0,1,NULL,NULL,NULL,NULL,NULL,NULL,'2011-08-08 00:00:00','2011-08-08 00:00:00'),
+ (29,'ALBERTA ELEM SCH','TUSCALOOSA CITY','2700 University Blvd E',NULL,'Tuscaloosa','35404','35404-3227','AL','TUSCALOOSA COUNTY',NULL,0,0,1,NULL,NULL,NULL,NULL,NULL,NULL,'2011-08-08 00:00:00','2011-08-08 00:00:00'),
+ (30,'ALBERTVILLE EARLY LEARNING CTR','ALBERTVILLE CITY','107 W Main St',NULL,'Albertville','35950','','AL','MARSHALL COUNTY',NULL,0,0,1,NULL,NULL,NULL,NULL,NULL,NULL,'2011-08-08 00:00:00','2011-08-08 00:00:00');
+/*!40000 ALTER TABLE `schools` ENABLE KEYS */;
+
+
+--
+-- Definition of table `smtp_server`
+--
+
+DROP TABLE IF EXISTS `smtp_server`;
+CREATE TABLE `smtp_server` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `version` bigint(20) NOT NULL,
+  `accepts_verify_requests` bit(1) NOT NULL,
+  `can_connect` bit(1) NOT NULL,
+  `domain` varchar(255) NOT NULL,
+  `mx_record` varchar(255) NOT NULL,
+  `valid` bit(1) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `smtp_server`
+--
+
+/*!40000 ALTER TABLE `smtp_server` DISABLE KEYS */;
+/*!40000 ALTER TABLE `smtp_server` ENABLE KEYS */;
+
+
+--
+-- Definition of table `supporter`
+--
+
+DROP TABLE IF EXISTS `supporter`;
+CREATE TABLE `supporter` (
+  `mem_id` bigint(20) NOT NULL,
+  `supporter_info1` varchar(1024) DEFAULT NULL,
+  `supporter_info2` varchar(1024) DEFAULT NULL,
+  `date_created` datetime DEFAULT NULL,
+  `last_updated` datetime DEFAULT NULL,
+  PRIMARY KEY (`mem_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `supporter`
+--
+
+/*!40000 ALTER TABLE `supporter` DISABLE KEYS */;
+/*!40000 ALTER TABLE `supporter` ENABLE KEYS */;
+
+
+--
+-- Definition of table `survey_proceeds`
+--
+
+DROP TABLE IF EXISTS `survey_proceeds`;
+CREATE TABLE `survey_proceeds` (
+  `survey_proceed_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `survey_transaction_ref` varchar(32) NOT NULL,
+  `survey_name` varchar(128) DEFAULT NULL,
+  `survey_date` date DEFAULT NULL,
+  `received_date` varchar(45) DEFAULT NULL,
+  `credit_points` decimal(10,2) DEFAULT NULL,
+  `credit_amount` decimal(10,2) DEFAULT NULL,
+  `created_by` bigint(20) DEFAULT NULL,
+  `last_updated_by` bigint(20) DEFAULT NULL,
+  `created_date` datetime DEFAULT NULL,
+  `last_updated` datetime DEFAULT NULL,
+  PRIMARY KEY (`survey_proceed_id`),
+  KEY `fk_survey_proceeds_surveys_taken1` (`survey_transaction_ref`),
+  CONSTRAINT `fk_survey_proceeds_surveys_taken1` FOREIGN KEY (`survey_transaction_ref`) REFERENCES `surveys_taken` (`survey_transaction_ref`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='Data sent by WWP regarding Surverys proceeds';
+
+--
+-- Dumping data for table `survey_proceeds`
+--
+
+/*!40000 ALTER TABLE `survey_proceeds` DISABLE KEYS */;
+/*!40000 ALTER TABLE `survey_proceeds` ENABLE KEYS */;
+
+
+--
+-- Definition of table `surveys_taken`
+--
+
+DROP TABLE IF EXISTS `surveys_taken`;
+CREATE TABLE `surveys_taken` (
+  `survey_transaction_ref` varchar(32) NOT NULL,
+  `taken_date` datetime NOT NULL,
+  `created_by` bigint(20) DEFAULT NULL,
+  `last_updated_by` bigint(20) DEFAULT NULL,
+  `created_date` datetime DEFAULT NULL,
+  `last_updated` datetime DEFAULT NULL,
+  `member_mem_id` bigint(20) NOT NULL,
+  PRIMARY KEY (`survey_transaction_ref`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `surveys_taken`
+--
+
+/*!40000 ALTER TABLE `surveys_taken` DISABLE KEYS */;
+/*!40000 ALTER TABLE `surveys_taken` ENABLE KEYS */;
+
+
+--
+-- Definition of table `template_attachments`
+--
+
+DROP TABLE IF EXISTS `template_attachments`;
+CREATE TABLE `template_attachments` (
+  `template_attachment_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `template_id` bigint(20) NOT NULL,
+  `attachment_name` varchar(64) DEFAULT NULL,
+  `attach_file` blob,
+  `created_by` bigint(20) DEFAULT NULL,
+  `last_updated_by` bigint(20) DEFAULT NULL,
+  `created_date` datetime DEFAULT NULL,
+  `last_updated` datetime DEFAULT NULL,
+  PRIMARY KEY (`template_attachment_id`),
+  KEY `fk_template_attachments_templates1` (`template_id`),
+  CONSTRAINT `fk_template_attachments_templates1` FOREIGN KEY (`template_id`) REFERENCES `templates` (`template_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `template_attachments`
+--
+
+/*!40000 ALTER TABLE `template_attachments` DISABLE KEYS */;
+/*!40000 ALTER TABLE `template_attachments` ENABLE KEYS */;
+
+
+--
+-- Definition of table `template_types`
+--
+
+DROP TABLE IF EXISTS `template_types`;
+CREATE TABLE `template_types` (
+  `template_type_id` varchar(16) NOT NULL,
+  `template_type_desc` varchar(64) NOT NULL,
+  PRIMARY KEY (`template_type_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `template_types`
+--
+
+/*!40000 ALTER TABLE `template_types` DISABLE KEYS */;
+INSERT INTO `template_types` (`template_type_id`,`template_type_desc`) VALUES 
+ ('ACTIVITY','School Activity Template'),
+ ('EVENT','Event Template'),
+ ('FOLLOWUP','Followup Template'),
+ ('INVITATION','Invitation Template'),
+ ('INVOICE','Invoice Template');
+/*!40000 ALTER TABLE `template_types` ENABLE KEYS */;
+
+
+--
+-- Definition of table `templates`
+--
+
+DROP TABLE IF EXISTS `templates`;
+CREATE TABLE `templates` (
+  `template_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `template_name` varchar(64) NOT NULL,
+  `template_type` varchar(16) DEFAULT NULL,
+  `email_template` blob,
+  `created_by` bigint(20) DEFAULT NULL,
+  `last_updated_by` bigint(20) DEFAULT NULL,
+  `date_created` datetime DEFAULT NULL,
+  `last_updated` datetime DEFAULT NULL,
+  PRIMARY KEY (`template_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `templates`
+--
+
+/*!40000 ALTER TABLE `templates` DISABLE KEYS */;
+/*!40000 ALTER TABLE `templates` ENABLE KEYS */;
+
+
+--
+-- Definition of table `url`
+--
+
+DROP TABLE IF EXISTS `url`;
+CREATE TABLE `url` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `version` bigint(20) NOT NULL,
+  `alt_text` varchar(255) DEFAULT NULL,
+  `description` varchar(255) DEFAULT NULL,
+  `location` varchar(255) NOT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `url`
+--
+
+/*!40000 ALTER TABLE `url` DISABLE KEYS */;
+/*!40000 ALTER TABLE `url` ENABLE KEYS */;
+
+
+--
+-- Definition of table `us_states`
+--
+
+DROP TABLE IF EXISTS `us_states`;
+CREATE TABLE `us_states` (
+  `state_code` varchar(2) NOT NULL,
+  `state_name` varchar(64) NOT NULL,
+  PRIMARY KEY (`state_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `us_states`
+--
+
+/*!40000 ALTER TABLE `us_states` DISABLE KEYS */;
+INSERT INTO `us_states` (`state_code`,`state_name`) VALUES 
+ ('AK','ALASKA'),
+ ('AL','ALABAMA'),
+ ('AR','ARKANSAS'),
+ ('AS','AMERICAN SAMOA'),
+ ('AZ','ARIZONA'),
+ ('CA','CALIFORNIA'),
+ ('CO','COLORADO'),
+ ('CT','CONNECTICUT'),
+ ('DC','DISTRICT OF COLUMBIA'),
+ ('DE','DELAWARE'),
+ ('FL','FLORIDA'),
+ ('FM','FEDERATED STATES OF MICRONESIA'),
+ ('GA','GEORGIA'),
+ ('GU','GUAM'),
+ ('HI','HAWAII'),
+ ('ID','IDAHO'),
+ ('IL','ILLINOIS'),
+ ('IN','INDIANA'),
+ ('IS','IOWA'),
+ ('KA','KANSAS'),
+ ('KY','KENTUCKY'),
+ ('LA','LOUISIANA'),
+ ('MA','MASSACHUSETTS'),
+ ('MD','MARYLAND'),
+ ('ME','MAINE'),
+ ('MH','MARSHALL ISLANDS'),
+ ('MI','MICHIGAN'),
+ ('MN','MINNESOTA'),
+ ('MO','MISSOURI'),
+ ('MP','NORTHERN MARIANA ISLANDS'),
+ ('MS','MISSISSIPPI'),
+ ('MT','MONTANA'),
+ ('NC','NORTH CAROLINA'),
+ ('ND','NORTH DAKOTA'),
+ ('NE','NEBRASKA'),
+ ('NH','NEW HAMPSHIRE'),
+ ('NJ','NEW JERSEY'),
+ ('NM','NEW MEXICO'),
+ ('NV','NEVADA'),
+ ('NY','NEW YORK'),
+ ('OH','OHIO'),
+ ('OK','OKLAHOMA'),
+ ('OR','OREGON'),
+ ('PA','PENNSYLVANIA'),
+ ('PR','PUERTO RICO'),
+ ('PW','PALAU'),
+ ('RI','RHODE ISLAND'),
+ ('SC','SOUTH CAROLINA'),
+ ('SD','SOUTH DAKOTA'),
+ ('TN','TENNESSEE'),
+ ('TX','TEXAS'),
+ ('UT','UTAH'),
+ ('VA','VIRGINIA'),
+ ('VI','VIRGIN ISLANDS'),
+ ('VT','VERMONT'),
+ ('WA','WASHINGTON'),
+ ('WI','WISCONSIN'),
+ ('WV','WEST VIRGINIA'),
+ ('WY','WYOMING');
+/*!40000 ALTER TABLE `us_states` ENABLE KEYS */;
+
+
+
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
