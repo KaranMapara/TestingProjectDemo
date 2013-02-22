@@ -1,0 +1,1142 @@
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530    1) <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530    2) <html>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530    3) <head>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530    4) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530    5) <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530    6) <meta http-equiv="Content-Style-Type" content="text/css">
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530    7) <script type="text/javascript">var cu_Dcr="rebooking";</script> <title></title><!-- Page = /US/en/local/rebooking/standard/rbk_standard_recap.jsp --><link rel="stylesheet" href="/FR/common/common/css/headerfooterv5.css" type="text/css">
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530    8) <link rel="stylesheet" href="/FR/common/common/css/menu.css" type="text/css">
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530    9) <link rel="stylesheet" href="/FR/common/common/css/global.css" type="text/css">
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   10) <link rel="stylesheet" href="/FR/common/common/css/sIFR-screen.css" type="text/css" media="screen">
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   11) <link rel="stylesheet" href="/FR/common/common/css/sIFR-print.css" type="text/css" media="print">
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   12) <link rel="stylesheet" href="/FR/common/common/css/gb_styles.css" type="text/css">
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   13) <!--[if lte IE 8]>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   14)  <link rel="stylesheet" href="/FR/common/common/css/global_ie.css" type="text/css">
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   15) <![endif]-->
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   16) <script type="text/javascript" src="/FR/common/common/js/af_init.js"></script>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   17) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   18) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   19) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   20) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   21) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   22) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   23) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   24) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   25) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   26) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   27) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   28) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   29) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   30) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   31) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   32) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   33) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   34) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   35) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   36) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   37) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   38) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   39) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   40) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   41) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   42) <script type="text/javascript">
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   43) /****** DEBUG SECTION START ******/
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   44) var Session='0000I6IGxr7ZZ8QS0PJvpA1krl-:140ufud6t';
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   45) var currentTimeInMillis = '1358036447227';
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   46) /****** DEBUG SECTION END ******/
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   47) var chaineIDs = 'FBSessionID=0000I6IGxr7ZZ8QS0PJvpA1krl-&FBCloneID=140ufud6t';
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   48) var chaineLien	= '';
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   49) var chaineForm = '';
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   50) var chaineLogue	= '1';
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   51) var chaineBase	= '/cgi-bin/AF';
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   52) var cu_Marche	= 'US';
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   53) var cu_Cluster = 'X02';
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   54) var cu_Langue	= 'en';
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   55) var cu_Serveur  = 'www.airfrance.us';
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   56) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   57) var isMenuAffichable = true;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   58) var isBayadereAffichable = true;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   59) var isTracerAffichable = true;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   60) var isFooterAffichable = true;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   61) var isPushAffichable = true;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   62) var isLiensAffichable = true;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   63) var isBoutonResaAffichable = true;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   64) var isBoutonHorairesAffichable = true;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   65) var isContexteResaPopup = false;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   66) var isContexteABT = false;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   67) var isContexteD6 = false;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   68) var isContexteKLM = false;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   69) var isContexteAZ = false;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   70) var isContexteKLMAZ = false;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   71) var isContexteDL = false;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   72) var isContexteParticulier = false;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   73) var codeXiti = '121431';
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   74) var isGenerique = false;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   75) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   76) var fb_loggued = false;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   77) var fb_user = '';
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   78) var fb_number = '';
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   79) var fb_solde = '';
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   80) var fb_last_operation = '';
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   81) var fb_level = '0';
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   82) var fb_mmb = new Array();
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   83) var fb_last_name = '';
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   84) document.iseatzParams = '';
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   85) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   86) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   87) var flagTest=false ;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   88) var cu_Monet=new Array("FR", "US", "AE", "AM", "AR", "AT", "AU", "BE", "BF", "BG", "BH", "BJ", "BR", "CA", "CG", "CH", "CI", "CL", "CM", "CN", "CO", "CZ", "DE", "DJ", "DK", "DO", "DZ", "EG", "ES", "FI", "GA", "GB", "GF", "GP", "GR", "HK", "HR", "HT", "HU", "IE", "IL", "IN", "IR", "IT", "JO", "JP", "KR", "KW", "LB", "LU", "MA", "MG", "ML", "MU", "MX", "MQ", "NC", "NE", "NG", "NL", "NO", "PF", "PK", "PL", "PT", "QA", "RE", "RO", "RS", "RU", "SA", "SE", "SG", "SI", "SK", "SN", "SY", "TG", "TH", "TN", "TR", "TW", "UA", "VE", "VN", "XX", "ZA", "MF", "IQ", "KH");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   89) var cu_MonetNonVendeur=new Array("AC", "CD", "CU", "UR", "UY", "PE", "LY", "SL", "LR");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   90) var FormatCodePostal = /^([0-9]{5})$/;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   91) var FormatTelMobile = /^([0-9]{5,15})$/;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   92) var FormatIndTelMobile = /^([0-9]{0,4})$/;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   93) var isMyAccountActive = true;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   94) var mya_customerType = "";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   95) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   96) 	FormatCodePostal = /^([0-9]{5})$/;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   97) 	FormatTelMobile = /^([0-9 \-]{5,21})$/;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   98) 	FormatIndTelMobile = /^([0-9]{0,4})$/;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530   99) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  100) </script>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  101) <script type="text/javascript" src="/FR/common/js/pceHpEssentials.js"></script>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  102) <script type="text/javascript" src="/FR/common/js/pceCookies.js"></script>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  103) <script type="text/javascript" src="/FR/common/js/pceCheckMandatoryFields.js"></script>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  104) <script type="text/javascript" src="/FR/common/common/js/afkl_event.js"></script>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  105) <script type="text/javascript" src="/FR/common/common/js/myAccountEventManager.js" charset="utf-8"></script>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  106) <script type="text/javascript">
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  107) var countryCode = "US";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  108) var languageCode = "en";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  109) var carrierCode = "AF";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  110) var myaroot = "/klm/passage/account/";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  111) function loadJsFile(fileUrl) {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  112) 	var jsFile = document.createElement("script");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  113) 	jsFile.setAttribute("type", "text/javascript");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  114) 	jsFile.setAttribute("src", fileUrl);
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  115) 	if (typeof jsFile != "undefined")
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  116) 		document.getElementsByTagName("head")[0].appendChild(jsFile);
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  117) }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  118) if (typeof cu_Dcr == 'undefined' || (cu_Dcr != "home_page_market" && cu_Dcr != "myAccount" && cu_Dcr != "hp_process_v6")) { /* do not include theses files in homepage.jsp, to gain weight */
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  119) 	loadJsFile("/FR/common/js/prototype.js");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  120) 	loadJsFile("/FR/common/js/pceAjax.js");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  121) }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  122) </script>                          
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  123) 	
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  124)            <script type="text/javascript" src="/US/en/js/af_menu.js"></script> <script type="text/javascript" src="/FR/common/js/pcePopUp.js"></script> <script type="text/javascript" src="/FR/common/js/pceAfValidation.js"></script> <script type="text/javascript" src="/US/common/js/pceTools.js"></script> <script type="text/javascript"> // Message d'erreur par d&eacute;faut pour les champs obligatoires
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  125)    		defaultErrorMessage[VALIDATION_MANDATORY] = "{0} is a mandatory field ";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  126)    		var nbSendEnewsLetter = 0;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  127) 		var isKlm = false;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  128) 		if (isKlm) {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  129) 			document.write('<link rel="stylesheet" href="/US/common/common/css/jor.css" type="text/css">');
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  130) 		} else {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  131) 			document.write('<link rel="stylesheet" href="/US/common/common/css/boutons_new.css" type="text/css">');
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  132) 			document.write('<link rel="stylesheet" href="/US/common/common/css/booking_new.css" type="text/css">');
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  133) 			document.write('<link rel="stylesheet" href="/US/common/common/css/mmb_new.css" type="text/css">');
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  134) 		}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  135) 		function cancelPNR() {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  136) 			af_go("/US/en/local/process/standard/rebooking/AskCancellationAction.do",'width=510,height=200,top=5,left=5,location=no,resizable=no,menubar=no,status=no,scrollbars=yes,toolbars=no,directory=no,titlebar=no');
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  137) 		}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  138) 		function validate() {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  139) 			
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  140) 		}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  141) 		function popupECheckin(fightCarrier, flightNumber) {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  142) 			var element = '?DPS=af&LANG=en&MKT=US&ICI_FORM_ID=searchCriteriaForm&identSearch=y&fullIdentSearch=n&identDataSpecified=y&identNumber=ZZJZEO&identType=PNR&staffId=n&m_icil=e&identAirlineCode='+fightCarrier+'&identFlightNumber='+flightNumber;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  143) 			window.open("https://www2.klm.com/gs/ici/checkin/Main/FlightPax" + element,'',"");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  144) 		}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  145) 		
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  146) 		function go_other_market(iu_Url,iu_Parametre,iu_Fermer)
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  147)         {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  148)           var vo_Url=new String(iu_Url) ;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  149)           if ((vo_Url.indexOf(".do")>0 || vo_Url.indexOf(".jsp")>0) && (vo_Url.substr(0,7)!= "http://" && vo_Url.substr(0,8)!= "https://"))
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  150)             vo_Url = chaineBase+vo_Url;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  151)           if (iu_Parametre)
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  152)           {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  153)             var vo_Pop = window.open(vo_Url,"",iu_Parametre+",scrollbars=yes");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  154)             if((!vo_Pop) || (vo_Pop.closed))
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  155)             {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  156)               alert("La configuration de votre ordinateur n'autorise pas l'ouverture de cette page en pop-up.Merci de vérifier la configuration de votre ordinateur.");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  157)             } else {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  158)               vo_Pop.focus();
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  159)             }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  160)           } else {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  161)             if (iu_Fermer && parent.opener)
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  162)             {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  163)               parent.opener.location = vo_Url;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  164)               window.close();
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  165)             } else {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  166)               document.location=vo_Url;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  167)             }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  168)           }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  169)         }  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  170)         
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  171)         function popupContactKlm() {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  172) 			$("idFrameKlm").src = "http://www.klm.com/travel/US_en/travel_information/customer_support/booking_support/index.htm??&amp;actionBoutonFermer=closePopupKlm";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  173) 	   		 showDiv('idPopupKlm', 'idContactKlm', 10, -650);
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  174) 		}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  175) 	
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  176) 		function closePopupKlm() {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  177) 			closeDiv('idPopupKlm', 'idContactKlm');
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  178) 		}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  179) 		
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  180) 		function submitForm() {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  181) 			var fieldsOK = af_validation("idrbkReeditionMemoForm", DEBUG);
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  182) 			if (fieldsOK) {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  183) 				$("validateReeditMemo").className="hidden";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  184) 				$("idrbkReeditionMemoForm").submit();      
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  185) 			}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  186)    	  }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  187)    	  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  188)    	  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  189)    	 function sendEdatisFR(email, lastName, firstName, title, zipCode, state, destinationAdresse, dateNaissance) {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  190) 	var edt_randomize  = Math.round(Math.random()*10000000000); 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  191) 	var v0 = ""; // Id_client 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  192)  	var v1 = email;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  193)  	var v2 = lastName;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  194) 	var v3 = firstName;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  195)  	var dateDuJour = new Date();
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  196)  	var v4 = getDateFormate("yyyy-MM-dd HH:mm:ss", dateDuJour); // Date d'inscription 2011-07-19 13:19:48
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  197)  	var v5 = "NL"; // Origine Inscription      valeur par d&eacute;faut : &laquo; NL &raquo;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  198)  	var v6 ="BLR"; //A&eacute;roport de d&eacute;part
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  199)  	var v7 = title; 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  200) 	var v8 = ""; // Info from our parteners 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  201) 	var v9 = "OUI"; // Opt-in     valeur par d&eacute;faut : &laquo; OUI &raquo;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  202) 	var v10 = zipCode;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  203)  	var v11 = state;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  204) 	var v12 = "OUI"; // Crit&egrave;re March&eacute;     valeur par d&eacute;faut : &laquo; OUI &raquo;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  205) 	var v13 = "NON"; // FlyingBlue     valeur par d&eacute;faut : &laquo; Non &raquo;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  206) 	var v14 = "booking"; // D&eacute;tail Inscription valeur par d&eacute;faut : &laquo; booking &raquo;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  207) 	var v15 = "I"; // Type_cible     valeur par d&eacute;faut : &laquo; I &raquo;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  208) 	var v16 = destinationAdresse;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  209)  	var v17 = dateNaissance;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  210) 	var v18 = "NON"; // inscription NL FB                  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  211) 	var v19 = "EN"; // Code Langue  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  212) 	var v20 =  "US"; // Code Pays
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  213) 	var v21 = "OUI"; // Inscrits tag commande     valeur par d&eacute;faut : &laquo; OUI &raquo;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  214) 	var edt_url = "https://home-ssl.edt02.net/emc/Nl_tag_dw2/?s=37660&t=20"; 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  215)     edt_url += '&r=' + edt_randomize ; 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  216)     edt_url += '&v0=' + v0 + '&v1=' + v1 + '&v2=' + v2 + '&v3=' + v3; 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  217)  	edt_url += '&v4=' + v4 + '&v5=' + v5 + '&v6=' + v6 + '&v7=' + v7; 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  218)     edt_url += '&v8=' + v8 + '&v9=' + v9 + '&v10=' + v10 + '&v11=' + v11; 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  219)     edt_url += '&v12=' + v12 + '&v13='  + v13 + '&v14=' + v14 + '&v15=' + v15; 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  220)     edt_url += '&v16=' + v16 + '&v17=' + v17 + '&v18=' + v18 + '&v19=' + v19; 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  221)     edt_url += '&v20=' + v20 + '&v21=' + v21; 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  222)     var tmp = document.createElement("img");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  223)     tmp.src = edt_url;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  224)     tmp.border = 0;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  225)     tmp.height = 0;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  226)     tmp.width = 0;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  227)     document.body.appendChild(tmp);
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  228) }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  229) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  230) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  231) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  232) function sendEdatis(email, lastName, firstName, title, zipCode, state) {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  233) 	var edt_randomize  = Math.round(Math.random()*10000000000); 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  234) 	var v0 = ""; // Id_client 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  235)  	var v1 = email;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  236)  	var v2 = lastName;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  237) 	var v3 = firstName;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  238)  	var dateDuJour = new Date();
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  239)  	var v4 = getDateFormate("yyyy-MM-dd HH:mm:ss", dateDuJour); // Date d'inscription 2011-07-19 13:19:48
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  240)  	var v5 = "NL"; // Origine Inscription      valeur par d&eacute;faut : &laquo; NL &raquo;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  241)  	var v6 ="BLR"; //A&eacute;roport de d&eacute;part
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  242)  	var v7 = title; 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  243) 	var v8 = ""; // Info from our parteners 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  244) 	var v9 = "OUI"; // Opt-in     valeur par d&eacute;faut : &laquo; OUI &raquo;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  245) 	var v10 = zipCode;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  246)  	var v11 = state;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  247) 	var v12 = "OUI"; // Crit&egrave;re March&eacute;     valeur par d&eacute;faut : &laquo; OUI &raquo;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  248) 	var v13 = "NON"; // FlyingBlue     valeur par d&eacute;faut : &laquo; Non &raquo;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  249) 	var v14 = "booking"; // D&eacute;tail Inscription valeur par d&eacute;faut : &laquo; booking &raquo;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  250) 	var v15 = "I"; // Type_cible     valeur par d&eacute;faut : &laquo; I &raquo;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  251) 	var v16 ="EN"; // Code Langue 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  252) 	var v17 ="US"; // Code Pays
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  253) 	var v18 = "OUI"; // Inscrits tag commande     valeur par d&eacute;faut : &laquo; OUI &raquo; 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  254) 	var edt_url = "https://home-ssl.edt02.net/emc/Nl_tag_dw2/?s=37660&t=20"; 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  255)     edt_url += '&r=' + edt_randomize ; 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  256)    	edt_url += '&v0=' + v0 + '&v1=' + v1 + '&v2=' + v2 + '&v3=' + v3; 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  257)    	edt_url += '&v4=' + v4 + '&v5=' + v5 + '&v6=' + v6 + '&v7=' + v7; 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  258)     edt_url += '&v8=' + v8 + '&v9=' + v9 + '&v10=' + v10 + '&v11=' + v11; 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  259)   	edt_url += '&v12=' + v12 + '&v13=' + v13 + '&v14=' + v14 + '&v15=' + v15; 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  260)    	edt_url += '&v16=' + v16 + '&v17=' + v17 + '&v18=' + v18; 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  261) 	var tmp = document.createElement("img");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  262)     tmp.src = edt_url;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  263)     tmp.border = 0;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  264)     tmp.height = 0;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  265)     tmp.width = 0;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  266)     document.body.appendChild(tmp); 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  267) } </script> </head> <body id="pageRecap" >  <script type="text/javascript" src="/FR/common/common/js/swfobject.js"></script><script type="text/javascript" src="/FR/common/common/js/tools.js"></script><script type="text/javascript" src="/FR/common/common/js/blocks.js"></script><script type="text/javascript" src="/FR/common/common/js/jquery.js"></script><script type="text/javascript" src="/FR/common/common/js/AJS.js"></script><script type="text/javascript" src="/FR/common/common/js/gb_scripts.js"></script><script type="text/javascript" src="/FR/common/js/pceHpEssentials.js"></script><script type="text/javascript" src="/FR/common/js/pceCookies.js"></script> <center> <a id="hautpage" name="hautpage"></a> <div id="page" class="structure1"> <div id="blocheader"> <div id="flyingBlueLogin"> <!--#config errmsg=" " --><!--#include virtual="/US/en/local/include/blocLogin.htm"--> <!-- -->
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  268) 	
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  269) <script type="text/javascript">
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  270) var baliseHead = document.getElementsByTagName("head")[0];
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  271) var jsFile = document.createElement("script");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  272) jsFile.setAttribute("type", "text/javascript");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  273) jsFile.setAttribute("src", "/FR/common/common/js/TealeafSDK.js");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  274) baliseHead.insertBefore(jsFile, baliseHead.getElementsByTagName('*')[0]);
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  275) </script>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  276) <!-- Bloc non loggue -->
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  277) 				<div id="contentLogin" class="tabFB">
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  278) 					<div id="blocLogin" class="loggin">
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  279) 						<div id="headerTab">
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  280) 							<div id="tabFB" class="tabLogin"></div>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  281) 							<div id="tabMA" class="tabLogin"><p id="labelTabMA">&amp;&nbsp;My Account</p></div>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  282) 						</div>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  283) 						<div id="logFB">
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  284) 							<p class="inputZone" style="clear:left">
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  285) 								<label for="idFbNumber"><img id="imgFbNumber" class="imgErreur" src="/FR/common/common/img/pictos/img-erreur_on_10px.gif" alt="" /><br/>E-mail address /username</label>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  286) 								<input type="text" id="idFbNumber" name="fbNumber" />
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  287) 							</p>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  288) 							<p class="inputZone">
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  289) 								<label for="idFbPassword"><img id="imgFbPassword" class="imgErreur" src="/FR/common/common/img/pictos/img-erreur_on_10px.gif" alt="" /><br/>Password</label>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  290) 								<input type="password" id="idFbPassword" name="fbPassword" onkeypress="if(event.keyCode==13){loginFB();}" />
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  291) 								<a id="btnHeaderLogin" class="b_d_HP" href="javascript:loginFB()">ok</a>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  292) 							</p>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  293) 					    </div>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  294) 						<div id="idFbLinks" class="links">
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  295)     <a href="" onClick="javascript:callEnrollmentWidget();return false;" id='idlinknotLogguedLink1_0'>Sign up</a>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  296)  |
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  297)     <a href="/US/en/common/transverse/popup/aide_login.htm" onClick="javascript:af_go('/'+cu_Marche+'/'+cu_Langue+'/common/transverse/popup/aide_login.htm');return false;"  rel="gb_page_center[580,750]" id='idlinknotLogguedLink2_0'>Learn more</a>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  298)  |
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  299)     <a href="" onClick="javascript:callForgotPasswordWidget();return false;" id='idlinknotLogguedLink3_0'>Forgotten password</a>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  300) 						</div>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  301) 						<div id="logAjaxLoading">
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  302) 						<img src="/FR/common/common/img/pictos/ajaxLoading.gif" alt=""/>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  303) 						Thank you for your patience. We are retrieving your personal information
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  304) 				  	</div>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  305) 					</div>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  306) <!-- Fin Bloc non loggue -->
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  307) <!-- Bloc loggue -->
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  308)                 <div id="blocLoggued">
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  309) 										<div id="headerLoggued">
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  310) 											<div id="headerMA">My Account </div><span class="logoFB">&nbsp;</span>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  311) 										</div>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  312)                     <span>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  313) Welcome &nbsp;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  314)                     </span>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  315)                     <div id="FBLogguedIdentity">
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  316)                     </div>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  317)                     <input type="hidden" name="codeDepPref" id="codeDepPref" value="">
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  318)                     <input type="hidden" name="codeArrPref" id="codeArrPref" value="">
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  319)                     <div class="links">
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  320)     <a href="" onClick="javascript:callLogoutWidget();return false;" id='idlinklogguedLink1_0'>Sign out </a>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  321)     <a href="/US/en/common/personnalisation/nonloggue/modifierMonAirfranceFFPSecurise.do" onClick="javascript:af_go('/'+cu_Marche+'/'+cu_Langue+'/common/personnalisation/nonloggue/modifierMonAirfranceFFPSecurise.do');return false;"  id='idlinklogguedLink2_0'>My profile </a>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  322)     <a href="" onClick="javascript:af_go('');return false;"  id='idlinklogguedLink3_0'></a>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  323)                     </div>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  324)                 </div>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  325) <!-- Fin bloc loggue -->
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  326) 			</div>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  327) <!-- --> </div> <div id="surheader"> <!--#config errmsg=" " --><!--#include virtual="/US/en/local/include/blocSurheader.htm"--> <!-- -->
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  328)     
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  329) 	
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  330) <div id="liens">
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  331) 	<ul>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  332) 		<li class="country">USA</li>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  333)         <li class="separateur">&nbsp;</li>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  334) 		<li class="othercountry"><a href="/US/en/common/transverse/popup/popup_autres_pays.htm" onclick="javascript:af_go('/US/en/common/transverse/popup/popup_autres_pays.htm','');return false;" class="countrySelector">Other countries</a></li>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  335)         <li class="langueactive">EN</li>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  336) 		<li class="contacter"><a href="/US/en/local/transverse/footer/aide_et_contact.htm?menu=false" onclick="javascript:af_go('/US/en/local/transverse/footer/aide_et_contact.htm?menu=false','');return false;">Contact us<span class="imgcontact">&nbsp;</span></a></li>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  337)         <li class="separateur" id="sepqgo">&nbsp;</li>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  338)         <li id="lienqgo"><a href="#" onclick="javascript:showFormQgo();return false;">Question <span class="imgqgo">&nbsp;</span></a></li>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  339) 	</ul>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  340) </div>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  341) <div id="blocQgo">
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  342)     <span id="blancqgo">&nbsp;</span>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  343)     <input type="text" name="idQgoQuestion" id="idQgoQuestion" value="Ask your question here" onfocus="if (this.value==this.defaultValue) {this.value='';}" onkeypress="if(event.keyCode==13){initFaqPopup();}" />
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  344)     <a name="idQgoOk" id="idQgoOk" href="#" onclick='initFaqPopup();return false;'><img class="btnqgo" src="/FR/common/common/img/pixel/pixtrans.gif" width="25px" height="25px" border="0" alt="" /></a>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  345) </div>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  346) <!-- --> <div><a id="idlogoAF" href="/US/en/common/home/flights/ticket-plane.do" onclick="javascript:goToHome();"><img class="logoAF" src="/common/image/logos/logo_af.png" width="235" height="26" border="0" alt="Air France - Sky Team" /></a></div> </div> </div> <div id="menu" class="menuContainer withjavascript"> <!--#config errmsg=" " --><!--#include virtual="/US/en/local/include/blocMenu.htm"--> <!-- -->
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  347)   
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  348)   
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  349) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  350) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  351) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  352)  <ul id='menuNiv0'> <li id='menuCell_0' class='top'> <a id='homehidden' href='/US/en/common/home/flights/ticket-plane.do' onclick="javascript:goToHome(); return false;" class='top_link homeimage' /> <a id='gotohome' href='/US/en/common/home/flights/ticket-plane.do' onclick="javascript:goToHome(); return false;" class='top_link'>Accueil </a> </li> <li class='separateur'><span class='qmdivider qmdividery' ></span></li> <li class='top submenu'> <a id='id_itemUn' href='#' class='top_link'>Ticketing &amp; check-in</a> <ul id='menuNiv1_1' class='droite'> <li id='menuCell_1_2'> <a  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  353) 		 id="reservation_achat_onglet" title="Purchase a ticket" href="/US/en/local/resainfovol/achat/reservation_achat_airfrance.htm" >Purchase a ticket</a> </li> <li id='menuCell_1_3'> <a  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  354) 		 id="tarifs_promotions" title="Best offers and promotions" href="/US/en/local/resainfovol/meilleuresoffres/tarifs_promotions.htm" >Best offers and promotions</a> </li> <li id='menuCell_1_4'> <a  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  355) 		 id="services_a_la_carte" title="A la Carte services " href="/US/en/common/resainfovol/services/services_a_la_carte.htm" >A la Carte services </a> </li> <li id='menuCell_1_9'> <a  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  356) 		 id="reservation_gerer" title="Review / modify your reservations" href="/US/en/local/resainfovol/achat/reservation_gerer.htm" >Review / modify your reservations</a> </li> <li class='noborder' id='menuCell_1_10'> <a  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  357) 		 id="enregistrement_carte_embarquement" title="Check-in &amp; boarding pass" href="/US/en/common/resainfovol/services/enregistrement_carte_embarquement.htm" >Check-in &amp; boarding pass</a> </li> </ul> </li> <li class='separateur'><span class='qmdivider qmdividery' ></span></li> <li class='top submenu'> <a id='id_itemDeux' href='#' class='top_link'>Flight &amp; airport info</a> <ul id='menuNiv1_2' class='droite'> <li id='menuCell_2_2'> <a  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  358) 		 id="reseau_af" title="Air France destinations " href="/US/en/common/guidevoyageur/reseau/reseau_af.htm" >Air France destinations <br/>and network</a> </li> <li id='menuCell_2_6'> <a  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  359) 		 id="horaires" title="Flight times" href="/US/en/common/guidevoyageur/e_services/horaires.htm" >Flight times</a> </li> <li id='menuCell_2_7'> <a  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  360) 		 id="home-news-air-traffic-air-france" title="Operations News" href="/US/en/local/information/archive/home-news-air-traffic-air-france.htm" >Operations News</a> </li> <li id='menuCell_2_8'> <a  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  361) 		 id="airfrance_vous_contacte" title="Air France in touch" href="/US/en/common/avotreservice/relationclientele/airfrance_vous_contacte.htm" >Air France in touch</a> </li> <li id='menuCell_2_9'> <a  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  362) 		 id="plan_cabine" title="Cabin maps" href="/US/en/common/guidevoyageur/classeetconfort/plan_cabine.htm" >Cabin maps</a> </li> <li class='noborder' id='menuCell_2_10'> <a  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  363) 		 id="aeroport_parisien" title="At the airport" href="/US/en/common/resainfovol/achat/aeroport_parisien.htm" >At the airport</a> </li> </ul> </li> <li class='separateur'><span class='qmdivider qmdividery' ></span></li> <li class='top submenu'> <a id='id_itemTrois' href='#' class='top_link'>Preparing your trip</a> <ul id='menuNiv1_3' class='droite'> <li id='menuCell_3_2'> <a  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  364) 		 id="bagage" title="Baggage" href="/US/en/common/guidevoyageur/pratique/pratique_bagage.htm" >Baggage</a> </li> <li id='menuCell_3_6'> <a  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  365) 		 id="formalite_onglet" title="Regulations" href="/US/en/common/guidevoyageur/pratique/visa_document_airfrance.htm" >Regulations</a> </li> <li id='menuCell_3_7'> <a  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  366) 		 id="famille_enfant_non_accompagne" title="Families and unaccompanied children" href="/US/en/common/guidevoyageur/assistance/famille_enfant_non_accompagne.htm" >Families and unaccompanied children</a> </li> <li id='menuCell_3_11'> <a  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  367) 		 id="assistance_passager" title="Passenger assistance" href="/US/en/common/guidevoyageur/assistance/guide_assistance_particuliere.htm" >Passenger assistance</a> </li> <li id='menuCell_3_14'> <a  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  368) 		 id="bien_etre_sante" title="Health and comfort" href="/US/en/common/guidevoyageur/bienetre_sante/guide_bienetre_sante.htm" >Health and comfort</a> </li> <li id='menuCell_3_18'> <a  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  369) 		 id="animal_onglet" title="Animals" href="/US/en/common/guidevoyageur/pratique/animal_cabine_airfrance.htm" >Animals</a> </li> <li class='noborder' id='menuCell_3_19'> <a  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  370) 		 id="autre_service" title="Hotels, rental cars" href="/US/en/local/resainfovol/services/autre_service.htm" >Hotels, rental cars<br/>and tourism info</a> </li> </ul> </li> <li class='separateur'><span class='qmdivider qmdividery' ></span></li> <li class='top submenu'> <a id='id_itemQuatre' href='#' class='top_link'>Classes &amp; comfort</a> <ul id='menuNiv1_4' class='droite'> <li id='menuCell_4_2'> <a  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  371) 		 id="la_premiere_onglet" title="La Premi&egrave;re / First" href="/US/en/common/guidevoyageur/classeetconfort/la_premiere_aeroport.htm" >La Premi&egrave;re / First</a> </li> <li id='menuCell_4_3'> <a  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  372) 		 id="business" title="Business" href="/US/en/common/guidevoyageur/classeetconfort/business.htm" >Business</a> </li> <li id='menuCell_4_6'> <a  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  373) 		 id="premium_economy" title="Premium Economy" href="/US/en/common/guideeconomy/classeetconfort/premium_economy.htm" >Premium Economy</a> </li> <li id='menuCell_4_9'> <a  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  374) 		 id="economy" title="Economy" href="/US/en/common/guideeconomy/classeetconfort/economy.htm" >Economy</a> </li> <li id='menuCell_4_12'> <a  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  375) 		 id="divertissement_programme" title="Entertainment" href="/US/en/common/guidevoyageur/classeetconfort/divertissement_programme_airfrance.htm" >Entertainment</a> </li> <li id='menuCell_4_13'> <a  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  376) 		 id="A380_onglet" title="Air France A380" href="/US/en/common/guidevoyageur/classeetconfort/A380_presentation_airfrance.htm" >Air France A380</a> </li> <li class='noborder' id='menuCell_4_14'> <a  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  377) 		 id="salon_onglet" title="Airport lounges" href="/US/en/common/guidevoyageur/aeroport/salon_presentation_airfrance.htm" >Airport lounges</a> </li> </ul> </li> <li class='separateur'><span class='qmdivider qmdividery' ></span></li> <li class='top submenu'> <a id='id_itemCinq' href='#' class='top_link'>Flying Blue</a> <ul id='menuNiv1_5' class='droite'> <li id='menuCell_5_2'> <a  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  378) 		 id="fblue_welcome" title="Flying Blue " href="/cgi-bin/AF/US/en/common/util/forwardClusterAction.do?url=fblue_welcome.htm" >Flying Blue </a> </li> <li id='menuCell_5_11'> <a  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  379) 		 id="petroleum_programme_onglet" title="Flying Blue Petroleum" href="/US/en/common/voyageurfrequent/petroleumclub/decouverte_service.htm" >Flying Blue Petroleum</a> </li> <li class='noborder' id='menuCell_5_12'> <a  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  380) 		 id="fblue_clubs" title="Flying Blue Clubs" href="/cgi-bin/AF/US/en/common/util/forwardClusterAction.do?url=fblue_clubs.htm" >Flying Blue Clubs</a> </li> </ul> </li> </ul> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  381) <!-- --> </div> <div class="clearFix"></div> <div id="subheader"> </div> <div id="surcontent"></div> <script type="text/javascript"> var codeMarcheMenu = cu_Marche;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  382)         if (isContexteKLM || isContexteD6){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  383)                 codeMarcheMenu = 'FR';
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  384)                 for(var i=0;i<cu_Monet.length;i++){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  385)                         if(cu_Monet[i] == cu_Marche) {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  386)                                 codeMarcheMenu = cu_Marche;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  387)                                 break;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  388)                         }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  389)                 }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  390)         } </script> <script type="text/javascript" src="/FR/common/common/js/af_transverse.js"></script> <script type="text/javascript"> loadHeader();
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  391)         jQuery.getScript('/'+codeMarcheMenu+'/'+cu_Langue+'/js/init_menu.js', function() {jQuery(document).ready(function(){ loadInitMenu();});}); </script> <center> <div class="pageWidth">                                         <a name="anchor_errors"></a> <div id="allErrorsContainer" style="display:none"> <div id="msgErrorTop"></div> <div id="msgErrorContent"> <div id="errorList"></div> </div> <div id="msgErrorBottom"></div> </div>  <h1 class="txttraceur afOnly">Your reservations</h1>     
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  392) 	
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  393)                <script type="text/javascript" language="Javascript"> function openLienPush(urlPush, paramPush) {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  394)     	urlPush = "http://www.airfrance.com/US/en/local/transverse/frame/genericIFrame.htm?url=" + urlPush + "&resize=auto&frameWidth=976";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  395)     	
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  396)     	af_go(urlPush,paramPush,true);
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  397)   	}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  398)   	
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  399) 	function openLienPushPopIn(urlPush) {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  400) 		urlPush = "/cgi-bin/AF/US/en" + urlPush;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  401) 		GB_showResize("Choose your personalized services at the airport",urlPush);
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  402)   	}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  403) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  404) 	var nbPushAffiche = 1;	
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  405) 	var nbRequestFinish = 0;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  406) 	var xmlIseatz = "";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  407) 	function pushHotel(xmlElement, num, parampopup){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  408) 		if(nbPushAffiche <= 5){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  409) 			var hotelElement =  xmlElement.getElementsByTagName("Hotel")[0];
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  410) 			if(hotelElement){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  411) 				var hotelResult = hotelElement.getAttribute("result");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  412) 				if(hotelResult == "1"){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  413) 					nbPushAffiche = nbPushAffiche + 1;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  414) 					var hotelName = xmlElement.getElementsByTagName("name")[0].getAttribute("value");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  415) 					if(hotelName.length < 26 ){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  416) 						$('pushLibHotelPoint').style.display = "none";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  417) 					}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  418) 					var name = "pushLib"+num;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  419) 					$(name).innerHTML = hotelName;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  420) 					$(name).title = hotelName;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  421) 					var startDate = xmlElement.getElementsByTagName("startDate")[0].getAttribute("value");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  422) 					var endDate = xmlElement.getElementsByTagName("endDate")[0].getAttribute("value");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  423) 					name = "pushDate"+num;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  424) 					$(name).innerHTML = "From " +startDate +" To "+ endDate;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  425) 					var urlPhotoHotel = xmlElement.getElementsByTagName("urlPhotoHotel")[0].getAttribute("value");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  426) 					var linkUrlHotel = xmlElement.getElementsByTagName("linkUrlHotel")[0].getAttribute("value");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  427) 					name = "pushImg"+num+"a";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  428) 					$(name).src = urlPhotoHotel;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  429) 					name = "pushImg"+num+"b";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  430) 					$(name).src = "/FR/common/common/img/push/sophitel.gif";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  431) 					var priceHotel = xmlElement.getElementsByTagName("price")[0].getAttribute("value");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  432) 					name = "pushPrix" + num;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  433) 					$(name).innerHTML = "Beginning on " + priceHotel + " /night (taxes included)";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  434) 					name = "pushHotel"+num;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  435) 					$(name).onclick =  function(){openLienPush(linkUrlHotel,parampopup);};
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  436) 					$(name).style.display = "block";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  437) 				}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  438) 			}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  439) 		}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  440) 	}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  441) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  442) 	
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  443) 	function pushActivity(xmlElement, num, typeService, parampopup){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  444) 		if(nbPushAffiche <= 5){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  445) 			var ActivityElement =  xmlElement.getElementsByTagName("Activity")[0];
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  446) 			if(ActivityElement){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  447) 				var ActivityResult = ActivityElement.getAttribute("result");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  448) 				if(ActivityResult == "1"){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  449) 					nbPushAffiche = nbPushAffiche + 1;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  450) 					var activityName = xmlElement.getElementsByTagName("name")[0].getAttribute("value");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  451) 					if(activityName.length < 26 ){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  452) 						$('pushLibServicePoint').style.display = "none";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  453) 					}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  454) 					var name = "pushLib"+num;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  455) 					$(name).innerHTML = activityName;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  456) 					$(name).title = activityName;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  457) 					var startDate = xmlElement.getElementsByTagName("startDate")[0].getAttribute("value");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  458) 					var endDate = xmlElement.getElementsByTagName("endDate")[0].getAttribute("value");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  459) 					name = "pushDate"+num;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  460) 					 if(typeService == "SHUTTLE"){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  461) 					 	var codeAeroportArrive = xmlElement.getElementsByTagName("codeAeroportArrive")[0].getAttribute("value");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  462) 					 	$(name).innerHTML = "On " + endDate + " to " + codeAeroportArrive;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  463) 					 }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  464) 					 else{
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  465) 						$(name).innerHTML = "From " +startDate + " To " + endDate;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  466) 					}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  467) 					var urlPhotoactivity = xmlElement.getElementsByTagName("urlPhotoactivity")[0].getAttribute("value");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  468) 					var linkUrlactivity = xmlElement.getElementsByTagName("linkUrlactivity")[0].getAttribute("value");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  469) 					name = "pushImg"+num+"a";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  470) 					$(name).src = urlPhotoactivity;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  471) 					name = "pushImg"+num+"b1";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  472) 					if(typeService == "ACTIVITE"){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  473) 						$(name).src = "";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  474) 						$(name).style.display = "none";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  475) 					}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  476) 					else if(typeService == "PARKING"){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  477) 						$(name).src = "";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  478) 						$(name).style.display = "none";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  479) 					}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  480) 					else if(typeService == "SHUTTLE"){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  481) 	
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  482) 						$(name).src = "";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  483) 						$(name).style.display = "none";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  484) 					}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  485) 					name = "pushImg"+num+"b2";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  486) 					if(typeService == "ACTIVITE"){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  487) 						$(name).src = "";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  488) 						$(name).style.display = "none";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  489) 					}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  490) 					else if(typeService == "PARKING"){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  491) 						$(name).src = "/FR/common/common/img/push/parking.gif";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  492) 					}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  493) 					else if(typeService == "SHUTTLE"){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  494) 						$(name).src = "/FR/common/common/img/push/shuttle.gif";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  495) 					}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  496) 					var priceactivity = xmlElement.getElementsByTagName("price")[0].getAttribute("value");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  497) 					name = "pushPrix" + num;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  498) 					if(typeService == "SHUTTLE"){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  499) 					 	$(name).innerHTML = "For " + priceactivity + " taxes included one-way";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  500) 					 }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  501) 					 else{
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  502) 						$(name).innerHTML = "Beginning on " + priceactivity + " Taxes included";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  503) 					}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  504) 					name = "pushactivity"+num;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  505) 					$(name).onclick =  function(){openLienPush(linkUrlactivity,parampopup);};					
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  506) 					$(name).style.display = "block";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  507) 				}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  508) 			}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  509) 		}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  510) 	}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  511) 	
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  512) 	function pushCar(xmlElement, num, parampopup){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  513) 		if(nbPushAffiche <= 5){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  514) 			var carElement =  xmlElement.getElementsByTagName("Car")[0];
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  515) 			if(carElement){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  516) 				var carResult = carElement.getAttribute("result");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  517) 				if(carResult == "1"){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  518) 					nbPushAffiche = nbPushAffiche + 1;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  519) 					var carName1 = xmlElement.getElementsByTagName("name1")[0].getAttribute("value");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  520) 					if(carName1.length < 15 ){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  521) 						$('pushLibNamePointa').style.display = "none";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  522) 					}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  523) 					var nameBis = "pushLibNameCar" + num +"a";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  524) 					$(nameBis).innerHTML = carName1;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  525) 					$(nameBis).title = carName1;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  526) 					var carName2 = xmlElement.getElementsByTagName("name2")[0].getAttribute("value");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  527) 					if(carName2.length < 15 ){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  528) 						$('pushLibNamePointb').style.display = "none";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  529) 					}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  530) 					nameBis = "pushLibNameCar" + num +"b";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  531) 					$(nameBis).innerHTML = carName2;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  532) 					$(nameBis).title = carName2;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  533) 					var startDate = xmlElement.getElementsByTagName("startDate")[0].getAttribute("value");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  534) 					var endDate = xmlElement.getElementsByTagName("endDate")[0].getAttribute("value");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  535) 					nameBis = "pushDateCar"+num+"a";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  536) 					$(nameBis).innerHTML = "From " +startDate + " To " + endDate;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  537) 					nameBis = "pushDateCar"+num+"b";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  538) 					$(nameBis).innerHTML = "From " +startDate + " To " + endDate;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  539) 					var urlPhotoCar1 = xmlElement.getElementsByTagName("urlPhotoCar1")[0].getAttribute("value");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  540) 					var linkUrlCar1 = xmlElement.getElementsByTagName("linkUrlCar1")[0].getAttribute("value");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  541) 					var priceCar1 = xmlElement.getElementsByTagName("price1")[0].getAttribute("value");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  542) 					var urlPhotoCar2 = xmlElement.getElementsByTagName("urlPhotoCar2")[0].getAttribute("value");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  543) 					var linkUrlCar2 = xmlElement.getElementsByTagName("linkUrlCar2")[0].getAttribute("value");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  544) 					var priceCar2 = xmlElement.getElementsByTagName("price2")[0].getAttribute("value");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  545) 					nameBis = "pushImgCar"+num+"a";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  546) 					$(nameBis).src = urlPhotoCar1;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  547) 					nameBis = "pushImgCar"+num+"b";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  548) 					$(nameBis).src = urlPhotoCar2;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  549) 					nameBis = "pushImgref"+num+"a";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  550) 					$(nameBis).onclick =  function(){openLienPush(linkUrlCar1,parampopup);};
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  551) 					nameBis = "pushImgref"+num+"b";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  552) 					$(nameBis).onclick =  function(){openLienPush(linkUrlCar2,parampopup);};
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  553) 					nameBis = "pushPrixCar" + num +"a";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  554) 					$(nameBis).innerHTML = priceCar1 + " /day (taxes included)";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  555) 					nameBis = "pushPrixCar" + num +"b";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  556) 					$(nameBis).innerHTML = priceCar2 + " /day (taxes included)";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  557) 					nameBis = "pushCar"+num;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  558) 					$(nameBis).style.display = "block";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  559) 				}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  560) 			}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  561) 		}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  562) 	}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  563) 	
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  564) 	function pushFB(num){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  565) 		if(nbPushAffiche <= 5){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  566) 			nbPushAffiche = nbPushAffiche + 1;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  567) 			var name2 = "pushFB"+num;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  568) 			$(name2).style.display = "block";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  569) 		}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  570) 	}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  571) 	
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  572) 	function push(num){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  573) 		if(nbPushAffiche <= 5){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  574) 			nbPushAffiche = nbPushAffiche + 1;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  575) 			var name3 = "push"+num;		
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  576) 			$(name3).style.display = "block";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  577) 		}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  578) 	}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  579) 	
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  580) 	function afficherPush(){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  581) 		$("push").style.display = "block";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  582) 	}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  583) 	
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  584) 	function pushIseatz(){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  585) 		eval(xmlIseatz);
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  586) 		 push(1);  push(2);  push(3);  push(4);  push(5);  afficherPush();
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  587) 	}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  588) 	
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  589) 	
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  590) 	function initPushIseatz() {  onRequestFinish();  }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  591) 	
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  592) 	function onRequestFinish(){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  593) 		if(nbRequestFinish == "0"){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  594) 			pushIseatz();
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  595) 		}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  596) 	} </script> <div class="blocPush"  id="push" style="display:none;">  <div id="push1" style="display:none;"> <table cellspacing="0" border="0"><tr><td align="left"><a href="http://www.airfrance.com/US/en/local/transverse/frame/genericIFrame.htm?url=http://car-hotel.airfrance.com/car_searches/new&Locale=en_US&resize=auto&frameWidth=976"><img src="/US/common/common/img/push/push-car-en.gif" CMSsrc="/US/common/common/img/push/push-car-en.gif" id="push-car-en.gif" width="175" height="95"/></a></td></tr></table> </div>  <div id="push2" style="display:none;"> <table cellspacing="0" border="0"><tr><td align="left"><a href="javascript:openLienPushPopIn('/local/meetandassist/PrefillFormAction.do');"><img src="/US/common/common/img/push/push-meetandassist-en.jpg" CMSsrc="/US/common/common/img/push/push-meetandassist-en.jpg" id="push-meetandassist-en.jpg" width="180" height="95"/></a></td></tr></table> </div>  <div id="push3" style="display:none;"> <table cellspacing="0" border="0"><tr><td align="left"><a href="http://www.airfrance.com/US/en/local/transverse/frame/genericIFrame.htm?url=http://car-hotel.airfrance.com/hotel_searches/new&Locale=en_US&resize=auto&frameWidth=976"><img src="/US/common/common/img/push/push-hotel-en.gif" CMSsrc="/US/common/common/img/push/push-hotel-en.gif" id="push-hotel-en.gif" width="175" height="95"/></a></td></tr></table> </div>  <div id="push4" style="display:none;"> <table cellspacing="0" border="0"><tr><td align="left"><a href="http://www.facebook.com/airfrance"><img src="/US/common/common/img/push/push_facebook-en.gif" CMSsrc="/US/common/common/img/push/push_facebook-en.gif" id="push_facebook-en.gif" width="175" height="95"/></a></td></tr></table> </div>  <div id="push5" style="display:none;"> <table cellspacing="0" border="0"><tr><td align="left"><a href="/cgi-bin/AF/US/en/local/voyageurfrequent/ffp/AdhesionFFP2.do"><img src="/US/common/common/img/push/push-flyingblue-en.gif" CMSsrc="/US/common/common/img/push/push-flyingblue-en.gif" id="push-flyingblue-en.gif" width="175" height="95"/></a></td></tr></table> </div>  </div> <script type="text/javascript" language="Javascript"> javascript:initPushIseatz(); </script>  <div class="blocMain"> <h1 class="klOnly validated">Confirmation of your booking</h1> <div id="klmTopMainContainer" class="klOnly"></div> <div id="klmMainContainer"> <div id="idPopupKlm" class="popUpInfo"> <iframe id="idFrameKlm" src="/FR/common/common/img/pixel/pixtrans.gif" scrolling="no" height="400" width="620" FRAMEBORDER="yes"></iframe> </div> <div id="klRightCol" class="klOnly"> <div id="pushContact"> <a id="idContactKlm" href="javascript:popupContactKlm();"> <div> Contact KLM <br/>Service Center </div> </a> </div> <div class="klRightColTopContent"></div> <div class="klRightColContent"> <h2>Earn Flying Blue miles</h2> <a href="https://secure.klm.com/travel/US_en/flying_blue/programme/bam/index.htm"></a> <a class="bottomLink" href="https://secure.klm.com/travel/US_en/flying_blue/programme/bam/index.htm"><img src="/FR/common/common/img/pictos/klArrowRight.gif" /></a> </div> <div class="klRightColBottomContent"></div> <div class="klRightColTopContent"></div> <div class="klRightColContent"> <h2>Manage My booking</h2> <ul> <li>View, change, cancel or plan your journey</li> <li>Flight status notification</li> <li>Special meal</li> </ul> <a class="bottomLink" href="/cgi-bin/AF/US/en/local/process/standard/rebooking/ExitRbkAction.do"><img src="/FR/common/common/img/pictos/klArrowRight.gif" /></a> </div> <div class="klRightColBottomContent"></div> </div> <img class="cleaner" style="clear: left;" src="/FR/common/common/img/pixel/pixtrans.gif" /> <div class="klmPageContent">  <table class="miniBeTabs afOnly"> <tbody> <tr> <td id="ongletS1" class="selected left"> <div class="tlc"> <h2 class="trc"><a id="btnOngletMinBe" href="javascript:void(0)">Your trip</a></h2> </div> </td>  <td id="ongletS2" class="notSelected"> <div class="tlc"> <h2 class="trc"> <a id="idLinkOnBoard" href="/cgi-bin/AF/US/en/local/process/standard/rebooking/AroundYourTrip.do?tab=1">On board</a> </h2> </div> </td>   <td id="ongletS3" class="notSelected"> <div class="tlc"> <h2 class="trc"> <a id="idLinkAtDestination" href="/cgi-bin/AF/US/en/local/process/standard/rebooking/AroundYourTrip.do?tab=2">At destination</a> </h2> </div> </td>   <td id="ongletS4" class="notSelected"> <div class="tlc"> <h2 class="trc"> <a id="idLinkPracticalInfo" href="/cgi-bin/AF/US/en/local/process/standard/rebooking/AroundYourTrip.do?tab=3">Practical information</a> </h2> </div> </td>   </tr> </tbody> </table> <div class="miniBeTabsBottom"></div>  <dl>  <dd class="refonte noKlBackground" id="booking"> <div class="afOnly completeWidth"> <div class="top left bottom" id="bookingLeftSide"> <span id="idRecordLocatorLabel"> Reservation reference&nbsp;: </span> <span class="importantNote" id="idRecordLocator">ZZJZEO</span> </div> <div class="top bottom"> Your reservation is&nbsp;: <span class="importantNote"	id="idBookingStatus">confirmed</span> </div> </div>      <div class="afOnly"> <div class="left bottom completeWidth"> <strong> Thank you for choosing Air France. Have a pleasant trip. </strong> </div> </div>  <div class="klOnly"> <ul>  </ul> <br /> <strong>Reservation reference</strong><br/> Please save your booking code well. You can use this code in your correspondence with KLM and our partners, if necessary. <div id="identifiants"> <div class="recapIdentifiantContainer"> <div class="recapIdentifiantInnerContainer"> <span class="label">Reservation reference</span> <span class="identifiantLeft"></span> <span class="identifiant">ZZJZEO</span> </div> </div>  </div>  <hr /> </div> </dd> </dl>  <dt class="etape afOnly"> <div class="titre">Your trip</div> </dt>  <dl class="include_flights"> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  597) 	
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  598) 	
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  599)                      <script type="text/javascript"> function showRecapItinerary() {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  600)     idLinkShowRecap.className = "switchFlightDetail hidden";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  601)     idLinkHideRecap.className = "switchFlightDetail block";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  602)     idRecapItinerary.className = "recapItinerary block";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  603)     showAllRecapFlight();
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  604)   }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  605) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  606)   function hideRecapItinerary() {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  607)     idLinkShowRecap.className = "switchFlightDetail block";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  608)     idLinkHideRecap.className = "switchFlightDetail hidden";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  609)     idRecapItinerary.className = "recapItinerary hidden";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  610)   }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  611) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  612)   function hideRecapFlight(id) {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  613) 		eval("hideRecapFlight" + id).className = "hidden";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  614) 		eval("showRecapFlight" + id).className = "show";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  615) 		eval("recapFlightDetailLine" + id).className = "recapFlightDetailLine hidden";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  616)   }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  617) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  618)   function showRecapFlight(id) {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  619) 		eval("hideRecapFlight" + id).className = "show";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  620) 		eval("showRecapFlight" + id).className = "hidden";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  621) 		eval("recapFlightDetailLine" + id).className = "recapFlightDetailLine block";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  622)   }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  623)   
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  624)   function hideRecapFlightKl(id) {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  625) 		eval("klHideRecapFlight" + id).className = "recapShowDetail klOnly hidden";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  626) 		eval("klShowRecapFlight" + id).className = "recapShowDetail klOnly show";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  627) 		eval("recapFlightDetailLine" + id).className = "recapFlightDetailLine hidden";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  628) 		eval("recapFlightDetailLine" + id + "b").className = "bottomRecapFlightDetail hidden";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  629)   }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  630) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  631)   function showRecapFlightKl(id) {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  632) 		eval("klHideRecapFlight" + id).className = "recapShowDetail klOnly show";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  633) 		eval("klShowRecapFlight" + id).className = "recapShowDetail klOnly hidden";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  634) 		eval("recapFlightDetailLine" + id).className = "recapFlightDetailLine block";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  635) 		eval("recapFlightDetailLine" + id + "b").className = "bottomRecapFlightDetail block";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  636)   }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  637) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  638)   function showAllRecapFlight() {  showRecapFlight(10);  showRecapFlight(11);  showRecapFlight(20);  showRecapFlight(21);  }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  639) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  640) 	
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  641) function initInfoMessages() {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  642)   var isInfoAllItineraries = false;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  643)   for (var i = 0; i < $("idInfoAllItineraries").childNodes.length; i++) {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  644)     if ($("idInfoAllItineraries").childNodes[i].nodeName == "DIV") {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  645)       isInfoAllItineraries = true;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  646)     }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  647)   }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  648)   if (isInfoAllItineraries) {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  649)     Element.show("idSeparation");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  650)   } else {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  651)     Element.hide("idSeparation");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  652)   }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  653) }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  654) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  655) 	
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  656) 	// addEvent(window, "load", initInfoMessages);
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  657) 	
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  658) function validatePaidUpgrade(flightTatoo) {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  659) 	$("idFlightTatoo").value = flightTatoo;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  660) 	$("idPaidUpgradeForm").submit();
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  661) }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  662) 	
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  663) </script>  <form id="idPaidUpgradeForm" name="puForm" action="/cgi-bin/AF/US/en/local/process/standard/paidupgrade/PaymentAction.do" method="post"> <input type="hidden" name="flightTatoo" id="idFlightTatoo" value="" /> </form>  <div class="recapItinerary block"
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  664) 	id="idRecapItinerary">  <dl class="klOnly"> <dt class="etape">  <div class="titre klOnly plane">Your departure flight</div>  </dt> </dl> <div class="recapItineraryKlm"> <div class="klmPageBottomSubContent">  <div class="recapItineraryTitle"> Your departure flight : Bangalore
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  665) 				- Sint Maarten </div>   <div class="recapItineraryDate afOnly"> <span class="afOnly show" id="hideRecapFlight10"> <a href="javascript:hideRecapFlight(10);"> <img class="iconeMoins" src="/FR/common/common/img/pixel/pixtrans.gif" alt="close detail" /> </a> </span> <span class="afOnly hidden" id="showRecapFlight10"> <a href="javascript:showRecapFlight(10);"> <img class="iconePlus" src="/FR/common/common/img/pixel/pixtrans.gif" alt="open detail" /> </a> </span> Monday, February 25, 2013 </div> <div class="recapItineraryDate klOnly"> Monday, February 25, 2013 </div> <div id="recapFlight10"> <div id="recapFlightLine10"
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  666) 					class="recapFlightLine"> <div style="display: block;"> <div style="float: left;"> <div class="recapFlightDetailNumberCabin">AF191 - Premium Economy</div> <div
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  667) 								class="recapFlightTimeBold"> 2:20 AM </div>  <div class="recapFlightStopOver"> <strong>Bangalore</strong>, International Airport (BLR) - <span class="nowrap">India</span>  </div> </div> </div> <div style="display: block; clear: both;">  <div class="recapFlightDetailNumberCabin">&nbsp;</div> <div class="recapFlightTimeBold">&nbsp;</div> <div class="recapFlightStopOver"> Deadline for check-in
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  668) 							&nbsp;:&nbsp; 1:20 AM </div>  </div>  <div style="display: block; clear: both;"> <div class="recapFlightDetailNumberCabin">&nbsp;</div> <div
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  669) 							class="recapFlightTime"> 8:35 AM  </div> <div class="recapFlightStopOver"> Paris, Charles de Gaulle (CDG) - France &nbsp;-&nbsp;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  670) 							TERMINAL
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  671) 							&nbsp;2E  </div> </div>  <div style="display: block; clear: both;"> <div class="recapFlightDetailNumberCabin">&nbsp;</div> <div class="recapFlightTime" id="statut"> Status
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  672) 							:&nbsp; <span class="statut">Confirmed</span> </div> </div>  <img src="/FR/common/common/img/pixel/pixtrans.gif" class="cleaner"
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  673) 						style="clear: left" /> </div> <div> <div
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  674) 						id="klShowRecapFlight10"
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  675) 						class="recapShowDetail klOnly hidden"> <a
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  676) 							href="javascript:showRecapFlightKl(10);"><img
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  677) 							height="12" width="12" alt="open detail"
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  678) 							src="/FR/common/common/img/pictos/icon_plusKl.gif" /> more details </a> </div> <div
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  679) 						id="klHideRecapFlight10"
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  680) 						class="recapShowDetail klOnly"> <a
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  681) 							href="javascript:hideRecapFlightKl(10);"><img
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  682) 							height="12" width="12" alt="open detail"
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  683) 							src="/FR/common/common/img/pictos/icon_moinsKl.gif" /> more details </a> </div> </div> <div class="recapFlightDetail"> <div class="recapFlightDetailLine block" id="recapFlightDetailLine10"> <div class="recapFlightFirstline"> <div class="recapFlightDetailContent1"> <span class="recapFlightBlueTitle recapFlightDetailTitle"> Operated by : </span>  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  684) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  685) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  686) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  687)   Air France  </div> <div class="recapFlightDetailContent2"> <span class="recapFlightBlueTitle recapFlightDetailTitle"> Aircraft
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  688) 									: </span> Airbus A330-200 </div> <div class="recapFlightDetailContent3"> <span class="recapFlightBlueTitle recapFlightDetailTitle"> Inflight meal served : </span>   dinner.   Snack.    </div> </div> <div class="recapFlightSecondline"> <div class="recapFlightDetailContent1">  <span class="recapFlightBlueTitle recapFlightDetailTitle"> Class : </span> A  </div> <div class="recapFlightDetailContent2"> <span class="recapFlightBlueTitle recapFlightDetailTitle"> duration : </span> 10h45mn non stop  </div>  <div class="recapFlightDetailContent3"> <span class="recapFlightBlueTitle recapFlightDetailTitle">Baggage allowance 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  689) 									: </span>   <span class="redInfoFlight">none</span>  </div>  </div> </div> <div
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  690) 						id="recapFlightDetailLine10b"
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  691) 						class="bottomRecapFlightDetail"></div>  </div> <img src="/FR/common/common/img/pixel/pixtrans.gif" class="cleaner"
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  692) 					style="clear: left" /> </div>   <div class="recapItineraryDate afOnly"> <span class="afOnly show" id="hideRecapFlight11"> <a href="javascript:hideRecapFlight(11);"> <img class="iconeMoins" src="/FR/common/common/img/pixel/pixtrans.gif" alt="close detail" /> </a> </span> <span class="afOnly hidden" id="showRecapFlight11"> <a href="javascript:showRecapFlight(11);"> <img class="iconePlus" src="/FR/common/common/img/pixel/pixtrans.gif" alt="open detail" /> </a> </span> Monday, February 25, 2013 </div> <div class="recapItineraryDate klOnly"> Monday, February 25, 2013 </div> <div id="recapFlight11"> <div id="recapFlightLine11"
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  693) 					class="recapFlightLine"> <div style="display: block;"> <div style="float: left;"> <div class="recapFlightDetailNumberCabin">AF3510 - Premium Economy</div> <div
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  694) 								class="recapFlightTime"> 10:35 AM </div>  <div class="recapFlightStopOver"> Paris, Charles de Gaulle (CDG) - France &nbsp;-&nbsp;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  695) 								TERMINAL
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  696) 								&nbsp;2F  </div> </div> </div> <div style="display: block; clear: both;">  </div>  <div style="display: block; clear: both;"> <div class="recapFlightDetailNumberCabin">&nbsp;</div> <div
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  697) 							class="recapFlightTimeBold"> 2:35 PM  </div> <div class="recapFlightStopOver"> <strong>Sint Maarten</strong>, Pr. Juliana (SXM) - <span class="nowrap">Neth Antilles</span>  </div> </div>  <div style="display: block; clear: both;"> <div class="recapFlightDetailNumberCabin">&nbsp;</div> <div class="recapFlightTime" id="statut"> Status
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  698) 							:&nbsp; <span class="statut">Confirmed</span> </div> </div>  <img src="/FR/common/common/img/pixel/pixtrans.gif" class="cleaner"
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  699) 						style="clear: left" /> </div> <div> <div
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  700) 						id="klShowRecapFlight11"
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  701) 						class="recapShowDetail klOnly hidden"> <a
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  702) 							href="javascript:showRecapFlightKl(11);"><img
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  703) 							height="12" width="12" alt="open detail"
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  704) 							src="/FR/common/common/img/pictos/icon_plusKl.gif" /> more details </a> </div> <div
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  705) 						id="klHideRecapFlight11"
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  706) 						class="recapShowDetail klOnly"> <a
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  707) 							href="javascript:hideRecapFlightKl(11);"><img
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  708) 							height="12" width="12" alt="open detail"
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  709) 							src="/FR/common/common/img/pictos/icon_moinsKl.gif" /> more details </a> </div> </div> <div class="recapFlightDetail"> <div class="recapFlightDetailLine block" id="recapFlightDetailLine11"> <div class="recapFlightFirstline"> <div class="recapFlightDetailContent1"> <span class="recapFlightBlueTitle recapFlightDetailTitle"> Operated by : </span>  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  710) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  711) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  712) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  713)   Air France  </div> <div class="recapFlightDetailContent2"> <span class="recapFlightBlueTitle recapFlightDetailTitle"> Aircraft
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  714) 									: </span> Airbus A340-300 </div> <div class="recapFlightDetailContent3"> <span class="recapFlightBlueTitle recapFlightDetailTitle"> Inflight meal served : </span>   dinner.   Snack.    </div> </div> <div class="recapFlightSecondline"> <div class="recapFlightDetailContent1">  <span class="recapFlightBlueTitle recapFlightDetailTitle"> Class : </span> A  </div> <div class="recapFlightDetailContent2"> <span class="recapFlightBlueTitle recapFlightDetailTitle"> duration : </span> 09h00mn non stop  </div>  <div class="recapFlightDetailContent3"> <span class="recapFlightBlueTitle recapFlightDetailTitle">Baggage allowance 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  715) 									: </span>   <span class="redInfoFlight">none</span>  </div>  </div> </div> <div
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  716) 						id="recapFlightDetailLine11b"
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  717) 						class="bottomRecapFlightDetail"></div>  </div> <img src="/FR/common/common/img/pixel/pixtrans.gif" class="cleaner"
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  718) 					style="clear: left" /> </div>   </div> </div> <div class='hr'><hr/></div>   <dl class="klOnly"> <dt class="etape">  <div class="titre klOnly plane">Your return flight</div>  </dt> </dl> <div class="recapItineraryKlm"> <div class="klmPageBottomSubContent">  <div class="recapItineraryTitle"> Your return flight : Sint Maarten
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  719) 				- Mumbai </div>   <div class="recapItineraryDate afOnly"> <span class="afOnly show" id="hideRecapFlight20"> <a href="javascript:hideRecapFlight(20);"> <img class="iconeMoins" src="/FR/common/common/img/pixel/pixtrans.gif" alt="close detail" /> </a> </span> <span class="afOnly hidden" id="showRecapFlight20"> <a href="javascript:showRecapFlight(20);"> <img class="iconePlus" src="/FR/common/common/img/pixel/pixtrans.gif" alt="open detail" /> </a> </span> Monday, September 2, 2013 </div> <div class="recapItineraryDate klOnly"> Monday, September 2, 2013 </div> <div id="recapFlight20"> <div id="recapFlightLine20"
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  720) 					class="recapFlightLine"> <div style="display: block;"> <div style="float: left;"> <div class="recapFlightDetailNumberCabin">AF3515 - Economy</div> <div
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  721) 								class="recapFlightTimeBold"> 4:00 PM </div>  <div class="recapFlightStopOver"> <strong>Sint Maarten</strong>, Pr. Juliana (SXM) - <span class="nowrap">Neth Antilles</span>  </div> </div> </div> <div style="display: block; clear: both;">  <div class="recapFlightDetailNumberCabin">&nbsp;</div> <div class="recapFlightTimeBold">&nbsp;</div> <div class="recapFlightStopOver"> Deadline for check-in
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  722) 							&nbsp;:&nbsp; 3:00 PM </div>  </div>  <div style="display: block; clear: both;"> <div class="recapFlightDetailNumberCabin">&nbsp;</div> <div
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  723) 							class="recapFlightTime"> 6:10 AM <br>+1&nbsp;Day </div> <div class="recapFlightStopOver"> Paris, Charles de Gaulle (CDG) - France &nbsp;-&nbsp;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  724) 							TERMINAL
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  725) 							&nbsp;2E  </div> </div>  <div style="display: block; clear: both;"> <div class="recapFlightDetailNumberCabin">&nbsp;</div> <div class="recapFlightTime" id="statut"> Status
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  726) 							:&nbsp; <span class="statut">Confirmed</span> </div> </div>  <img src="/FR/common/common/img/pixel/pixtrans.gif" class="cleaner"
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  727) 						style="clear: left" /> </div> <div> <div
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  728) 						id="klShowRecapFlight20"
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  729) 						class="recapShowDetail klOnly hidden"> <a
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  730) 							href="javascript:showRecapFlightKl(20);"><img
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  731) 							height="12" width="12" alt="open detail"
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  732) 							src="/FR/common/common/img/pictos/icon_plusKl.gif" /> more details </a> </div> <div
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  733) 						id="klHideRecapFlight20"
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  734) 						class="recapShowDetail klOnly"> <a
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  735) 							href="javascript:hideRecapFlightKl(20);"><img
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  736) 							height="12" width="12" alt="open detail"
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  737) 							src="/FR/common/common/img/pictos/icon_moinsKl.gif" /> more details </a> </div> </div> <div class="recapFlightDetail"> <div class="recapFlightDetailLine block" id="recapFlightDetailLine20"> <div class="recapFlightFirstline"> <div class="recapFlightDetailContent1"> <span class="recapFlightBlueTitle recapFlightDetailTitle"> Operated by : </span>  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  738) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  739) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  740) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  741)   Air France  </div> <div class="recapFlightDetailContent2"> <span class="recapFlightBlueTitle recapFlightDetailTitle"> Aircraft
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  742) 									: </span> Airbus A340-300 </div> <div class="recapFlightDetailContent3"> <span class="recapFlightBlueTitle recapFlightDetailTitle"> Inflight meal served : </span>   dinner.    Breakfast.   </div> </div> <div class="recapFlightSecondline"> <div class="recapFlightDetailContent1">  <span class="recapFlightBlueTitle recapFlightDetailTitle"> Class : </span> Q  </div> <div class="recapFlightDetailContent2"> <span class="recapFlightBlueTitle recapFlightDetailTitle"> duration : </span> 08h10mn non stop  </div>  <div class="recapFlightDetailContent3"> <span class="recapFlightBlueTitle recapFlightDetailTitle">Baggage allowance 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  743) 									: </span>   <span class="redInfoFlight">none</span>  </div>  </div> </div> <div
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  744) 						id="recapFlightDetailLine20b"
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  745) 						class="bottomRecapFlightDetail"></div>  </div> <img src="/FR/common/common/img/pixel/pixtrans.gif" class="cleaner"
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  746) 					style="clear: left" /> </div>   <div class="recapItineraryDate afOnly"> <span class="afOnly show" id="hideRecapFlight21"> <a href="javascript:hideRecapFlight(21);"> <img class="iconeMoins" src="/FR/common/common/img/pixel/pixtrans.gif" alt="close detail" /> </a> </span> <span class="afOnly hidden" id="showRecapFlight21"> <a href="javascript:showRecapFlight(21);"> <img class="iconePlus" src="/FR/common/common/img/pixel/pixtrans.gif" alt="open detail" /> </a> </span> Tuesday, September 3, 2013 </div> <div class="recapItineraryDate klOnly"> Tuesday, September 3, 2013 </div> <div id="recapFlight21"> <div id="recapFlightLine21"
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  747) 					class="recapFlightLine"> <div style="display: block;"> <div style="float: left;"> <div class="recapFlightDetailNumberCabin">AF218 - Economy</div> <div
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  748) 								class="recapFlightTime"> 10:50 AM </div>  <div class="recapFlightStopOver"> Paris, Charles de Gaulle (CDG) - France &nbsp;-&nbsp;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  749) 								TERMINAL
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  750) 								&nbsp;2E  </div> </div> </div> <div style="display: block; clear: both;">  </div>  <div style="display: block; clear: both;"> <div class="recapFlightDetailNumberCabin">&nbsp;</div> <div
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  751) 							class="recapFlightTimeBold"> 11:25 PM  </div> <div class="recapFlightStopOver"> <strong>Mumbai</strong>, Chhatrapati Shivaji (BOM) - <span class="nowrap">India</span> &nbsp;-&nbsp;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  752) 							TERMINAL
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  753) 							&nbsp;2  </div> </div>  <div style="display: block; clear: both;"> <div class="recapFlightDetailNumberCabin">&nbsp;</div> <div class="recapFlightTime" id="statut"> Status
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  754) 							:&nbsp; <span class="statut">Confirmed</span> </div> </div>  <img src="/FR/common/common/img/pixel/pixtrans.gif" class="cleaner"
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  755) 						style="clear: left" /> </div> <div> <div
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  756) 						id="klShowRecapFlight21"
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  757) 						class="recapShowDetail klOnly hidden"> <a
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  758) 							href="javascript:showRecapFlightKl(21);"><img
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  759) 							height="12" width="12" alt="open detail"
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  760) 							src="/FR/common/common/img/pictos/icon_plusKl.gif" /> more details </a> </div> <div
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  761) 						id="klHideRecapFlight21"
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  762) 						class="recapShowDetail klOnly"> <a
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  763) 							href="javascript:hideRecapFlightKl(21);"><img
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  764) 							height="12" width="12" alt="open detail"
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  765) 							src="/FR/common/common/img/pictos/icon_moinsKl.gif" /> more details </a> </div> </div> <div class="recapFlightDetail"> <div class="recapFlightDetailLine block" id="recapFlightDetailLine21"> <div class="recapFlightFirstline"> <div class="recapFlightDetailContent1"> <span class="recapFlightBlueTitle recapFlightDetailTitle"> Operated by : </span>  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  766) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  767) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  768) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  769)   Air France  </div> <div class="recapFlightDetailContent2"> <span class="recapFlightBlueTitle recapFlightDetailTitle"> Aircraft
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  770) 									: </span> Airbus A330-200 </div> <div class="recapFlightDetailContent3"> <span class="recapFlightBlueTitle recapFlightDetailTitle"> Inflight meal served : </span>   dinner.   Snack.    </div> </div> <div class="recapFlightSecondline"> <div class="recapFlightDetailContent1">  <span class="recapFlightBlueTitle recapFlightDetailTitle"> Class : </span> Q  </div> <div class="recapFlightDetailContent2"> <span class="recapFlightBlueTitle recapFlightDetailTitle"> duration : </span> 09h05mn non stop  </div>  <div class="recapFlightDetailContent3"> <span class="recapFlightBlueTitle recapFlightDetailTitle">Baggage allowance 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  771) 									: </span>   <span class="redInfoFlight">none</span>  </div>  </div> </div> <div
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  772) 						id="recapFlightDetailLine21b"
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  773) 						class="bottomRecapFlightDetail"></div>  </div> <img src="/FR/common/common/img/pixel/pixtrans.gif" class="cleaner"
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  774) 					style="clear: left" /> </div>   </div> </div>     <div class="conditionModifFlights"> <div id="idSeparation" class="hr"> <hr /> </div> <div class="recapItineraryTitle"> Conditions </div> <div class="blocDroiteFl">  </div> <div class="blocGauche" style="float: left;">Changes to your booking are not permitted online. </div>       </div>  </div>  </dl>       <dl> <dt class="etape"> <div class="titre">Passengers</div> </dt> <dd class="refonte noKlBackground" id="passengers">  <div id="idPax"> <div class="passengerName top left"> <span>SHASHITULSIDAS MAPARA</span> </div> <div class="passengerDetail top right"> <span>Frequent flyer card :</span> Not specified </div>  <div class="passengerDetail right"> <span>  VoyageurRewards contract  &nbsp;: </span> Not specified </div>   <div class="passengerDetail  right"> <span>Ticket number :</span>    0062166065798    </div> <div class="passengerDetail  right">  </div>      <div class="passengerDetail  right"> <div class="assistance"><span>Personal assistance&nbsp;:&nbsp;</span>Wheelchair and help with stairs</div> <div class="statut"><span>Status&nbsp;:&nbsp;</span>confirmed</div> </div>   <div class="passengerDetail  right"> <div class="assistance"><span>Personal assistance&nbsp;:&nbsp;</span>Wheelchair and help with stairs</div> <div class="statut"><span>Status&nbsp;:&nbsp;</span>confirmed</div> </div>   <div class="passengerDetail  right"> <div class="assistance"><span>Personal assistance&nbsp;:&nbsp;</span>Wheelchair and help with stairs</div> <div class="statut"><span>Status&nbsp;:&nbsp;</span>confirmed</div> </div>   <div class="passengerDetail bottom right"> <div class="assistance"><span>Personal assistance&nbsp;:&nbsp;</span>Wheelchair and help with stairs</div> <div class="statut"><span>Status&nbsp;:&nbsp;</span>confirmed</div> </div>   <hr class="klOnly" /> </div>     <div class="afOnly rightButtonContainer"> <span class="btnmoreinfo right" id=""> <span><a href="/cgi-bin/AF/US/en/local/process/standard/rebooking/ModifyPassengersAction.do" id="idBtnModifyPassengerDetails">select or modify</a></span> </span> </div>  </dd> </dl>  <dl> <dt class="etape"> <div class="titre">Preferences</div> </dt> <br /> <dd id="preferences" class="refonte noKlBackground mealPreferences">   <table style="table-layout:fixed;width:100%"> <thead> <th class="left black" width="28%">  SHASHITULSIDAS MAPARA  </th> <th width="20%">Meal</th> <th width="14%">Status</th> <th width="19%">Seat</th> <th width="19%">Status</th> </thead> <tbody>  <tr> <td class="airport">Bangalore - Paris</td> <td id="idPax1Meal1">Vegetarian Hindu meal</td> <td class="statut">confirmed</td>  <td class="mealSeat" id="idPax1Seat1">21A</td> <td class="statut">confirmed</td> </tr>  <tr> <td class="airport">Paris - Sint Maarten</td> <td id="idPax1Meal2">Vegetarian Hindu meal</td> <td class="statut">confirmed</td>  <td class="mealSeat" id="idPax1Seat2">16B</td> <td class="statut">confirmed</td> </tr>  <tr> <td class="airport">Sint Maarten - Paris</td> <td id="idPax1Meal3">Vegetarian Hindu meal</td> <td class="statut">confirmed</td>  <td class="mealSeat" id="idPax1Seat3">40A</td> <td class="statut">confirmed</td> </tr>  <tr> <td class="airport">Paris - Mumbai</td> <td id="idPax1Meal4">no selection</td> <td class="statut">-</td>  <td class="mealSeat" id="idPax1Seat4">37A</td> <td class="statut">confirmed</td> </tr>  </tbody> </table>    <br /> <hr class="klOnly" />  <div class="afOnly rightButtonContainer"> <span class="btnmoreinfo right" id=""> <span><a href="/cgi-bin/AF/US/en/local/process/standard/rebooking/ModifyTripPreferencesAction.do" id="idBtnModifyServices">select or modify</a></span> </span> </div>  </dd> </dl>   <dl> <dt class="etape"> <div class="titre">Contacts</div> </dt> <dd class="refonte noKlBackground " id="contacts"> <div id="idContactsMailPhone"> <div id="idContactsInfo"> Please remember to provide the mobile phone number and e-mail address you will be using throughout your trip. This way we can inform you immediately by SMS or e-mail of any changes to your flight (delay, cancellation, new boarding gate, etc.). </div> <div class='top left bottom'> <span>E-mail:</span>  Not specified  </div>   </div>  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  775) 	
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  776)            <script type="text/javascript"> function emergencyChecks() {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  777) 		var valid = 'af_validation';
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  778) 		var attName;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  779) 		var attPhone;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  780) 		if($('idEmergencyName') != null) attName = $('idEmergencyName').getAttribute(valid);
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  781) 		if($('idEmergencyPhone') != null) attPhone = $('idEmergencyPhone').getAttribute(valid);
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  782) 		var newAttName = "required " + attName;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  783) 		var newAttPhone = "required " + attPhone;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  784) 		if ($('idEmergencyName') != null && $('idEmergencyName').value == '' && 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  785) 			($('idEmergencyPhone').value != '' || $('idEmergencyComment').value != '')) {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  786) 			$('idEmergencyName').setAttribute(valid, newAttName);
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  787) 		}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  788) 		if ($('idEmergencyPhone') != null && $('idEmergencyPhone').value == '' && 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  789) 			($('idEmergencyName').value != '' || $('idEmergencyComment').value != '')) {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  790) 			$('idEmergencyPhone').setAttribute(valid, newAttPhone);
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  791) 		}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  792) 	}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  793) 	function initEmergencyAttibutes() {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  794) 		var valid = 'af_validation';
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  795) 		var reg=new RegExp("(required)", "g");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  796) 		if($('idEmergencyName') != null) {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  797) 			var newAfValidationName = $('idEmergencyName').getAttribute("af_validation").replace(reg,"");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  798) 			$('idEmergencyName').setAttribute("af_validation",newAfValidationName);
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  799) 		}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  800) 		if($('idEmergencyPhone') != null) {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  801) 			var newAfValidationPhone = $('idEmergencyPhone').getAttribute("af_validation").replace(reg,"");				
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  802) 			$('idEmergencyPhone').setAttribute("af_validation",newAfValidationPhone);
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  803) 		}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  804) 	} </script> <div class="contactBlocSeparation hr"><hr></hr></div>  <div id="idEmergencyReglementation"> In compliance with European Regulation (EU) No. 996/2010 from October 20, 2010, we recommend that you provide us with the name and contact information of an emergency contact. </div>    <div class="afOnly rightButtonContainer"> <span class="btnmoreinfo right" id=""> <span><a href="/cgi-bin/AF/US/en/local/process/standard/rebooking/ModifyContactsAction.do" id="idBtnModifyContact">select or modify</a></span> </span> </div>  </dd> </dl>    <dl> <dt class="etape"> <div class="titre">Regulations</div> </dt> <dd class="lastBloc refonte noKlBackground" id="reglementation"> <div class="top left bottom">The authorities in your country of departure, destination or transfer require all passengers to provide additional information (example: passport details, addrese at destination) prior to departure. Please click on &laquo; introduce &raquo; to provide details.</div> <div class="afOnly rightButtonContainer"> <span class="btnmoreinfo right" id=""> <span><a href="/cgi-bin/AF/US/en/local/process/standard/rebooking/ModifyRegulationAction.do" id="idBtnModifyApisInfo">Introduce</a></span> </span> </div> </dd> </dl>  <img src="/FR/common/common/img/pixel/pixtrans.gif" class="cleaner" /> <div class="klmPageBottomContent"></div> </div> <img src="/FR/common/common/img/pixel/pixtrans.gif" class="cleaner"	style="clear:left" />  
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  805) 	
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  806)            <div class="blocBouton blocBoutonOneLine">  <div class="rightButton"> <a id="idBtnAnotherReservation" href="/cgi-bin/AF/US/en/local/process/standard/rebooking/SearchPnrRbkAction.do" > <span id="validateButtonContainer" class="btnnext right"> <span> consult another reservation </span> </span> </a> </div>  <div class="leftButton  leftButtonOneLine ">  <a id="idBtnBackHomePage" href="/cgi-bin/AF/US/en/local/process/standard/rebooking/ExitRbkAction.do" > <span id="btnPreviousPageContainer" class="btnback left"> <span> quit </span> </span> </a>  </div>  <div class="centerButton">  <div class="centerContact"> <a href="/US/en/local/transverse/footer/aide_et_contact.htm" rel="gb_page_resize[]"  target="_blank" id="linkContact" title="assistance"> <span class=" btncontact "> <span> assistance </span> </span> </a> </div>  </div>  <img src="/FR/common/common/img/pixel/pixtrans.gif" class="cleaner" alt=""/>       </div>  </div> </div> <!-- fin #klmMainContainer --> <div id="klmBottomMainContainer"></div>   
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  807) 	
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  808)          <script type="text/javascript">   var tc3= "";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  809) 	var tc4= "false";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  810) 	var tc5= "USD";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  811) 	var tc6= "0.00";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  812) 	var tc7= "null";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  813) 	var tc8= "null";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  814) 	var tc9= "MXX";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  815) 	var tc11= "0.00";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  816) 	var tc12= "";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  817) 	var tc13= "1";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  818) 	var tc16= "4";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  819) 	var tc17= "0.00";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  820) 	var tc18= "0.00";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  821) 	var tc19= "null";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  822) 	var tc20= "LH";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  823) 	var tc21= "null";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  824) 	var tc22= "null";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  825) 	var tc23= "null";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  826) 	var tc24= "null";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  827) 	var tc25= "";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  828) 	var tc26= "null";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  829) 	var tcCOST= "0.00";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  830) 	var tcConcatVar = "tc3=" +tc3+ ";tc4=" +tc4+ ";tc5=" +tc5+ ";tc6=" +tc6+ ";tc7=" +tc7+ ";tc8=" +tc8+ ";tc9=" +tc9+ ";tc11=" +tc11+ ";tc12=" +tc12+ ";tc13=" +tc13+ ";tc16=" +tc16+ ";tc17=" +tc17+ ";tc18=" +tc18+ ";tc19=" +tc19+ ";tc20=" +tc20+ ";tc21=" +tc21+ ";tc22=" +tc22+ ";tc23=" +tc23+ ";tc24=" +tc24+ ";tc25=" +tc25+ ";tc26=" +tc26+ ";qty=1;tc_cost="+tcCOST;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  831) 	var tc_pnrDate = "null";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  832) 	var tc_pnrTime = "null";  </script>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  833)       
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  834) <!-- TC - Start -->
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  835) <script type="text/javascript">
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  836) var tc_vars = new Array();
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  837) tc_vars["dcsid"] = "dcsb82wbr00000c5cqct20nkx_9u3w";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  838) tc_vars["application"] = "monet";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  839) tc_vars["country"] = "US";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  840) tc_vars["language"] = "en";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  841) tc_vars["ti"] = "rbk_standard_recap";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  842) tc_vars["cg_n"] = "rebooking";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  843) tc_vars["cg_s"] = "standard";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  844) if(isContexteKLM){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  845)   tc_vars["host"] = "KL";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  846) }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  847) else{
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  848)   tc_vars["host"] = "AF";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  849) }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  850) tc_vars["dcsuri"] = "/US/en/local/rebooking/standard/rbk_standard_recap.jsp";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  851) tc_vars["z_pos"] = "US";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  852) tc_vars["si_x"] = "";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  853) tc_vars["si_n"] = "Rebooking funnel";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  854) tc_vars["tx_e"] = "";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  855) tc_vars["EBT_type"] = "no_award";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  856) if(typeof tc_vars_miniRecap != 'undefined'){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  857) 		for(var tc_vars_miniRecap_key in tc_vars_miniRecap){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  858) 			tc_vars[tc_vars_miniRecap_key] = tc_vars_miniRecap[tc_vars_miniRecap_key];
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  859) 		}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  860) }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  861) tc_vars["z_pos"] = "US";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  862) tc_vars["pn_sku"] = "RAIR";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  863) tc_vars["tx_u"] = "";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  864) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  865) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  866) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  867) tc_vars["tx_id"] = "20130113";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  868) tc_vars["tx_it"] = "24:20:48";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  869) tc_vars["currency"] = "USD";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  870) tc_vars["totalPriceLocal"] = "0.0";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  871) if(document.getElementById('upgradeBlockContainer')){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  872) 	tc_vars_upgrade = new Array();
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  873) 	tc_vars_upgrade["event_place"] = "MMB";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  874) 	tc_vars_upgrade["event_type"] = "PUPG_Link";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  875) 	tc_vars_upgrade["event"] = "offered";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  876) 	tc_vars["upgrade"] = tc_vars_upgrade; 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  877) 	tc_vars["si_x"] = "1";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  878) }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  879) else{
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  880) 	tc_vars["si_x"] = "5";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  881) }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  882) 		
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  883) if(isContexteKLM){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  884) 	var DCSIDKLM = "dcs8i7h6p00000om5mqog2xmv_9h5e"; 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  885) 	tc_vars["dcsid"]=DCSIDKLM;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  886) 	tc_vars["z_application"] = "JOR";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  887) 	tc_vars["ti"] = "Confirmation";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  888) 	if(document.getElementById('upgradeBlockContainer')){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  889) 		tc_vars["si_n"] = "PaidUpgradeFunnel";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  890) 	}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  891) 	else{
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  892) 		tc_vars["si_n"] = "Online Rebooking";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  893) 	}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  894) }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  895) else{
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  896) 	if(document.getElementById('upgradeBlockContainer')){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  897) 		tc_vars["si_n"] = "PaidUpgradeFunnel";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  898) 	}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  899) 	else{
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  900) 		tc_vars["si_n"] = "jorBooking Funnel";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  901) 	}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  902) }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  903) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  904) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  905) tc_vars["isPassengerFlyingBlueMember"] = "0";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  906) tc_vars["nb_passengers"] = "1";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  907) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  908) tc_vars["typology"] = "ADT,1";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  909) tc_vars["insurance"] = "0";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  910) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  911) tc_vars["checkin"] = "0";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  912) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  913) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  914) var WTPageTitle = "";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  915) if(isContexteKLM){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  916) 	WTPageTitle = "Confirmation";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  917) }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  918) else{
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  919) 	WTPageTitle = "rbk_standard_recap";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  920) }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  921) function getPushId(node) {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  922) 	while((node.parentNode != null) && (node.parentNode.id != 'push')){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  923) 		node = node.parentNode;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  924) 	}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  925) 	if(node.parentNode != null) return(node.id);
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  926) 	else return "PushNotFound";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  927) }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  928) function pushMeasureVariablesAndCommit(type,event){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  929) 	var indice = getPushId(event.target).match(/\d+$/);
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  930) 	if((!isNaN(indice)) && (indice != null)){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  931) 		tc_vars_event = new Array();
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  932)     	tc_vars_event["event_value"] = listServiceZone[indice-1];
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  933)     	tc_vars_event["event_type"] = type;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  934)     	tc_vars_event["event_place"] = WTPageTitle;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  935)     	tc_vars_event["event"] = "Clicked";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  936) 		tc_events_11(this, type+(indice-1), tc_vars_event);
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  937) 	}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  938) }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  939) var listServiceZone = new Array();
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  940) listServiceZone.push("Car");listServiceZone.push("Meet and assist");listServiceZone.push("Hotel");listServiceZone.push("Facebook");listServiceZone.push("Flying_Blue");listServiceZone.push("Bluenity");listServiceZone.push("Transfer");listServiceZone.push("");listServiceZone.push("");listServiceZone.push("");
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  941) var wt_serviceZone = "None";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  942) tc_vars["push"] = new Array();
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  943) for(i=1; i<=10; i++){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  944) 	if(i<listServiceZone.length){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  945) 		if(listServiceZone[i-1] != ""){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  946) 			wt_serviceZone = listServiceZone[i-1];
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  947) 		}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  948) 		else{
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  949) 			wt_serviceZone = "None";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  950) 		}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  951) 	}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  952) 	else{
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  953) 		wt_serviceZone = "None";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  954) 	}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  955) 	try{
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  956) 		pushI = document.getElementById("push"+i);
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  957) 		if(pushI.style.display == 'block'){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  958) 			tc_vars_push_item = new Array();
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  959) 			tc_vars_push_item["push"] = "Simple";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  960) 			tc_vars_push_item["event_value"] = wt_serviceZone;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  961) 			tc_vars_push_item["event"] = "offered";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  962) 			tc_vars_push_item["event_place"] = WTPageTitle;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  963) 			tc_vars["push"].push(tc_vars_push_item);
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  964) 		}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  965) 		addEvent( pushI, 'click', function(event){ pushMeasureVariablesAndCommit('push',event) } );
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  966) 	}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  967) 	catch(e){}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  968) 	try{
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  969) 		pushI = document.getElementById("pushFB"+i);
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  970) 		if(pushI.style.display == 'block'){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  971) 			tc_vars_push_item = new Array();
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  972) 			tc_vars_push_item["push"] = "FB";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  973) 			tc_vars_push_item["event_value"] = wt_serviceZone;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  974) 			tc_vars_push_item["event"] = "offered";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  975) 			tc_vars_push_item["event_place"] = WTPageTitle;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  976) 			tc_vars["push"].push(tc_vars_push_item);
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  977) 		}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  978) 		addEvent( pushI, 'click', function(event){ pushMeasureVariablesAndCommit('pushFB',event) } );
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  979) 	}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  980) 	catch(e){}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  981) 	try{
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  982) 		pushI = document.getElementById("pushactivity"+i);
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  983) 		if(pushI.style.display == 'block'){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  984) 			tc_vars_push_item = new Array();
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  985) 			tc_vars_push_item["push"] = "Activity";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  986) 			tc_vars_push_item["event_value"] = wt_serviceZone;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  987) 			tc_vars_push_item["event"] = "offered";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  988) 			tc_vars_push_item["event_place"] = WTPageTitle;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  989) 			tc_vars["push"].push(tc_vars_push_item);
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  990) 		}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  991) 		addEvent( pushI, 'click', function(event){ pushMeasureVariablesAndCommit('pushActivity',event) } );
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  992) 	}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  993) 	catch(e){}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  994) 	try{
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  995) 		pushI = document.getElementById("pushCar"+i);
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  996) 		if(pushI.style.display == 'block'){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  997) 			tc_vars_push_item = new Array();
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  998) 			tc_vars_push_item["push"] = "Car";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530  999) 			tc_vars_push_item["event_value"] = wt_serviceZone;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1000) 			tc_vars_push_item["event"] = "offered";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1001) 			tc_vars_push_item["event_place"] = WTPageTitle;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1002) 			tc_vars["push"].push(tc_vars_push_item);
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1003) 		}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1004) 		addEvent( pushI, 'click', function(event){ pushMeasureVariablesAndCommit('pushCar',event) } );
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1005) 	}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1006) 	catch(e){}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1007) 	try{
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1008) 		pushI = document.getElementById("pushHotel"+i);
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1009) 		if(pushI.style.display == 'block'){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1010) 			var tc_vars_push_item = new Array();
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1011) 			tc_vars_push_item["push"] = "Hotel";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1012) 			tc_vars_push_item["event_value"] = wt_serviceZone;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1013) 			tc_vars_push_item["event"] = "offered";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1014) 			tc_vars_push_item["event_place"] = WTPageTitle;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1015) 			tc_vars["push"].push(tc_vars_push_item);
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1016) 		}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1017) 		addEvent( pushI, 'click', function(event){ pushMeasureVariablesAndCommit('pushHotel',event) } );
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1018) 	}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1019) 	catch(e){}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1020) }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1021) if(document.getElementsByName('upgradeButton')){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1022) 	var wt_upgradeButton = document.getElementsByName('upgradeButton');
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1023) 	for(var i=0; i<wt_upgradeButton.length; i++){
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1024) 		addEvent( wt_upgradeButton[i], 'click', function(){ 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1025) 			tc_vars_event = new Array();
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1026)     		tc_vars_event["event_value"] = "";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1027)     		tc_vars_event["event_place"] = "MMB";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1028)     		tc_vars_event["event_type"] = "PUPG_Link";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1029)     		tc_vars_event["event"] = "Clicked";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1030) 			tc_events_11(this, 'upgradeButton', tc_vars_event);
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1031) 		});
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1032) 	}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1033) }
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1034) if(document.getElementById('idLinkOnBoard'))
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1035)     addEvent( document.getElementById('idLinkOnBoard'), 'click', function(){ 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1036)     		tc_vars_event = new Array();
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1037)     		tc_vars_event["event_value"] = "";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1038)     		tc_vars_event["event_place"] = WTPageTitle;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1039)     		tc_vars_event["event_type"] = "linkOnBoard";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1040)     		tc_vars_event["event"] = "Clicked";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1041) 			tc_events_11(this, 'idLinkOnBoard', tc_vars_event);
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1042)     });
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1043) if(document.getElementById('idLinkAtDestination'))
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1044)     addEvent( document.getElementById('idLinkAtDestination'), 'click', function(){ 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1045)     		tc_vars_event = new Array();
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1046)     		tc_vars_event["event_value"] = "";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1047)     		tc_vars_event["event_place"] = WTPageTitle;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1048)     		tc_vars_event["event_type"] = "linkAtDestination";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1049)     		tc_vars_event["event"] = "Clicked";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1050) 			tc_events_11(this, 'idLinkAtDestination', tc_vars_event);
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1051)     });
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1052) if(document.getElementById('idLinkPracticalInfo'))
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1053)     addEvent( document.getElementById('idLinkPracticalInfo'), 'click', function(){ 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1054)     		tc_vars_event = new Array();
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1055)     		tc_vars_event["event_value"] = "";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1056)     		tc_vars_event["event_place"] = WTPageTitle;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1057)     		tc_vars_event["event_type"] = "linkPracticalInfo";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1058)     		tc_vars_event["event"] = "Clicked";
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1059) 			tc_events_11(this, 'idLinkPracticalInfo', tc_vars_event);
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1060)     });
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1061) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1062) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1063) </script>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1064) <script src="/US/common/common/tc/js/tc_AirFranceGlobal_11.js" type="text/javascript"></script>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1065) <!-- TBD : NOSCRIPT TC -->
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1066) <!-- TC - Stop -->
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1067) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1068) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1069) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1070)  </div> </center> <div class="clearFix"></div> <div id="submenu"></div> <div id="ombreFooter"></div> <div id="footer"> <!--#config errmsg=" " --><!--#include virtual="/US/en/local/include/blocFooter.htm"--> <!-- -->
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1071) 	
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1072) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1073) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1074) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1075) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1076)         <form action="" method="post" id="FaqForm" name="faqForm" >
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1077)                 <input type="hidden" id="idFaqQuestion" name="question" />
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1078)                 <input type="hidden" id="idFaqLanguage" name="language" />
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1079)                 <input type="hidden" id="idFaqCountry" name="country" />
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1080)                 <input type="hidden" id="idFaqReferrer" name="referrer" />
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1081)                 <input type="hidden" id="idFaqDefaultQuestionBoolean" name="defaultQuestionBoolean" />
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1082)         </form>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1083) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1084) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1085)  <div class="libellemaj">
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1086) <ul> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1087) <li> <a id="fo0mobile_airfrance_onglet_us_uk" title="Air France mobile" href="/US/en/common/transverse/footer/internet_mobile_airfrance_us_uk.htm" >Air France mobile</a> </li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1088) <li> <a id="fo0plan_du_site" title="Site map" href="/US/en/common/transverse/footer/plan_du_site.htm" onclick="javascript:popin(this);return false;" rel="gb_page_center[820, 800]">Site map</a> </li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1089) <li> <a id="fo0edito_preambule" title="Legal notices" href="/US/en/local/transverse/footer/edito_preambule.htm" onclick="javascript:openwin(this);return false;" rel="[1024, 750]">Legal notices</a> </li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1090) <li> <a id="fo0us_dot_regulation" title="Fees &amp; Paid Options" href="/US/en/local/page_flottante/hp/us_dot_regulation.htm" >Fees &amp; Paid Options</a> </li> </ul> </div> <div class="rubriques"> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1091) <ul> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1092) <li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1093) <ul><li class='titrelib'>Contact us</li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1094) <li> <a id="fo1nous_contacter_onglet" title="Online help and contacts" href="/US/en/local/transverse/footer/aide_et_contact.htm" >Online help and contacts</a> </li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1095) <li> <a id="fo1nous_contacter-onglet" title="Claims and baggage service" href="/US/en/local/transverse/footer/reclamation.htm" >Claims and baggage service</a> </li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1096) <li> <a id="fo1nous_contacter-onglet" title="Suggestions" href="/US/en/local/transverse/footer/suggestion.htm" >Suggestions</a> </li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1097) <li> <a id="fo1aide_remboursement" title="Ticket refunds" href="/US/en/local/avotreservice/relationclientele/clientele_remboursement.htm?menu=false" >Ticket refunds</a> </li> </ul> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1098) <ul><li class='titrelib'>About Air France</li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1099) <li> <a id="fo1actualites" title="Air France News" href="/US/en/common/transverse/footer/actualites.htm" >Air France News</a> </li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1100) <li> <a id="fo1corporate_airfrance" title="Air France Corporate" href="http://corporate.airfrance.com/en/" onclick="javascript:openwin(this);return false;" rel="[1000, 750]">Air France Corporate</a> </li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1101) <li> <a id="fo1airfranceklm" title="Air France KLM Corporate" href="http://www.airfranceklm.com/" onclick="javascript:openwin(this);return false;" rel="[1000, 750]">Air France KLM Corporate</a> </li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1102) <li> <a id="fo1developpement_durable" title="Sustainable development" href="http://corporate.airfrance.com/en/sustainable-development/headlines/" onclick="javascript:openwin(this);return false;" rel="[1000, 750]">Sustainable development</a> </li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1103) <li> <a id="fo1The Air France Story" title="The Air France Story" href="http://corporate.airfrance.com/airfrancelasaga/?lang=en_us" onclick="javascript:openwin(this);return false;" rel="[1000, 750]">The Air France Story</a> </li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1104) <li> <a id="fo1career_available_positions" title="Careers" href="/US/en/local/toutsurairfrance/emploi/career_available_positions.htm " >Careers</a> </li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1105) <li> <a id="fo1 " title="Become an affiliate" href="https://signup.cj.com/member/brandedPublisherSignUp.do?air_refmerchantid=1648018   " onclick="javascript:openwin(this);return false;" rel="[1000, 750]">Become an affiliate</a> </li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1106) <li> <a id="fo1goodies" title="Wallpaper &amp; screensavers" href="/US/en/common/transverse/footer/goodies.htm" >Wallpaper &amp; screensavers</a> </li> </ul> </li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1107) <li><img class="sep" alt="" src="/FR/common/common/img/pixel/pixgris2.gif" height="300"> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1108) <ul><li class='titrelib'>Social Media</li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1109) <li> <a id="fo2facebook" title="Facebook" href="http://www.facebook.com/AirFranceUSA" onclick="javascript:openwin(this);return false;" rel="[1000, 750]"><img alt="Facebook" src="/common/image/icones_hp/footer/picto_facebook_16x17.gif" class="footerimage" /><span>&nbsp;Facebook</span></a> </li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1110) <li> <a id="fo2twitter" title="Twitter" href="https://twitter.com/AirFranceUS" onclick="javascript:openwin(this);return false;" rel="[1000, 750]"><img alt="Twitter" src="/common/image/icones_hp/footer/picto_twitter_16x16.gif" class="footerimage" /><span>&nbsp;Twitter</span></a> </li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1111) <li> <a id="fo2google+" title="Google+" href="https://plus.google.com/104102114701503348151?prsrc=3" onclick="javascript:openwin(this);return false;" rel="[1000, 750]"><img alt="Google+" src="/common/image/icones_hp/footer/picto_gplus_14x14.gif" class="footerimage" /><span>&nbsp;Google+</span></a> </li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1112) <li> <a id="fo2linkedIn" title="LinkedIn" href="http://www.linkedin.com/company/air-france" onclick="javascript:openwin(this);return false;" rel="[1000, 750]"><img alt="LinkedIn" src="/common/image/icones_hp/footer/picto_linkedin_14x14.gif" class="footerimage" /><span>&nbsp;LinkedIn</span></a> </li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1113) <li> <a id="fo2youtube" title="YouTube" href="http://www.youtube.com/airfranceonair" onclick="javascript:openwin(this);return false;" rel="[1000, 750]"><img alt="" src="/common/image/icones_hp/footer/picto_youtube_14x14.gif" class="footerimage" /><span>&nbsp;YouTube</span></a> </li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1114) <li> <a id="fo2instagram" title="Instagram" href="http://instagram.com/airfrance" onclick="javascript:openwin(this);return false;" rel="[1000, 750]"><img alt="" src="/common/image/icones_hp/footer/picto_instagram_14x14.gif" class="footerimage" /><span>&nbsp;Instagram</span></a> </li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1115) <li> <a id="fo2pinterest" title="Pinterest" href="http://pinterest.com/airfrance/" onclick="javascript:openwin(this);return false;" rel="[1000, 750]"><img alt="Pinterest" src="/common/image/icones_hp/footer/picto_pinterest_14x14.gif" class="footerimage" /><span>&nbsp;Pinterest</span></a> </li> </ul> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1116) <ul><li class='titrelib'>Others websites</li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1117) <li> <a id="fo2klm" title="KLM" href="http://www.klm.com" >KLM</a> </li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1118) <li> <a id="fo2Skyteam" title="SkyTeam" href="http://www.skyteam.com/en/" >SkyTeam</a> </li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1119) <li> <a id="fo2autres_sites_af" title="Worlwide sites" href="http://www.airfrance.com" >Worlwide sites</a> </li> </ul> </li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1120) <li><img class="sep" alt="" src="/FR/common/common/img/pixel/pixgris2.gif" height="300"> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1121) <ul><li class='titrelib'>Business services</li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1122) <li> <a id="fo3vr_skybonus_onglet" title="SkyBonus" href="/US/en/local/avotreservice/entreprises/vr_programme.htm" >SkyBonus</a> </li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1123) <li> <a id="fo3flying_blue_business" title="Flying Blue for Business" href="http://www.flyingbluebusinesstool.com/" onclick="javascript:openwin(this);return false;" rel="[1024, 750]">Flying Blue for Business</a> </li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1124) <li> <a id="fo3us_dot_regulation" title="Fees &amp; Paid Options" href="/US/en/local/page_flottante/hp/us_dot_regulation.htm" >Fees &amp; Paid Options</a> </li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1125) <li> <a id="fo3global_travel" title="One Global Travel Solution" href="http://www.af-klm.com/one/en" onclick="javascript:openwin(this);return false;" rel="[1000, 750]">One Global Travel Solution</a> </li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1126) <li> <a id="fo3congres_salon_seminaire" title="Conventions, conferences and seminars" href="/US/en/common/avotreservice/entreprises/service_congres_salon_seminaire.htm" >Conventions, conferences and seminars</a> </li> </ul> </li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1127) <li><img class="sep" alt="" src="/FR/common/common/img/pixel/pixgris2.gif" height="300"> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1128) <ul><li class='titrelib'>The Air France experience</li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1129) <li> <a id="fo4laboutique" title="In-flight sales - La Boutique" href="http://laboutique.airfrance.com/" onclick="javascript:openwin(this);return false;" rel="[1000, 750]">In-flight sales - La Boutique</a> </li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1130) <li> <a id="fo4E-shopping" title="Air France Shopping" href="http://shopping.airfrance.com/actions/home?time=1340718842103&amp;language=en" onclick="javascript:openwin(this);return false;" rel="[1000, 750]">Air France Shopping</a> </li> </ul> </li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1131) <li><img class="sep" alt="" src="/FR/common/common/img/pixel/pixgris2.gif" height="300"> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1132) <ul><li class='titrelib'>Air France Flights</li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1133) <li> <a id="fo5Air France Flights" title="Air France Flights" href="/US/en/local/air-france/monde/index.htm" >Air France Flights</a> </li> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1134) <li> <a id="fo5travel-to-paris-france" title="Travel to Paris - France" href="/US/en/local/flights-air-france/travel/travel-to-paris-france.htm" >Travel to Paris - France</a> </li> </ul> </li> </ul> </div> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1135) <!-- --> </div> </div> <script type="text/javascript"> loadFooter(); </script>  </center>  <script type="text/javascript"> function sendEnews(email, lastName, firstName, title, zipCode, state, destinationAdresse, dateNaissance) {
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1136) 		if(nbSendEnewsLetter == 0){  sendEdatis(email, lastName, firstName, title, zipCode, state);  nbSendEnewsLetter = 1;
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1137) 		}
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1138)    	} </script> 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1139) 
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1140) </body>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1141)  </html>
+b3e64ceb (unknown 2013-02-19 11:40:36 +0530 1142)   
